@@ -1,0 +1,7 @@
+// Los Arreglos como parametros a funciones
+
+static void Imprime(int[] arreglo)
+{
+
+}
+
