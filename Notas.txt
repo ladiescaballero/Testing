@@ -40,6 +40,4 @@ static void Main(string[]args)
            Console.WriteLine("El numero es {0} ",arreglo[n]);     
         }
     }
-
-
 }
