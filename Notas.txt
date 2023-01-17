@@ -2,6 +2,44 @@
 
 static void Imprime(int[] arreglo)
 {
-
+   
 }
 
+// para Realizar la invocacion de la Funcion de Arreglos
+
+int[] numeros = new int[5];
+....
+....
+...
+Imprime(numeros);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+// ahora veremos como le pasamos por parametros en el main
+
+static void Main(string[]args)
+{
+    int[] numeros = new int[5];
+    int n = 0;
+    string linea = "";
+
+    for(n=0;n<5;n++)
+    {
+      Console.WriteLine("Dame un numero ");
+      linea = Console.ReadLine();
+      numeros[n] = Convert.ToInt32(valor);  
+    }
+
+    //Invocamos a la funcion 
+    imprime(numeros);
+
+    static void imprime(int[]arreglo)
+    {
+        int n = 0;
+        for(n=0;n<5;n++)
+        {
+           Console.WriteLine("El numero es {0} ",arreglo[n]);     
+        }
+    }
+
+
+}
