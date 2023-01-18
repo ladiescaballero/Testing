@@ -9,6 +9,7 @@
 ⏲ 16:25
 
 
+
 // Los Arreglos como parametros a funciones
 
 static void Imprime(int[] arreglo)
@@ -25,6 +26,8 @@ int[] numeros = new int[5];
 Imprime(numeros);
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+📚 215
+
 // ahora veremos como le pasamos por parametros en el main
 
 static void Main(string[]args)
