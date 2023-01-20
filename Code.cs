@@ -197,11 +197,6 @@ static void Main(string[]args)
     indice = Datos.IndexOf(5);
     Console.WriteLine("El primer 5 se encuentra eb {0}" ,indice);
     Console.WriteLine("--________-------------________");
-    
-
-
-
-
 
     Console.WriteLine("Tenemos Inicialmente los Datos ");
     Imprime(datos);
@@ -215,5 +210,14 @@ static void Imprime(ArrayList arreglo)
     Console.WriteLine("n---------------------------------");
    }
 }
+// 📓 233
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+// 📙 235
+
+// El Stack es otro tipo de coleccion se le conoce como pila tambien. nos permite guardar elementos y cambia su tamaño de forma dinamica.es un objeto. tiene sus propios metodos. se debe instanciar
+
+
 
 
