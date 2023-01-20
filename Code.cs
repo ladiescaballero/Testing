@@ -214,9 +214,23 @@ static void Imprime(ArrayList arreglo)
 
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 235
+// 📙 235 - 236
 
 // El Stack es otro tipo de coleccion se le conoce como pila tambien. nos permite guardar elementos y cambia su tamaño de forma dinamica.es un objeto. tiene sus propios metodos. se debe instanciar
+
+// Como crear un stack como cualquier otra coleccion solo se necesita instanciar para poder utilizar.Adentro de esta clase encontramos todo los metodos necesarios. 
+
+Stack miPila = new Stack();
+
+// Para introducir informacion al stack. para introducir informacion al stack. usamos el metodo Push() // este metodo coloca el nuevo elemento en la parte superior del Stack.
+// solo se necesita de un parametro. 
+
+miPila.Push(7);
+miPila.Push(11);
+miPila.Push(8);
+
+// primer elemento es el 8 , ultimo elemento 7
+
 
 
 
