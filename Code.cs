@@ -1,3 +1,74 @@
+📅 18/01/2022
+⏲ 
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+📅 17/01/2022
+⏲ 16:25
+
+
+// Los Arreglos como parametros a funciones
+
+static void Imprime(int[] arreglo)
+{
+   
+}
+
+// para Realizar la invocacion de la Funcion de Arreglos
+
+int[] numeros = new int[5];
+....
+....
+...
+Imprime(numeros);
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+📚 215
+
+// ahora veremos como le pasamos por parametros en el main
+
+static void Main(string[]args)
+{
+    int[] numeros = new int[5];
+    int n = 0;
+    string linea = "";
+
+    for(n=0;n<5;n++)
+    {
+      Console.WriteLine("Dame un numero ");
+      linea = Console.ReadLine();
+      numeros[n] = Convert.ToInt32(valor);  
+    }
+
+    //Invocamos a la funcion 
+    imprime(numeros);
+
+    static void imprime(int[]arreglo)
+    {
+        int n = 0;
+        for(n=0;n<5;n++)
+        {
+           Console.WriteLine("El numero es {0} ",arreglo[n]);     
+        }
+    }
+}
+
+
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+// 📚 221
+// El Arralist
+// Ejemplo de un arrayList
+
+ArrayList datos = new ArrayList();
+ArrayList datosDos = new ArrayList(15);
+
+datos.Add(7);
+datos.Add(n);
+palabras.Add("Hola Mundo");
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
 static void Main(string[]args)
 {
 
@@ -11,24 +82,58 @@ static void Main(string[]args)
 
 // como acceder a la informacion de un arreglo
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 // 📙 224
+
 Console.WriteLine("El dato es {0} ",datos[2]);
 
 impuesto = datos[2] * 0.15f;
 
 datos[2] = 5;
 
-Como obtener la cantidad de elementos de un arreglo
+// Como obtener la cantidad de elementos de un arreglo
 
 elementos = datos.Count;
+
 // si sale valor 5 .. los indices son del 0 al 4
 
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+// 📙 225
 
 // Insertar Elementos , Tambien se pueden insertar elementos aparte de Add .
 // el metodo Insert() necesita de dos parametros. el primero es el indice , segundo indice el elemento
 // Es como un actualizar..
 
 datos.Insert(2,5); // valor del indice 2 y el elemento es el 5
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+// 📙 226
+
+// Nota:Para saber la capacidad del ArrayList es posible hacerlo al leer el valor de la propiedad. "Capacity" esta propiedad es de tipo entero. 
+// si lo que deseamos es reducir.la capacidad. del ArrayList. se puede usar el metodo. TrimToZise() pero tenemos que tener cuidado en no perder informacion.
+
+// Como eliminar un Elemento 
+// Se puede eliminar un elemento de forma sencilla, solo se necesita el indice- del elementos
+// Este metodo solo se necesita un parametro. que es el indice del objeto. que deseamos eliminar. 
+
+
+datos.RemoveAt(7);
+
+// Con ArrayList para saber si se encuentra. un elemento dentro de este. para eso usamos el metodo. IndexOf() este metodo solo se requiere un solo parametro.
+// que es el objeto a buscar adentro del arrayList. el metodo nos regresa un valor entero.
+// Si el elemento no se encuentra. en el ArrayList , entonces simplemente el valor "-1 "
+
+indice = datos.IndexOf(7);
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+// 📙 227
+
+
+
+
 
 
 
