@@ -155,23 +155,65 @@ static void Imprime(ArrayList arreglo)
    }
 }
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+// 📙 228
+
+
+static void Main(string[]args)
+{
+    int indice = 0;
+    int cantidad = 0;
+
+    ArrayList datos = new ArrayList();
+    datos.Add(7);
+    datos.Ad(5);
+    datos.Add(1);
+    datos.Add(4);
+    datos.Add(5);
+
+    indice = datos.Add(10);
+    Console.WriteLine("despues de hacerlo crecer");
+    imprime(datos);
+    Console.WriteLine("El ultimo elemento tiene el indice {0}",indice);
+    Console.WriteLine("--------------------------");
+    //Se imprime un elemento en particular
+    Console.WriteLine("El valor en el indice 2 es {0}",datos[2]);
+    Console.WriteLine("_____________________________________");
+    datos[3] = 55;
+    Console.WriteLine("Despues de las modificaciones ");
+    imprime(datos);
+    
+    // Obtenemos la cantidad
+    cantidad = datos.Count();
+    Console.WriteLine("la cantidad de elementos es {0}",cantidad);
+    Console.WriteLine("--_---_--______---___-__-_-__");
+    datos.Insert(2.88);
+    Console.WriteLine("Despues de la insercion.");
+    imprime(datos);
+    // Para eliminar un campo. 
+    datos.RemoveAt(4);
+    Console.WriteLine("Despues de la eliminacion ");
+    imprime(datos);
+    indice = Datos.IndexOf(5);
+    Console.WriteLine("El primer 5 se encuentra eb {0}" ,indice);
+    Console.WriteLine("--________-------------________");
+    
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+    Console.WriteLine("Tenemos Inicialmente los Datos ");
+    Imprime(datos);
 }
 
+static void Imprime(ArrayList arreglo)
+{
+   foreach(int n in arreglo)
+   {
+    Console.WriteLine("{0},",n);
+    Console.WriteLine("n---------------------------------");
+   }
+}
 
 
