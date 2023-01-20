@@ -131,10 +131,29 @@ indice = datos.IndexOf(7);
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 // 📙 227
 
+// Ejemplo de ArrayList
 
+static void Main(string[]args)
+{
+    int indice = 0;
+    int cantidad = 0;
 
+    ArrayList datos = new ArrayList();
+    datos.Add(7);
+    datos.Ad(5);
+    datos.Add(1);
+    Console.WriteLine("Tenemos Inicialmente los Datos ");
+    Imprime(datos);
+}
 
-
+static void Imprime(ArrayList arreglo)
+{
+   foreach(int n in arreglo)
+   {
+    Console.WriteLine("{0},",n);
+    Console.WriteLine("n---------------------------------");
+   }
+}
 
 
 
