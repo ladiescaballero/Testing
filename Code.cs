@@ -270,7 +270,7 @@ que es el elemento que se busca.Regresa un TRUE o FALSE
 bool enStack = false;
 enStack = miPila.Contains(7);
 
-¬¬ pag 237
+¬¬ pag 237 - 238
 
 /*creacion de una aplicacion
 */
