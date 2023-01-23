@@ -332,9 +332,21 @@ static void Main(string[]args)
             Console.WriteLine("encontrado {0}",encontrado);           
         }
 
-        ⏲12:24
+            // Mostramos la informacion del stack 
+            Console.WriteLine("El stack Tiene {0} elementos",miPila.Count);
+             
+             foreach(int n in miPila)
+             {
+                Console.WriteLine("{0},",n);
+                Console.WriteLine("");
+                COnsole.WriteLine("------------------");
+
+             }
 
     }
 
 }
+
+
+// ⏲
 
