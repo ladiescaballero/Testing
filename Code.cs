@@ -347,6 +347,50 @@ static void Main(string[]args)
 
 }
 
+// 📚 Pag  
+
+// El Queue o tambien conocida como cola. al igual que el stack ya no es necesario programarla.
+// existe una clase que se puede usar. la clase se llama Queue su estructura es de tipo fifo.
+// este funciona diferente al stack. es como una fila. el primero que llega el primero en salir.
+
+// Declaracion de un Queue Se debe crear una instancia de la clase.
+
+Queue fila = new Queue();
+
+// Una vez instanciado ya es posible hacer uso de la fila y tambien de los metodos. que nos provee la clase correspondiente
+
+// 📚 Pag -
+
+
+// Adiccion de elementos al Queue
+// Podemos agregar un elemento en cualquier momento que lo necesitamos. el tamaño del Queue se modifica dinamicamente por lo que no debemos preocuparnos. 
+// Se utiliza el metodo Enqueue que pertenece a la clase Queue y solo necesita un parametro.
+// se coloca el elemento que deseamos añadir.
+
+fila.Enqueue(7);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ⏲
