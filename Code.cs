@@ -233,5 +233,45 @@ miPila.Push(8);
 
 
 
+¬¬ pag 235
 
+/*como obtener informacion del stack
+
+si queremos obtener informacion del stack del elemento que esta en el lugar superior.
+*/
+int valor = 0;
+valor = (int)miPila.Pop();
+
+// el valor tendra el valor 8	
+
+/*para recorrer el stack usar foreach
+*/
+
+¬¬ pag 236
+
+foreach(int x in miPila)
+{
+	Console.WriteLine("{0}",n);
+}
+
+/*para obtener la cantidad de elementos del stack.Se debe usar la propiedad Count.
+Esta nos regresa un valor entero.Con la cantidad de elementos.
+*/
+cantidad = miPila.Count();
+
+/*para limpiar elementos del stack. Si queremos eliminar todo los elementos del stack se usa una propiedad y no necesita parametros.
+*/
+miPila.Clear();
+
+/*Para saber si un stack tiene elementos.y este es un elemento en particular.
+se debe agregar un parametro
+que es el elemento que se busca.Regresa un TRUE o FALSE
+*/
+bool enStack = false;
+enStack = miPila.Contains(7);
+
+¬¬ pag 237
+
+/*creacion de una aplicacion
+*/
 
