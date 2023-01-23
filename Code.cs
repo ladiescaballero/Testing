@@ -275,3 +275,66 @@ enStack = miPila.Contains(7);
 /*creacion de una aplicacion
 */
 
+static void Main(string[]args)
+{
+    int opcion = 0;
+    string linea = "";
+    int numero = 0 ;
+    bool encontrado = false;
+
+    Stack miPila = new Stack();
+
+    datos
+    {
+        Console.WriteLine("1- Push");
+        Console.WriteLine("2- Pop");
+        Console.WriteLine("3-Clear");
+        Console.WriteLine("4-Contains");
+        Console.WriteLine("3-Salir");
+        Console.WriteLine("Dame tu Opcion");
+        linea = Console.ReadLine();
+        opcion = Convert.ToInt32(linea);
+        
+        if(opcion ==1)
+        {
+            // pedimos el valor a introducir
+            Console.WriteLine("Dame el valor a Introducir");
+            linea = Console.ReadLine();
+            numero = Convert.ToInt32(linea);
+
+            // adicionamos el valor en el stack
+            miPila.Push(numero);
+        }
+
+        if(opcion==2)
+        {
+            // mostramos el elemento
+            numero = (int)miPila.Pop();
+            Console.WriteLine("El valor Obtenido es {0}",numero);
+        }
+
+        if(opcion==3)
+        {
+           //limpiamos todo los contenidos del stack
+           miPila.Clear(); 
+        }
+
+        if(opcion==4)
+        {
+            // pedimos el valor a encontrar
+            Console.WriteLine("Dame el valor a encontrar");
+            linea = Console.ReadLine();
+            numero = Convert.ToInt32(linea);
+
+            // Vemos si el elemento esta
+            encontrado = miPila.Contains(numero);
+            // Mostramos el resultado
+            Console.WriteLine("encontrado {0}",encontrado);           
+        }
+
+        ⏲12:24
+
+    }
+
+}
+
