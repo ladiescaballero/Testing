@@ -343,9 +343,10 @@ static void Main(string[]args)
 
              }
 
-    }
+    }while(opcion!=5)
 
 }
+
 
 
 // ⏲
