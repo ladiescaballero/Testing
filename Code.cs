@@ -2,10 +2,9 @@
 ⏲ 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-
+📚 215
 📅 17/01/2022
 ⏲ 16:25
-
 
 // Los Arreglos como parametros a funciones
 
@@ -23,7 +22,7 @@ int[] numeros = new int[5];
 Imprime(numeros);
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-📚 215
+📚 216
 
 // ahora veremos como le pasamos por parametros en el main
 
@@ -56,7 +55,7 @@ static void Main(string[]args)
 
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-// 📚 221
+📚 221 - 222
 // El Arralist
 // Ejemplo de un arrayList
 
@@ -69,10 +68,10 @@ palabras.Add("Hola Mundo");
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
+📙 223
+
 static void Main(string[]args)
 {
-
-// 📙 223
 
     foreach(int valor in costo)
     {
@@ -83,7 +82,7 @@ static void Main(string[]args)
 // como acceder a la informacion de un arreglo
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 224
+📙 224
 
 Console.WriteLine("El dato es {0} ",datos[2]);
 
@@ -100,7 +99,7 @@ elementos = datos.Count;
 
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 225
+📙 225
 
 // Insertar Elementos , Tambien se pueden insertar elementos aparte de Add .
 // el metodo Insert() necesita de dos parametros. el primero es el indice , segundo indice el elemento
@@ -109,7 +108,7 @@ elementos = datos.Count;
 datos.Insert(2,5); // valor del indice 2 y el elemento es el 5
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 226
+📙 226
 
 // Nota:Para saber la capacidad del ArrayList es posible hacerlo al leer el valor de la propiedad. "Capacity" esta propiedad es de tipo entero. 
 // si lo que deseamos es reducir.la capacidad. del ArrayList. se puede usar el metodo. TrimToZise() pero tenemos que tener cuidado en no perder informacion.
@@ -129,7 +128,7 @@ indice = datos.IndexOf(7);
 
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 227
+📙 227
 
 // Ejemplo de ArrayList
 
@@ -156,7 +155,7 @@ static void Imprime(ArrayList arreglo)
 }
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 228
+// 📙 228 al 233
 
 
 static void Main(string[]args)
@@ -214,7 +213,7 @@ static void Imprime(ArrayList arreglo)
 
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
-// 📙 235 - 236
+📙 234 - 235 -236 
 
 // El Stack es otro tipo de coleccion se le conoce como pila tambien. nos permite guardar elementos y cambia su tamaño de forma dinamica.es un objeto. tiene sus propios metodos. se debe instanciar
 
@@ -232,8 +231,9 @@ miPila.Push(8);
 // primer elemento es el 8 , ultimo elemento 7
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-¬¬ pag 235
+¬¬ pag 237
 
 /*como obtener informacion del stack
 
@@ -247,7 +247,9 @@ valor = (int)miPila.Pop();
 /*para recorrer el stack usar foreach
 */
 
-¬¬ pag 236
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+¬¬ pag 238
 
 foreach(int x in miPila)
 {
@@ -270,7 +272,9 @@ que es el elemento que se busca.Regresa un TRUE o FALSE
 bool enStack = false;
 enStack = miPila.Contains(7);
 
-¬¬ pag 237 - 238
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+¬¬ pag 239 - 240
 
 /*creacion de una aplicacion
 */
@@ -347,11 +351,19 @@ static void Main(string[]args)
 
 }
 
-// 📚 Pag  
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 Pag  243
+
 
 // El Queue o tambien conocida como cola. al igual que el stack ya no es necesario programarla.
 // existe una clase que se puede usar. la clase se llama Queue su estructura es de tipo fifo.
 // este funciona diferente al stack. es como una fila. el primero que llega el primero en salir.
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 Pag  244
 
 // Declaracion de un Queue Se debe crear una instancia de la clase.
 
@@ -359,18 +371,23 @@ Queue fila = new Queue();
 
 // Una vez instanciado ya es posible hacer uso de la fila y tambien de los metodos. que nos provee la clase correspondiente
 
-// 📚 Pag -
-
-
 // Adiccion de elementos al Queue
 // Podemos agregar un elemento en cualquier momento que lo necesitamos. el tamaño del Queue se modifica dinamicamente por lo que no debemos preocuparnos. 
 // Se utiliza el metodo Enqueue que pertenece a la clase Queue y solo necesita un parametro.
 // se coloca el elemento que deseamos añadir.
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 Pag  245
+
 fila.Enqueue(7);
 
+int valor = 0;
+valor = fila.Dequeue();
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
+📚 Pag  246
 
 
 
