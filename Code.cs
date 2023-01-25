@@ -36,7 +36,7 @@ static void Main(string[]args)
     {
       Console.WriteLine("Dame un numero ");
       linea = Console.ReadLine();
-      numeros[n] = Convert.ToInt32(valor);  
+      numeros[n] = Convert.ToInt32(linea);  
     }
 
     //Invocamos a la funcion 
@@ -139,7 +139,7 @@ static void Main(string[]args)
 
     ArrayList datos = new ArrayList();
     datos.Add(7);
-    datos.Ad(5);
+    datos.Add(5);
     datos.Add(1);
     Console.WriteLine("Tenemos Inicialmente los Datos ");
     Imprime(datos);
