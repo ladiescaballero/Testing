@@ -387,7 +387,48 @@ valor = fila.Dequeue();
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-📚 Pag  246
+¬¬ Pag 246
+
+/*para saber si un Queue tiene un determinado elemento en particular.gracias a un metodo se puede hacer. hay que pasarle un parametro. el elemento en cuestion. retorno un booleano
+*/
+Contains();
+
+if(miFila.Contains(7) == true)
+{
+	Console.WriteLine("El elemento si existe");
+}
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+¬¬ pag 247
+
+/*para Borrar elementos del Queue: No requiere de ningun parametro. pero se debe usar con cuidado. o se pueden perder toda la coleccion.
+*/
+
+miFila.Clear();
+
+/*Para conocer la cantidad de elementos que tiene un Queue:debemos usar la propiedad Count este corresponde a un valor entero.
+*/
+int cantidad = 0;
+cantidad = miFila.Count;
+
+/*Si se quiere usar para aprovechar y hacer una operacion en,particular.evitar algun error con el queue. 
+*/
+if(miFila.Count>0)
+{
+	 valor = (int)miFila.Dequeue();
+}
+
+/*Para recorrer los elementos del Queue la mejor forma es con un foreach.
+*/
+foreach(int n in miFila)
+{
+	Console.WriteaLine("{0}",n);
+}
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+¬¬ pag 248
 
 
 
