@@ -460,13 +460,44 @@ static void Main(string[]args)
 			numero = Convert.ToInt32(linea);
 			//Adicionamos el valor en el Queue
 			miFila = Enqueue(numero);
-		
-        
-        
-        
-        
-        
         }
+
+        if(opcion == 2)
+        {
+            // Obtenemos el elemento
+            numero = (int)miFila.Dequeue();
+            // Mostramos el elemento
+            Console.WriteLine("el valor obtenido es : {0}",numero);
+        }
+
+        if(opcion==3)
+        {
+            // Limpiamos todo los contenidos del Queue
+            miFila.Clear();
+        }
+
+        if(opcion == 4)
+        {
+            // Pedimos el valor a encontrar
+            Console.WriteLine("Dame el valor a encontrar");
+            linea = Console.ReadLine();
+            numero = Convert.ToInt32(linea);
+            // vemos si el elemento esta
+            encontrado = miFila.Contains(numero);
+            // Mostramos el resultado
+            Console.WriteaLine("Elemento encontrado {0}",encontrado);
+        }
+
+        // Mostramos la informacion del Stack
+        Console.WriteaLine("El Queue tiene {0} Elementos ",miFila.Count);
+        foreach(int n in miFila)
+        {
+           Console.WriteaLine("{0},",n);
+           Console.WriteaLine("");
+           Console.WriteaLine("-----------");     
+        }
+    }while(opcion!=5);
+
 	}
 }
 
