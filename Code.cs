@@ -430,6 +430,45 @@ foreach(int n in miFila)
 
 ¬¬ pag 248
 
+static void Main(string[]args)
+{
+	// variables necesarias
+	int opcion = "";
+	string linea = "";
+	int numero = 0;
+	bool encontrado = false;
+	
+	//Creamos el queue
+	Queue miFila = new Queue();
+	
+	do{
+		
+		// Menu
+		Console.WriteLine("1 Enqueue");
+		Console.WriteLine("2 deQueue");
+		Console.WriteLine("3 Clear");
+		Console.WriteLine("4 Contains");
+		Console.WriteLine("Salir");
+		Console.WriteLine("Dame tu opcion");
+		linea = Console.ReadLine();
+		opcion = Convert.ToInt32();
+		if(opcion==1)
+		{
+			// pedimos el valor a ingresar
+			Console.WriteLine("Dame el valor a ingresar");
+			linea = Console.ReadLine();
+			numero = Convert.ToInt32(linea);
+			//Adicionamos el valor en el Queue
+			miFila = Enqueue(numero);
+		
+        
+        
+        
+        
+        
+        }
+	}
+}
 
 
 
