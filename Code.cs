@@ -26,6 +26,7 @@ Imprime(numeros);
 
 // ahora veremos como le pasamos por parametros en el main
 
+ 🎬📍
 static void Main(string[]args)
 {
     int[] numeros = new int[5];
@@ -56,6 +57,8 @@ static void Main(string[]args)
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 📚 221 - 222
+📍
+
 // El Arralist
 // Ejemplo de un arrayList
 
@@ -69,6 +72,7 @@ palabras.Add("Hola Mundo");
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 📙 223
+📍
 
 static void Main(string[]args)
 {
@@ -83,6 +87,8 @@ static void Main(string[]args)
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 📙 224
+📍
+
 
 Console.WriteLine("El dato es {0} ",datos[2]);
 
@@ -100,6 +106,7 @@ elementos = datos.Count;
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 📙 225
+📍
 
 // Insertar Elementos , Tambien se pueden insertar elementos aparte de Add .
 // el metodo Insert() necesita de dos parametros. el primero es el indice , segundo indice el elemento
@@ -109,6 +116,7 @@ datos.Insert(2,5); // valor del indice 2 y el elemento es el 5
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 📙 226
+📍
 
 // Nota:Para saber la capacidad del ArrayList es posible hacerlo al leer el valor de la propiedad. "Capacity" esta propiedad es de tipo entero. 
 // si lo que deseamos es reducir.la capacidad. del ArrayList. se puede usar el metodo. TrimToZise() pero tenemos que tener cuidado en no perder informacion.

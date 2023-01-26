@@ -1,5 +1,15 @@
 
+📚 215
+📅 17/01/2022
+⏲ 16:25
 
+
+🎈 Para cambiar entre Pestañas de Visual Studio Code Web : Alt + Numero
+🎈 Para Cambiar entre pestañas del Navegador. Ctrl + Tabs
+🎈 Cambiar de Pestañas. Otra Forma Alt + Tabs
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
 
 
