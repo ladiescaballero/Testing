@@ -530,6 +530,10 @@ tabla.Add("Atun",85.50);
 
 // Recorriendo el Hashtable : Para recorrer el hashtable usaremos la clase foreach.si queremos obtener la pareja key,value nos apoyaremos en una clase llamasa DictionaryEntry. Si queremos la impresion del siguiente ejemplo usaremos esto.
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 253
+
 foreach(DictionatyEntry datos in tabla)
 {
     Console.WriteaLine("key - {0} , value -{1}" ,datos.Key , datos.Value);
@@ -539,6 +543,24 @@ foreach(DictionatyEntry datos in tabla)
 // De esta forma es como trabajar de una forma mas parecida a lo aprendido anteriormente
 
 ICollection valores = tabla.Values;
+
+
+// valores = ICollection , 
+// Imprimir = valor
+foreach(double valor in valores)
+{
+    Console.WriteLine("el valor es {0}",valor);
+}
+
+
+// Icollection es una interfaz usada para implementar las colecciones de tal forma que los valores pueden actuar como cualquier coleccion valida que tengamos. 
+
+// Obtener un elemento Hashtable: Si Deseamos leer un elemento en particular de Hashtable es posible que lo hagamos por medio de su propiedad Item para usarlo simplemente tenemos que colocar como indice un Key que corresponde al valor que queremos leer en el momento. 
+// debemos tener en cuenta que es posible que necesitamos hacer un type cast para dejar el valor correspondiente en el tipo necesario.
+
+float valor;
+valor = (float)tabla.Item["Pan"];
+
 
 
 
