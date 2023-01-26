@@ -509,6 +509,24 @@ static void Main(string[]args)
 	}
 }
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+¬¬ pag 251
+	
+Hashtable tabla = new Hashtable();
+
+/*adicion de elementos al Hashtable para agregar elementos se debe usar dos parametros. uno la llave y el value.
+
+llave generalmente es un string y el value cualquier tipo de dato.
+*/
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+¬¬ Pag 252
+
+tabla.Add("pan",5.77);
+tabla.Add("soda",10.85);
+tabla.Add("Atun",85.50);
+
 
 
 
