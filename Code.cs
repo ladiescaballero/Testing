@@ -528,6 +528,23 @@ tabla.Add("soda",10.85);
 tabla.Add("Atun",85.50);
 
 
+// Recorriendo el Hashtable : Para recorrer el hashtable usaremos la clase foreach.si queremos obtener la pareja key,value nos apoyaremos en una clase llamasa DictionaryEntry. Si queremos la impresion del siguiente ejemplo usaremos esto.
+
+foreach(DictionatyEntry datos in tabla)
+{
+    Console.WriteaLine("key - {0} , value -{1}" ,datos.Key , datos.Value);
+}
+
+//Si lo deseamos podemos extraer solamente los valores y colocar una copia de ellos en una coleccion
+// De esta forma es como trabajar de una forma mas parecida a lo aprendido anteriormente
+
+ICollection valores = tabla.Values;
+
+
+
+
+
+
 
 
 
