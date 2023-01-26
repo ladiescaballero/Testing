@@ -562,6 +562,45 @@ float valor;
 valor = (float)tabla.Item["Pan"];
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚254
+
+// Para borrar contenidos del Hashtable: Todo los elementos adentro del hashtable pueden ser borrados al utilizar el metodo clear() este metodo no necesita ningun parametro.
+
+tabla.Clear(2);
+
+// Para encontrar si ya existe un Key: Como no podemos repetir el mismo Key para dos elementos es necesario poder saber si ya existe un determinado key. existe un metodo Contains(). Solo se necesita de un parametro que es el key a buscar y regresa un valor de tipo Bool. si el valor es regresado es true. significa que el key ya existe. si es false que no se encuentra en el Hashtable.
+
+bool existe ;
+existe = tabla.Contains("Pan");
+
+// Para encontrar si ya existe un value: Tambien se puede buscar adentro del Hashtable por un value en particular en este caso usaremos el metodo ContainsVale(). como parametros pasamos el valor a buscar y el metodo regresa un bool , si el valor regresado es true el value existe en el hashtable y el valor de false nos indica que no encuentra.
+
+bool existe
+existe = tabla.ContainsValue(17.50);
+
+// Para conocer la cantidad de parejas en el hashtable: Si deseamos saber cuantas parejas key,value 
+// existe adentro de nuestro Hashtable podemos usar la propiedad de Count.No hay que olvidar que el valor regresado es un entero que dice el numero de parejas.
+
+
+int cantidad 
+cantidad = tabla.Count;
+
+// Para eliminar un elemento del Hashtable: No solamente podemos adicionar elementos. tambien podemos eliminar. Al eliminar se remueven la pareja key,value del hashtable para poder llevar a cabo la eliminacion. necesitamos conocer el key del valor a eliminar y utilizar el metodo Remove()
+// solo se necesita de un solo parametro que es el key del elemento a borrar.
+
+tabla.Remove("Pan");
+
+// Con esto finalizamos los metodos principales del Hashtable y las colecciones mas usadas en C# 
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚258
+
+CADENAS
+
 
 
 
