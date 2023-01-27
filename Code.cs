@@ -624,6 +624,15 @@ string cadena = valor.ToString();
 DateTime tiempo = DateTime.Now();
 
 // La propieda Now tiene el tiempo Actual del sistema. ahora lo que necesitamos es pasar esa informacion a un formato util y practico para trabajar. existe un metodo llamado Format() de String , remplaza los contenidos de la cadena por un cadena con un formato en particular.
+// para llevar a cabo un formato debemos usar los especificadores de formato DateTime contiene un conjunto de estos especificadores.
+
+// Revisar la tabla de como se forma una fecha 
+
+// Dia Semana , seguido del Año , Mes en numero.
+
+string formato;
+formato = String.Format("la fecha es : {0:dddd yyyy M}" , DateTime.Now); 
+
 
 
 
