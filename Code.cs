@@ -597,28 +597,33 @@ tabla.Remove("Pan");
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-📚258
+¬¬ Pag 258
 
-CADENAS
-
-
-
-
-
-
-
-
-
+/*Las cadenas sirven para guardar informacion alfanumerica.Se utilisa la clase String.
+las cadenas se guardan como una coleccion y cada caracter es un elemento.
+*/
+/*Como declarar una cadena:Para declarar una cadena es muy sencillo. se crea una instancia de la clase string 
+y le asignamos el valor que corresponde. puede ser un texto o vacio. debe ir entre comillas dobles.
+*/
+string miCadena = "lalal";
+string miCadenaDos = "";
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
+¬¬ Pag 259
 
+/*El metodo ToString: Este metodo es muy util cuando se quiere convertir un tipo de dato o su representacion a una "CADENA" y queremos desplegar informacion al usuario.
+Imagenemos que tenemos una variable de tipo entero y queremos desplegar este valor al usuario.Para eso podemos convertir a cadena el valor.
+*/
+string cadena = valor.ToString();
 
+// Como convertir y formatear fechas a cadenas: Uno de los usos mas comunes de las cadenas es poder formatear informacion que puede ser de cualquier tipo. Uno que es bien comun es la de formatear son las fechas- Se hace con una clase llamada DateTime();
+// Esta clase esta relacionado con el tiempo como son las fechas y horas del dia. 
 
+DateTime tiempo = DateTime.Now();
 
-
-
-
+// La propieda Now tiene el tiempo Actual del sistema. ahora lo que necesitamos es pasar esa informacion a un formato util y practico para trabajar. existe un metodo llamado Format() de String , remplaza los contenidos de la cadena por un cadena con un formato en particular.
 
 
 
