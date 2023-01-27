@@ -626,12 +626,27 @@ DateTime tiempo = DateTime.Now();
 // La propieda Now tiene el tiempo Actual del sistema. ahora lo que necesitamos es pasar esa informacion a un formato util y practico para trabajar. existe un metodo llamado Format() de String , remplaza los contenidos de la cadena por un cadena con un formato en particular.
 // para llevar a cabo un formato debemos usar los especificadores de formato DateTime contiene un conjunto de estos especificadores.
 
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 260
+
 // Revisar la tabla de como se forma una fecha 
 
 // Dia Semana , seguido del Año , Mes en numero.
 
 string formato;
 formato = String.Format("la fecha es : {0:dddd yyyy M}" , DateTime.Now); 
+
+// Adentro de format Colocamos la cadena de formato y como solo se va desplegar un valor , hacemos uso del {0} este tendra un valor en particular. Ponemos el formato al colocar : y los especificadores necesarios adentro del {}. de esta forma ese valor tendra el formato correspondiente. siempre que sean validos para el tipo que deseamos.
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 261
+
+// Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
+
 
 
 
