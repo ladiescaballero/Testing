@@ -643,9 +643,33 @@ formato = String.Format("la fecha es : {0:dddd yyyy M}" , DateTime.Now);
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-📚 261
+📚 261 
+  
+ // Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
+ 
+/*ver tabla de valores especifcados
+*/
 
-// Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
+/*Cuando especificamos un formato podemos tener diferentes secciones.podemos tener un formato en particular , Una primera seccion para los numeros positivos , segunda seccion para los numeros negativos , tercera seccion para el valor cero.
+*/
+Console.WriteLine(String.Format("{0:$#,###0.00;Negativo $#,###0.00;Cero}",valor));
+
+/*Si el valor contenido adentro de valor es positivo.se presentara normalmente y con un signo de moneda antes de el.Pero si el valor es negativo aparecera con la palabra Negativo y el signo de monedas antes.y si el valor fue cero aparecera la palabra Cero.
+*/
+
+/*Como concatenar Cadenas : Otra manipulacion que podemos hacer es la concatenacion es muy sencilla de hacer existe una funcionalidad o sobrecarga del operador + para la clase String .
+*/
+string nombre = "tomas";
+string apellido = "lopez"
+NombreCompleto = "nombre +""+apellido;
+
+/*Nota : Utilizar el operador + no es muy practico ya que al utilizar espacios vacios se pieden espacios en memoria. para eso es mejor utilizar Concat una clase especializada. solo requiere dos parametros . uno no tendria sentido unir.
+*/
+nombreCompleto = String.Concat(nombre , apellido);
+
+/*El metodo Concat es estatico por eso es posible usarlo sin la necesidad de instanciarlo.
+
+*/
 
 
 
