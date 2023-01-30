@@ -707,6 +707,46 @@ sb.AppendFormat("El valor es {0} , valor");
 
 
 
+// Un metodo Importante en esta clase es ToString() que permite convertir StringBuilder es una cadena y de esta manera poder utilizar los contenidos creados por medio de esta clase.
+
+String cadena = "";
+cadena = sb.ToString();
+
+// De esta forma la cadena tendra en su interior la cadena creada por medio del StringBuilder. Existen otros metodos mas que pertenecen a esta clase y pueden llegar a sernos utiles en el futuro.
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 265 
+
+// Comparacion de Cadenas:En algunas de nuestras aplicaciones es posible que lleguemos a necesitar llevar a cabo una comparacion entre algunas cadenas. esto nos sirve para determinar si una cadena en especial a sifo intruducida por el usuario.
+// La clase string nos da el metodo Compare()
+// este metodo es estatico y es posible de usar sin necesidad declarar un objeto de tipo string el metodo necesita de dos parametros que son las cadenas a comparar. 
+// el metodo regresa un valor entero y el valor se encargara de indicarnos su relacion que existe entre las cadenas que acabamos de comparar.
+// si el valor regresado es igual a 0 significa que las cadenas son iguales. en caso que el valor es negativo cadena1 es menor a cadena2 y si el numero es positivo significa que cadena1 es mayor a cadena2.
+
+int comparacion = 0;
+string nombre = "juan";
+..
+..
+comparacion = String.Compare("Pedro", nombre);
+if(comparacion==0)
+{
+    Console.WriteLine("Los nombre son iguales");
+}
+else
+{
+    Console.WriteaLine("Los nombres son Distintos");
+}   
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 266
+
+
+
+
+
 
 
 
