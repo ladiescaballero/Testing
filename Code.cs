@@ -743,6 +743,19 @@ else
 
 📚 266
 
+// Existe otra forma de comparar dos cadenas es con el metodo Equals() que solamente dira si las dos cadenas son iguales. No realiza otra comparacion.el metodo es estatico y solo requiere dos parametros cadena1 cadena2 , Retorna True si son Iguales o false si son Distintos.
+
+String cadena1 = "Hola";
+string cadena2 = "Todos";
+
+if(String.Equals(cadena1 , cadena2)==true)
+Console.WriteLine("Las cadenas Son Iguales");
+
+
+
+
+
+
 
 
 
