@@ -643,9 +643,9 @@ formato = String.Format("la fecha es : {0:dddd yyyy M}" , DateTime.Now);
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-📚 261 
+📚 261 
   
- // Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
+ // Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
  
 /*ver tabla de valores especifcados
 */
@@ -656,6 +656,8 @@ Console.WriteLine(String.Format("{0:$#,###0.00;Negativo $#,###0.00;Cero}",valor)
 
 /*Si el valor contenido adentro de valor es positivo.se presentara normalmente y con un signo de moneda antes de el.Pero si el valor es negativo aparecera con la palabra Negativo y el signo de monedas antes.y si el valor fue cero aparecera la palabra Cero.
 */
+
+¬¬ Pag 262
 
 /*Como concatenar Cadenas : Otra manipulacion que podemos hacer es la concatenacion es muy sencilla de hacer existe una funcionalidad o sobrecarga del operador + para la clase String .
 */
@@ -671,6 +673,16 @@ nombreCompleto = String.Concat(nombre , apellido);
 
 */
 
+¬¬ Pag 263
+
+nombreCompleto = String.Concat(nombre , String.Concat(" ",apellido));
+
+/*Uso de StringBuilder permite construir cadenas de forma efeciente.y se puedem usar en vez de usar las concatenaciones se puede usar el constructor por default que no necesita ningun parametro.la clase tiene varias propiedades como capacity que nos indica la capacidad actual o tambien chars que podemos modificar un caracter en particular.
+*/
+
+StringBuilder sb = new StringBuilder("Hola a todos");
+
+sb.Chars[6]= 'o';
 
 
 
