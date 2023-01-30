@@ -698,6 +698,14 @@ StringBuilder sb = new StringBuilder("Hola a todos");
 sb.Append("Hola Mundo");
 
 
+// En sb tendremos el contenido "Hola a todos Hola Mundo". Tambien podemos agregar una cadena de formato construida de forma similar a la forma como trabajamos con los formatos WriteLine() para eso usamos el metodo AppendFormat() Este metodo necesita dos parametros. pero puede llevar mas si fuera necesario en el prime colocamos la cadena de forma y en el segundo la siguiente lista de variables a utilizar. 
+
+StringBuider sb = new StringBuider();
+int valor = 5;
+...
+sb.AppendFormat("El valor es {0} , valor");
+
+
 
 
 
