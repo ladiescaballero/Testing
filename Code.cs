@@ -751,6 +751,19 @@ string cadena2 = "Todos";
 if(String.Equals(cadena1 , cadena2)==true)
 Console.WriteLine("Las cadenas Son Iguales");
 
+// Para Encontrar una Subcadena : la Cadena puede contener una frase con muchas palabras. y a veces necesitamos saber si determinada palabra se encuentra en la cadena. osea que buscamos una subcadena adentro de otra cadena. Esto puede servir cuando hacemos una busqueda o cuando queremos aplicar una logica. si se encuentra una palabra o frase en particular.El metodo que usaremos se llama Contains() y debe ser invocado por la cadena a la que realiza la busqueda. Eso es importante y no olvidemos que la invocacion de Contains() en la cadena incorrecta puede llevar a errores de logica.
+// El metodo Contains solo necesita un parametro . este parametro es la subcadena a buscar. esta puede ser dada explicitamente o por medio de una variable de tipo string que la contenga. El metodo regresa un Bool si la cadena la encuentra retorna un true si la encontro o una false si no se encuentra.
+
+
+String NombreCompleto = "Juan pedro Lopez";
+String NombreBuscar = "pedro";
+if(NombreCompleto.Contains(NombreBuscar)== true)
+{
+    Console.WriteLine("El nombre se encontro");
+}
+
+
+Para Obtener Una Subcadena = 
 
 
 
