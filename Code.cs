@@ -686,6 +686,22 @@ sb.Chars[6]= 'o';
 
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 264 
+// Si leemos la propiedad de Length Obtenemos la longitud que tiene el StringBuilder. Si colocamos en un valor en esta propiedad entonces el stringBuilder tendra el tamaño que indicamos. Si el nuevo tamaño es menor que el actual entonces se trunca el contenido del StringBuilder.
+// Para llevar a cabo la concatenacion. debemos usar el metodo Append() este metodo tiene muchas sobre carga ya que no solamente puede concatenar en la cadena. hay que recordar el Append() es eficiente.
+
+StringBuilder sb = new StringBuilder("Hola a todos");
+.
+.
+sb.Append("Hola Mundo");
+
+
+
+
+
+
 
 
 
