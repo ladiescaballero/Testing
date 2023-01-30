@@ -770,7 +770,7 @@ if(NombreCompleto.Contains(NombreBuscar)== true)
 // Debemos tener en cuenta puntos relacionados con Contains() el primero es que la cadena vacia como "" siempre regresara True , otro punto importante es que la busqueda que realiza Contains() es sensible a Mayusculas o Minusculas.
 // al Buscar "Hola" no es lo mismo que "hola"
 
-Para usar este metodo Necesitamos dos parametros que son valores de tipo entero. el primero indica el indice adentro de la cadena original. donde inicia la subcadena que nos interesa obtener. Y el segundo es la cantidad de caracteres que tiene una subcadena. El metodo regresa una cadena que contiene a la subcadena que hemos obtenido. 
+// Para usar este metodo Necesitamos dos parametros que son valores de tipo entero. el primero indica el indice adentro de la cadena original. donde inicia la subcadena que nos interesa obtener. Y el segundo es la cantidad de caracteres que tiene una subcadena. El metodo regresa una cadena que contiene a la subcadena que hemos obtenido. 
 
 String cadena = "Hola mundo Redondo";
 string resultado = "";
