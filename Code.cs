@@ -755,6 +755,12 @@ Console.WriteLine("Las cadenas Son Iguales");
 // El metodo Contains solo necesita un parametro . este parametro es la subcadena a buscar. esta puede ser dada explicitamente o por medio de una variable de tipo string que la contenga. El metodo regresa un Bool si la cadena la encuentra retorna un true si la encontro o una false si no se encuentra.
 
 
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 267
+
 String NombreCompleto = "Juan pedro Lopez";
 String NombreBuscar = "pedro";
 if(NombreCompleto.Contains(NombreBuscar)== true)
@@ -772,6 +778,12 @@ if(NombreCompleto.Contains(NombreBuscar)== true)
 
 // Para usar este metodo Necesitamos dos parametros que son valores de tipo entero. el primero indica el indice adentro de la cadena original. donde inicia la subcadena que nos interesa obtener. Y el segundo es la cantidad de caracteres que tiene una subcadena. El metodo regresa una cadena que contiene a la subcadena que hemos obtenido. 
 
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 268
+
 String cadena = "Hola mundo Redondo";
 string resultado = "";
 ...
@@ -784,6 +796,10 @@ resultado = cadena.Substring(5,5,);
 
 // Para determinar si una cadena finaliza en Subcadena:Es posible determinar si una Subcadena particular termina en un punto o palabra particular. esto es util para verificar donde termina esta subcadena. Este metodo se llama EndsWith() y solo necesita un parametro que sera la subcadena que vamos a buscar. 
 
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 269
 
 String cadena1 = "Juan Pedro Lopez";
 
