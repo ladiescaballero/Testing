@@ -782,9 +782,18 @@ resultado = cadena.Substring(5,5,);
 // Empiza de 0 a 4 .. y son cinco caracteres
 
 
+// Para determinar si una cadena finaliza en Subcadena:Es posible determinar si una Subcadena particular termina en un punto o palabra particular. esto es util para verificar donde termina esta subcadena. Este metodo se llama EndsWith() y solo necesita un parametro que sera la subcadena que vamos a buscar. 
 
 
+String cadena1 = "Juan Pedro Lopez";
 
+String cadena2 = "Lopez"
+if(cadena1.EndsWith(cadena2)==true)
+{
+    Console.WriteLine("La cadena finaliza en Lopez");
+}
+
+// La busqueda de la subcadena se hace al final de la cadena = Lopez
 
 
 
