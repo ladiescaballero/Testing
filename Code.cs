@@ -818,8 +818,14 @@ if(cadena1.EndsWith(cadena2)==true)
 char[] destino = new char[10];
 string cadena = "Hola a todos mis amigos.";
 
+cadena.CopyTo(7,destino,0,5);
 
 
+// Como insertar una cadena : Tambien es posible realizar la inserccion de una cadena en otra. esto es util cuando debemos insertar nueva informacion en la cadena. pero ya no es posible por medio de concatenacion o formato.
+// Para hacer esto recurrimos a utilizar el metodo Insert(); que nos brinda. Este metodo coloca la cadena dentro de la cadena principal.Este tambien necesitara dos parametros. 
+// El primero indicara el Indice dentro de la cadena principal donde se va insertar la nueva cadena.
+// Este valor debe de ser de tipo entero y nunca pasarle el valor negativo , El Segundo parametro es la cadena que deseamos insertar que puede ser colocado explicimante o mediante una variable de tipo string. 
+// El metodo insert(); regresa un valor de tipo String. Este valor regresado seria la instancia de la nueva cadena que ya contiene la insercion  
 
 
 
