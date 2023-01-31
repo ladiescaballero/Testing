@@ -811,7 +811,7 @@ if(cadena1.EndsWith(cadena2)==true)
 
 // La busqueda de la subcadena se hace al final de la cadena = Lopez
 
-
+Como copiar una parte de la cadena : Se puede Obtener o copiar una parte particular de la cadena y si la cadena contiene una frase , Podemos extraer una palabra en particular , Cuando necesitamos procesar una cadena es muy util hacer esto. El metodo que usaremos es el CopyTo() aunque es un poco mas complejo que los otros. Necesita los mismos cuatro parametros , la Cadena extraida sera colocada en un arreglo de tipo chars . el  
 
 
 
