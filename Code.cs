@@ -811,7 +811,15 @@ if(cadena1.EndsWith(cadena2)==true)
 
 // La busqueda de la subcadena se hace al final de la cadena = Lopez
 
-Como copiar una parte de la cadena : Se puede Obtener o copiar una parte particular de la cadena y si la cadena contiene una frase , Podemos extraer una palabra en particular , Cuando necesitamos procesar una cadena es muy util hacer esto. El metodo que usaremos es el CopyTo() aunque es un poco mas complejo que los otros. Necesita los mismos cuatro parametros , la Cadena extraida sera colocada en un arreglo de tipo chars . el  
+// Como copiar una parte de la cadena : Se puede Obtener o copiar una parte particular de la cadena y si la cadena contiene una frase , Podemos extraer una palabra en particular , Cuando necesitamos procesar una cadena es muy util hacer esto. El metodo que usaremos es el CopyTo() aunque es un poco mas complejo que los otros. Necesita los mismos cuatro parametros , la Cadena extraida sera colocada en un arreglo de tipo chars el metodo no regresa ningun valor.
+// el primer parametro es el indice adentro de la cadena principal.Donse se empezara a copiar , El segundo parametro el la cadena de tipo char donde se pondra la cadena a extraer. El tercer parametro es el indice del arreglo a partir donde se empezaran a colocar los caracteres de la cadena copiada. Esto es util ya que podemos hacer la copia en cualquier posicion del arreglo.No solamente al inicio.El cuarto parametro indica la cantidad de caracteres a copiar. Con estos parametros podemos indicar sin problemas cualquier secciona a copiar.
+
+
+char[] destino = new char[10];
+string cadena = "Hola a todos mis amigos.";
+
+
+
 
 
 
