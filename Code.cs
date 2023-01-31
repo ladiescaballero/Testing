@@ -821,13 +821,39 @@ string cadena = "Hola a todos mis amigos.";
 cadena.CopyTo(7,destino,0,5);
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 270
+
 // Como insertar una cadena : Tambien es posible realizar la inserccion de una cadena en otra. esto es util cuando debemos insertar nueva informacion en la cadena. pero ya no es posible por medio de concatenacion o formato.
 // Para hacer esto recurrimos a utilizar el metodo Insert(); que nos brinda. Este metodo coloca la cadena dentro de la cadena principal.Este tambien necesitara dos parametros. 
 // El primero indicara el Indice dentro de la cadena principal donde se va insertar la nueva cadena.
 // Este valor debe de ser de tipo entero y nunca pasarle el valor negativo , El Segundo parametro es la cadena que deseamos insertar que puede ser colocado explicimante o mediante una variable de tipo string. 
 // El metodo insert(); regresa un valor de tipo String. Este valor regresado seria la instancia de la nueva cadena que ya contiene la insercion  
 
+String cadena1 = "Hola a todos";
+String cadena2 = "Hola";
+String resultado = "";
 
+resultado = cadena1.Insert(5 , cadena2);
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 271
+
+// Para Encontrar la posicion de una Subcadena: En algunas situaciones necesitamos encontrar donde se encuentra determinada subcadena para poder llevar a cabo alguna operacion en ese indice en particular. Para poder hacer esto hacemos uso del metodo LastIndexOf() un punto importante a tener en cuenta es que este metodo es no regresa el indice de la ultima posicion encontrada. Es Decir que si la cadena tiene dos repiticiones de esa cadena , Nos da el indice de la segunda repiticion. 
+// Este metodo tiene varias sobreCargas. pero la que veremos solo necesita un parametro y la subcadena a encontrar. Como siempre la cadena puede ser dada forma explicita o por medio de una variable de tipo String. El metodo regresa un valor de tipo entero. que contiene el indice de la ultima ocurrencia de la subcadena. 
+
+int indice = 0;
+String cadena = "Hola a todos. Hola";
+...
+...
+indice = cadena.LastIndexOf("Hola");
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 272
 
 
 
