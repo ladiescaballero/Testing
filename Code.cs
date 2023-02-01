@@ -922,6 +922,39 @@ String resultado[] = cadena.Split(new char[] {',', '.' , ';'});
 
 
 
+// Intercambiar mayúsculas y minúsculas
+// En muchas ocasiones tendremos cadenas que estarán escritas con letras en mayúscula y minúscula mezcladas, pero puede suceder que para facilitar la lógica de
+// aplicación debamos tener la cadena exclusivamente en mayúscula o minúscula
+// Esto nos puede ayudar a reducir la cantidad de comparaciones o búsquedas que
+// necesitamos hacer. Si lo que deseamos hacer es convertir la cadena a minúscula,
+// entonces debemos hacer uso del método ToLower(). Este método no necesita ningún parámetro. La fuente de información para hacer la conversión es la misma
+// cadena que lo invoca, pero en esta ocasión nos daremos cuenta de que el método
+// sí se encargará de regresar un valor, el valor que se devuelve será la cadena convertida totalmente a letras minúsculas. 
+// Por ejemplo, podemos tener lo siguiente
+
+String cadena = "Hola Hola";
+String resultado = "";
+...
+...
+resultado = cadena.ToLower();
+
+// Al finalizar el código la variable resultado tendrá en su interior a la cadena “hola hola”.
+// De forma similar, podemos pasar la cadena a mayúscula. La forma de hacer esto es
+// con el método ToUpper(), que toma la cadena y pasa todas sus letras a mayúscula.
+// El método no necesita ningún parámetro, ya que al igual que ToLower(), toma la
+// información directamente de la cadena que lo invoca y regresa una cadena, que es
+// la resultante con todas las letras en mayúscula.
+
+String cadena = "Hola Hola";
+String resultado = "";
+....
+....
+resultado = cadena.ToUpper();
+
+
+
+
+
 
 
 
