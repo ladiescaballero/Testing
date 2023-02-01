@@ -952,10 +952,73 @@ String resultado = "";
 resultado = cadena.ToUpper();
 
 
+// La variable resultado tendrá en su interior “HOLA HOLA”.
+// Los dos métodos tienen otra versión que tiene en cuenta las reglas culturales para poder llevar a cabo la conversión. En ese caso tendríamos que pasar como parámetro el
+// identificador de la cultura que se usará como base para convertir los caracteres.
+// En MSDN podemos encontrar la información sobre los diferentes identificadores
+// de cultura que puede manejar .NET. Para hacer uso del identificador de cultura
+// debemos usar un objeto de tipo CultureInfo. En su constructor debemos pasar el ID
+// de la cultura correspondiente. Por ejemplo, para pasar a mayúscula con las reglas de
+// la cultura en México podemos colocar lo siguiente:
+
+String cadena = "Hola Hola";
+String resultado = "";
+...
+...
+resultado = cadena.ToUpper("new CultureInfo("es-MX"));
 
 
+// Cómo podar la cadena
+// Cuando trabajamos con las cadenas podemos encontrarnos con situaciones como
+// cuando la cadena tiene exceso de espacios, ya sea al inicio o al final. Algunas veces
+// esto puede ser útil, como cuando justificamos, pero otras veces estos espacios extras
+// pueden ser indeseados. Los espacios extras al inicio o al final pueden deberse a operaciones realizadas sobre la cadena o simplemente a entradas erróneas del usuario,
+// y para librarnos de estos caracteres tenemos diferentes opciones. En primer lugar
+// conoceremos un método que elimina los espacios en blanco extras tanto al inicio
+// como al final de la cadena. Este método se conoce como Trim().
+// El uso de Trim() es muy sencillo ya que no necesita ningún parámetro, simplemente
+// trabajará sobre la cadena que lo invoca. Este método regresará una cadena nueva,
+// que es la cadena original sin los espacios extras.
+// Es necesario que tengamos en cuenta que la cadena original no se modifica, por esta razón recibiremos una cadena completamente nueva
 
 
+String cadena = "Hola a todos";
+String resultado = "";
+...
+...
+resultado = cadena.Trim();
+
+// En la cadena resultado tendremos “Hola a todos”, que es la cadena sin los espacios
+// extras. El método Trim() poda los espacios tanto del inicio como del final de la cadena. Sin embargo, puede haber ocasiones en las que necesitemos podar únicamente el
+// inicio de la cadena. El método para lograr esto es TrimStart(). Este método es un poco más complejo que Trim() ya que necesita un parámetro. Este parámetro es un arreglo de caracteres y en él tenemos que colocar los caracteres que nos interesa extraer del
+// inicio de la cadena. El método regresará otra cadena, que es la resultante de la cadena
+// original sin los caracteres podados a su inicio.
+// Es posible que creemos el arreglo de caracteres o también que lo coloquemos explícitamente. Es conveniente pensar bien cuáles serán los caracteres a podar para evitar la eliminación de caracteres que sí pueden ser útiles.
+// Veamos cómo podemos utilizar este método
+
+String cadena = "x x x x x x Hola a todos 
+            ";
+String resultado = "";            
+
+
+resultado = cadena.TrimStart('','x');
+
+// En este ejemplo se podan los caracteres espacio y x. La cadena final resultante es
+// “Hola a todos. “. Debemos notar que los caracteres al final no han sido podados, ya que solamente trabaja sobre los caracteres al inicio de la cadena.
+// Si lo que necesitamos es podar el final de la cadena, entonces tenemos que usar
+// el método TrimEnd(). Este método es equivalente a TrimStart(), pero funciona
+// únicamente al final de la cadena.
+// Recordemos que el método necesita un parámetro. El parámetro es un arreglo de
+// caracteres. En este arreglo es necesario que coloquemos los caracteres que deseamos
+// eliminar del final de la cadena con la que trabajamos. El método correspondiente
+// se encargará de regresar una cadena, está será el resultado sin los caracteres que fueron eliminados al final de la cadena original.
+// Veamos un ejemplo del uso de este método
+
+String cadena = "x x x x x x hola a todos";
+String resultado = "";
+...
+...
+resultado = cadena.TrimEnd('','');
 
 
 
