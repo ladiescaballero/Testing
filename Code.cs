@@ -873,6 +873,29 @@ resultado = cadena.PadLeft(10);
 // PadLeft(). tambien se necesita un parametro que es un valor entero que indica la cantidad total de caracteres de la cadena final.
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 273
+
+// Para eliminar caracteres de la Cadena : Otra manipulacion que podemos hacer sobre la cadena es la eliminacion de caracteres. Es posible borrar determinada parte de la cadena. segun sea lo que necesitamos en la logica del programa.
+// El metodo que podemos utilizar se conoce como Remove() este metodo esta sobrecargado pero veremos la version mas flexible , la eliminacion de los caracteres puede hacerse en cualquier parte de la cadena. solo debemos teber cuidado de generar un error. 
+// El metodo Remove() necesita dos parametros. y valores enteros El primer parametro se usa para indicar el indice a partir del cual se empezara a eliminar los caracterer de la cadena y el segundo parametro colocamos la cantidad de caracteres a eliminar , el metodo regresa una cadena que es la resultante de la eliminacion 
+
+
+String cadena = "hola mundo , hola a todos";
+String resultado = "";
+...
+...
+resultado = cadena.Remove(12,4);
+
+
+// Como Remplazar una Subcadena : Remplazar una parte de la cadena principal con otra cadena puede ser un proceso que toma tiempo programar. esto se debe a que necesitamos encontrar la subcadena a eliminar, luego eliminarla y al final introducir los caracteres de la nueva cadena.Como siempre la clase String nos provee de un metodo que nos facilita la manipulacion de las cadenas para el remplazo. Este es el metodo Replace(). Existen dos versiones una funciona con caracteres y la otra con cadenas.
+// Es esta la que usaremos. Esto nos permite remplazar una palabra en particular contenida dentro de la cadena por otra palabra. El metodo llevara a cabo el remplazo en todas las ocurrencias de la palabra que tengamos.
+// El metodo necesita dos parametros. el primero es la cadena que simboliza la palabra que deseamos remplazar . el Segundo es la cadena con que vamos remplazar. El metodo regresa una cadena que es el resultado con los remplazos.
+
+
+
+
 
 
 
