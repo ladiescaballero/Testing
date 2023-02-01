@@ -855,6 +855,25 @@ indice = cadena.LastIndexOf("Hola");
 
 📚 272
 
+// Justificacion de texto : Hasta el momento hemos visto metodos para manipular cadenas. pero tambien hay otros metodos que sirven para hacer otras modificaciones. Por ejemplo justificar el texto hacia la derecha , supongamos que tenemos
+// una cadena de 10 caracteres como "0123456789"
+// para justificarla necesitamos saber el tamaño de la cadena resultante sera de 25 caracteres. Esto nos daria 15 caracteres del que tenemos que insertar del lado izquierdo para obtener "0123456789" que se encuentran justificada hacia la derecha. para esto necesitamos un metodo que nos permita empotrar esos caracteres de espacio. El metodo que nos permite es 
+// PadLeft(); requiere de un parametro que es la cantidad de caracteres de la cadena final. este es un valor entero y representa los caracteres originales mas los espacios en blanco.
+
+
+String cadena = "Hola";
+String resultado = "";
+...
+...
+resultado = cadena.PadLeft(10);
+
+"" "" "" "" "" "" "h" "o" "l" "a"
+
+// Tambien se puede justificar hacia la izquierda en este caso los caracteres en blanco seran insertados hacia la derecha de la cadena. Para esto usaremos el metodo equivalente a.
+// PadLeft(). tambien se necesita un parametro que es un valor entero que indica la cantidad total de caracteres de la cadena final.
+
+
+
 
 
 
