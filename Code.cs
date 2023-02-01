@@ -889,11 +889,25 @@ String resultado = "";
 resultado = cadena.Remove(12,4);
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 274
+
+
 // Como Remplazar una Subcadena : Remplazar una parte de la cadena principal con otra cadena puede ser un proceso que toma tiempo programar. esto se debe a que necesitamos encontrar la subcadena a eliminar, luego eliminarla y al final introducir los caracteres de la nueva cadena.Como siempre la clase String nos provee de un metodo que nos facilita la manipulacion de las cadenas para el remplazo. Este es el metodo Replace(). Existen dos versiones una funciona con caracteres y la otra con cadenas.
 // Es esta la que usaremos. Esto nos permite remplazar una palabra en particular contenida dentro de la cadena por otra palabra. El metodo llevara a cabo el remplazo en todas las ocurrencias de la palabra que tengamos.
 // El metodo necesita dos parametros. el primero es la cadena que simboliza la palabra que deseamos remplazar . el Segundo es la cadena con que vamos remplazar. El metodo regresa una cadena que es el resultado con los remplazos.
 
+String cadena1 = "Hola a todos , Hola Mundo";
+String cadena2 = "Adios";
+String Resultado = "";
 
+
+resultado = cadena1.Replace("Hola", cadena2);
+
+// Como se ve. es posible colocar el parametro de forma explicita o por medio de una variable.
+
+// Como Dividir la Cadena : Otro problema clasico con la manipulacion de las cadenas es la subdivicion. cuando se encuentra algun caracter en particular.Por ejemplo si la cadena contiene un parrafo de un texto. Podemos dividirla en subcadenas cada una de ellas delimitada por un signo de puntuacion. Para lograr esto necesitamos tener un arreglo de caracteres que contenga los caracteres 
 
 
 
