@@ -907,10 +907,18 @@ resultado = cadena1.Replace("Hola", cadena2);
 
 // Como se ve. es posible colocar el parametro de forma explicita o por medio de una variable.
 
-// Como Dividir la Cadena : Otro problema clasico con la manipulacion de las cadenas es la subdivicion. cuando se encuentra algun caracter en particular.Por ejemplo si la cadena contiene un parrafo de un texto. Podemos dividirla en subcadenas cada una de ellas delimitada por un signo de puntuacion. Para lograr esto necesitamos tener un arreglo de caracteres que contenga los caracteres 
+// Cómo dividir la cadena
+// Otro problema clásico con la manipulación de las cadenas es la subdivisión cuando se
+// encuentra algún carácter en particular. Por ejemplo, si la cadena contiene un párrafo
+// de un texto, podemos dividirla en subcadenas, cada una de ellas delimitada por un
+// signo de puntuación. Para lograr esto necesitamos tener un arreglo de caracteres que
+// contenga los caracteres que tomaremos como delimitadores. Cada vez que el método encuentre uno de estos caracteres, llevará a cabo el corte de la subcadena. 
+// El método que usaremos se conoce como Split(), éste sólo requiere de un parámetro, que es el arreglo de caracteres delimitadores. El método regresará un arreglo de tipo String. Cada uno de los elementos presentes en el arreglo regresado será una de las subcadenas que se habrán recortado. Después debemos proceder a
+// hacer uso de las cadenas en el arreglo y procesarlas o utilizarlas según sea necesario en la aplicación que estamos desarrollando.
 
+String cadena = "Hola a todos . Este es un ejemplo de lo que podemos hacer");
 
-
+String resultado[] = cadena.Split(new char[] {',', '.' , ';'});
 
 
 
