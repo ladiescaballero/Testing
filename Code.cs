@@ -1119,7 +1119,25 @@ Agenda amigo1 , amigo2 , amigo3;
 Agenda[] amigos = new Agenda[15];
 Agenda[] clientes = new Agenda[5];
 
+// Cómo acceder a los campos de la estructura
+// Ya tenemos variables de la estructura y sabemos que adentro de éstas se encuentran los campos que guardarán la información. Tenemos que tener acceso a los
+// campos para poder guardar, leer o modificar los datos. El acceso al campo se lleva a cabo de la siguiente manera:
 
+// VariableEstructura.Campo
+// Esto quiere decir que primero debemos indicar cuál es la variable con la que deseamos trabajar. Luego necesitamos utilizar el operador punto y seguido de él colocamos el nombre del campo a acceder. Veamos un ejemplo de esto:
+
+amigo.Edad = 25;
+
+// En este caso decimos que al campo Edad de la variable amigo le colocamos en su
+// interior el valor 25. Podemos utilizar los campos en cualquier tipo de expresión válida, tal y como una variable:
+
+if(amigo.Edad>18)
+{
+    ....
+    diasVividos = amigo.Edad * 365;
+    ...
+    Console.WriteLine("el nombre es {0}",amigo.Nombre);
+}
 
 
 
