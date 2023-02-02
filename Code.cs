@@ -1257,6 +1257,68 @@ static void Main(string[]args)
 // es que no tiene tipo. No sólo no regresa nada, no tiene tipo
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 289
+
+// Adentro del constructor podemos colocar cualquier código válido de C#, pero es
+// evidente que colocaremos código dedicado a la inicialización de los campos. Veamos un primer ejemplo de cómo podemos crear un constructor. El constructor siempre va adentro del bloque de código de la estructura.
+
+public Agenda(String pNombre , pEdad , pTelefono)
+{
+     Nombre = pNombre;
+     Edad = pEdad;
+     Telefono = pTelefono;
+}
+
+
+
+// En el código del constructor vemos que el acceso es público. Esto es necesario y
+// siempre debemos dejarlo así. Si observamos luego se coloca directamente el nombre del constructor. El nombre es Agenda, ya que pertenece a la estructura Agenda.
+// A continuación tenemos la lista de parámetros. Los valores pasados como parámetros serán asignados a los campos correspondientes. En la declaración de la variable
+// lo tendremos que usar de la siguiente forma:
+
+Agenda amigo = new Agenda("Tomas",34,"(544) 123456789");
+
+
+// Aquí vemos que declaramos la variable amigo que es de tipo Agenda. Al hacer la instanciación por medio de new vemos que pasamos los parámetros. Éstos serán los
+// datos que quedarán guardados en los campos de la variable amigo. La cadena “Juan”
+// quedaría adentro del campo Nombre, el valor de 25 adentro del campo Edad y la cadena “(555) 123-4567” en el campo Telefono.
+// Veamos cómo quedaría un programa completo con el constructor
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 290
+
+public struct Agenda
+{
+   public String Nombre;
+   public int Edad;
+   public String Telefono;
+
+   public Agenda(String pNombre , pEdad , pTelefono)
+    {
+     Nombre = pNombre;
+     Edad = pEdad;
+     Telefono = pTelefono;
+    } 
+
+    public override String ToString()
+    {
+        StringBuilder sb = new StringBuider();
+        sb.AppendFormat("Nombre : {0} , Edad :{1} , Telefono :{2}" , Nombre , Edad , Telefono);
+        return (sb.ToString());
+    }
+}
+
+static void Main(string[]args)
+{
+    // TODO: agregar aquí código para iniciar la aplicación
+    Agenda amigo = new Agenda("Tomas",34,"(544) 123456789");
+    Console.WriteaLine(amigo.ToString());
+}
+
+
 
 
 
