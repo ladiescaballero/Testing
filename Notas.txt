@@ -14,6 +14,7 @@ ____________--------------------------------------------------------------------
 
 ✔ Excel Moverse entre Pestañas Ctrl + AvPag o RegPag
 ✔ Net : CSI2 : pedro1365
+✔ https://www.xataka.com/basics/trucos-google-drive-trucos-algun-extra-para-sacarle-maximo-partido-a-nube-google
 ✔ Ver como cambiar tipo de fuentes en visual Code
 
 
