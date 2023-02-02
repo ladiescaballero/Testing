@@ -1202,15 +1202,59 @@ public override String ToString()
 
 Console.WriteLine(amigo.ToString());
 
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 287
+
+
 // Veamos un ejemplo completo de estos conceptos:
 
+public struct Agenda 
+{
+    public String Nombre;
+    public int Edad;
+    public String Telefono;
+}
+
+public override String toString()
+{
+    StringBuilder sb = new StringBuilder();
+    sb.AppendFormat("Nombre : {0} , Edad : {1} , Telefono : {2}",Nombre , Edad , Telefono);
+    return (sb.ToString());
+}
 
 
+static void Main(string[]args)
+{
+    
+// TODO: agregar aquí código para iniciar la aplicación
+   Agenda []amigos = new agenda[5]; 
+   amigos[1].Edad =25;
+   amigos[1].Nombre = "Tomas";
+   amigos[1].Telefono = "(555) 123-4567";
+   Console.WriteLine(amigos[1].ToString());
+}
 
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
+📚 288
 
+// Como parte del ejemplo creamos un arreglo de la estructura Agenda que se llama
+// amigos y tiene 5 elementos, luego, para el elemento en el índice 1 colocamos los
+// datos. Para finalizar simplemente imprimimos el elemento 1 del arreglo amigos,
+// pero usamos el método ToString() programado por nosotros. Si compilamos y ejecutamos el programa obtendremos lo siguiente:
 
+// Creación de un constructor para la estructura
+// En el ejemplo anterior hemos visto la manera de cómo cada uno de los campos
+// que componen la estructura ha tenido que inicializarse en forma individual. Esto
+// es correcto y no presenta ningún problema, sin embargo, hay una forma de poder inicializar los campos más fácilmente, sin tantas complicaciones.
+// Para hacer esto podemos hacer uso de un constructor. El constructor no es otra cosa que un método que nos permitirá llevar a cabo la inicialización de los campos. Sin
+// embargo, este método tiene algunas características especiales. La primera característica es que siempre se llamará igual que la estructura a la que pertenece. La segunda es
+// muy importante: el constructor se invoca automáticamente cuando llevamos a cabo
+// la instanciación de la variable de la estructura. La última característica del constructor
+// es que no tiene tipo. No sólo no regresa nada, no tiene tipo
 
 
 
