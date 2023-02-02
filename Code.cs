@@ -1084,6 +1084,10 @@ acceso struct nombre
 // los campos que necesitamos. Éstos se definen igual que las variables, pero es necesario colocar el acceso. En este libro utilizaremos un acceso de tipo public, de forma tal que podamos leer la información contenida adentro de la estructura.
 // Por ejemplo, la estructura de nuestra agenda puede ser definida de la siguiente forma:
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 283
+
 public struct agenda
 {
     public String Nombre;
@@ -1095,6 +1099,12 @@ public struct agenda
 
 // Nosotros podemos definir tantas estructuras como sean necesarias y también cada
 // estructura puede tener la cantidad necesaria de campos
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 284
+
 
 // Cómo crear una variable del nuevo tipo
 // Ya que tenemos definida la estructura, es necesario poder definir sus variables
@@ -1119,11 +1129,18 @@ Agenda amigo1 , amigo2 , amigo3;
 Agenda[] amigos = new Agenda[15];
 Agenda[] clientes = new Agenda[5];
 
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 285
+
+
 // Cómo acceder a los campos de la estructura
 // Ya tenemos variables de la estructura y sabemos que adentro de éstas se encuentran los campos que guardarán la información. Tenemos que tener acceso a los
 // campos para poder guardar, leer o modificar los datos. El acceso al campo se lleva a cabo de la siguiente manera:
 
-// VariableEstructura.Campo
+VariableEstructura.Campo
+
 // Esto quiere decir que primero debemos indicar cuál es la variable con la que deseamos trabajar. Luego necesitamos utilizar el operador punto y seguido de él colocamos el nombre del campo a acceder. Veamos un ejemplo de esto:
 
 amigo.Edad = 25;
@@ -1138,6 +1155,62 @@ if(amigo.Edad>18)
     ...
     Console.WriteLine("el nombre es {0}",amigo.Nombre);
 }
+
+// Cómo mostrar los campos de la estructura
+// Algo que necesitaremos constantemente es presentar los campos de la estructura.
+// La manera más evidente de hacerlo es con el método WriteLine(). Simplemente
+// mostramos el contenido del campo como si fuera otra variable del programa
+
+
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 286
+
+Console.WriteLine("la edad es {0}",amigo.Edad);
+
+// Esta forma es sencilla y útil en los casos en los que solamente necesitamos mostrar
+// un campo de la estructura. Sin embargo, de necesitar mostrar todos los campos,
+// deberemos colocar WriteLine() para cada campo, o uno solo con una cadena de
+// formato larga. En cualquier caso resulta incómodo.
+// La mejor forma de mostrar todos los datos contenidos en los campos sería mediante la conversión de la estructura a una cadena. Sabemos que existe un método llamado ToString() que hemos usado con las variables numéricas. Sin embargo, C# no
+// se lo puede dar directamente a nuestra estructura porque no puede saber cuáles son
+// los campos que contiene ni cómo los deseamos mostrar. Por esto, cae en nuestra
+// responsabilidad programar el método ToString() de nuestra estructura.
+// Veamos esto en el siguiente ejemplo
+
+public struct Agenda
+{
+    public String Nombre ;
+    public int Edad;
+    public String Telefono;
+
+}
+
+public override String ToString()
+{
+    StringBuilder sb = new StringBuilder();
+    sb.AppendFormat("Nombre : {0} , Edad : {1} , Telefono : {2} " , Nombre , Edad , Telefono);
+    return (sb.ToString());
+}
+
+// Podemos observar que adentro del bloque de código de la estructura hemos colocado nuestra versión del método ToString(). El acceso debe ser público para que se
+// pueda invocar desde el exterior de la estructura. Este método debe regresar un objeto de tipo String y no necesita ningún parámetro.
+// En el interior del método simplemente colocamos el código necesario para darle formato a la cadena y en nuestro caso hacemos uso de StringBuilder, aunque es válido
+// usar cualquier otro método. Al finalizar ya tenemos la cadena con la información
+// de nuestros campos y la regresamos por medio de return. 
+// Ahora que ya tenemos implementado ToString() mostrar la información contenida será tan sencillo como:
+
+Console.WriteLine(amigo.ToString());
+
+
+
+
+
+
+
+
+
+
 
 
 
