@@ -1093,8 +1093,36 @@ public struct agenda
 
 // Así de sencilla es la definición. Ya tenemos una estructura llamada Agenda que contiene los campos: Nombre, Edad y Telefono
 
-Nosotros podemos definir tantas estructuras como sean necesarias y también cada
-estructura puede tener la cantidad necesaria de campos
+// Nosotros podemos definir tantas estructuras como sean necesarias y también cada
+// estructura puede tener la cantidad necesaria de campos
+
+// Cómo crear una variable del nuevo tipo
+// Ya que tenemos definida la estructura, es necesario poder definir sus variables
+// para guardar información. Como hemos realizado la declaración de un nuevo tipo, entonces nos será posible crear variables de ésta, y la forma de hacer esto es
+// similar a la de cualquier otro tipo.
+// Para definir la variable sólo deberemos poner el nombre del tipo seguido del nombre que le daremos a nuestra variable. No debemos olvidar colocar ; (punto y coma) al final de la sentencia. Supongamos que deseamos crear una variable cuyo
+// nombre será amigo y es del tipo agenda.
+
+Agenda amigo;
+
+// Ahora, adentro del nuevo tipo de variable declarada llamada amigo, se encuentran
+// los campos Nombre, Edad y Telefono. Es posible declarar varias variables de Agenda
+
+Agenda amigo1 , amigo2 , amigo3;
+
+
+// En el caso de necesitar hacer uso de éste, podemos crear un arreglo de la estructura. Este arreglo puede ser del tamaño que necesitemos para nuestra aplicación, y es
+// entonces de esta forma que para la estructura agenda podemos tener un arreglo
+// donde guardamos la información de los amigos, y otro arreglo donde se guardará
+// la información de los clientes
+
+Agenda[] amigos = new Agenda[15];
+Agenda[] clientes = new Agenda[5];
+
+
+
+
+
 
 // ⏲
 
