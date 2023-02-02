@@ -1318,7 +1318,11 @@ static void Main(string[]args)
     Console.WriteaLine(amigo.ToString());
 }
 
+// Ejecutemos el programa y veamos el resultado que obtenemos
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚291
 
 
 
