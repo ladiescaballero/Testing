@@ -1202,7 +1202,7 @@ public override String ToString()
 
 Console.WriteLine(amigo.ToString());
 
-
+// Veamos un ejemplo completo de estos conceptos:
 
 
 
