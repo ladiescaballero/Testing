@@ -907,6 +907,7 @@ resultado = cadena1.Replace("Hola", cadena2);
 
 // Como se ve. es posible colocar el parametro de forma explicita o por medio de una variable.
 
+
 // Cómo dividir la cadena
 // Otro problema clásico con la manipulación de las cadenas es la subdivisión cuando se
 // encuentra algún carácter en particular. Por ejemplo, si la cadena contiene un párrafo
@@ -920,7 +921,9 @@ String cadena = "Hola a todos . Este es un ejemplo de lo que podemos hacer");
 
 String resultado[] = cadena.Split(new char[] {',', '.' , ';'});
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
+📚 275
 
 // Intercambiar mayúsculas y minúsculas
 // En muchas ocasiones tendremos cadenas que estarán escritas con letras en mayúscula y minúscula mezcladas, pero puede suceder que para facilitar la lógica de
@@ -967,6 +970,9 @@ String resultado = "";
 ...
 resultado = cadena.ToUpper("new CultureInfo("es-MX"));
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 277
 
 // Cómo podar la cadena
 // Cuando trabajamos con las cadenas podemos encontrarnos con situaciones como
@@ -1020,7 +1026,75 @@ String resultado = "";
 ...
 resultado = cadena.TrimEnd('','');
 
+// En la cadena de resultado tendremos “x x x x x x Hola a todos”, el espacio fue eliminado al final ya que se encuentra dentro de la lista de caracteres a podar.
+// Con esto hemos visto el uso y la manipulación de las cadenas, así como los métodos más importantes que nos permiten trabajar con ellas
 
+<<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
+
+📚 282
+
+// Estructuras y enumeraciones : 
+
+// En este capítulo aprenderemos un tema
+// muy útil. Empezaremos por cómo utilizar
+// los tipos definidos por el programador,
+// es decir, los tipos de datos definidos
+// por nosotros. Estos tipos nos darán
+// la flexibilidad de poder guardar
+// lo que nosotros necesitemos en nuestra
+// aplicación y poder utilizarlos de forma
+// similar a las variables
+
+// Las estructuras
+// Las estructuras son tipos definidos por el programador y son un conjunto de datos
+// agrupados. Supongamos que programamos una agenda telefónica. Desde luego, la
+// agenda necesita guardar mucha información, por lo que ya hemos pensado en usar
+// arreglos. Pero también necesitamos pensar en los datos que debe contener como:
+// nombre, edad, teléfono. Esto nos lleva a tener tres arreglos. Si necesitamos más datos, entonces más arreglos serán necesarios. Al final es posible que sea un poco complicado administrar tantos arreglos y esto reduce la flexibilidad de nuestro software.
+// Lo mejor sería poder agrupar esa información, de forma tal que solamente tengamos que administrar un solo arreglo. La forma de poder agrupar la información
+// es por medio del uso de las estructuras.
+// Cuando creamos una estructura, definimos un nuevo tipo y adentro de este tipo
+// podremos colocar datos. Estos datos se conocen como campos. Cada campo está
+// representado por una variable, que puede ser de cualquier tipo. Luego que hemos
+// terminado de definir la estructura podemos crear variables de esta estructura y guardar la información que necesitemos en ellas.
+
+// Cómo definir una estructura
+// Definir una estructura es sencillo. Sin embargo, el primer paso no se lleva a cabo en
+// la computadora. Lo primero que tenemos que hacer es encontrar cuáles son los campos y el tipo que debe guardar la estructura. En el programa la definiremos utilizando el código que comentamos en el siguiente bloque:
+
+
+acceso struct nombre
+{
+ acceso tipo campo1
+ ....
+ acceso tipo campo2
+}
+
+
+// El acceso indica si la estructura puede verse por afuera del ámbito donde ha sido
+// definida o no. Si el acceso es de tipo público, se puede acceder a la estructura por
+// afuera del ámbito. Para esto pondremos como acceso public. Si no deseamos que
+// el exterior pueda acceder a la estructura, entonces la colocamos como privada.
+// Para esto colocamos el acceso como private. En este libro siempre trabajaremos
+// con acceso de tipo public. Para indicar que definimos una estructura usamos struct
+// seguido del nombre de la estructura. Éste puede ser cualquier nombre válido en
+// C#. No hay que confundir el nombre de la estructura con la o las variables que
+// usaremos de ella. Con este nombre identificaremos el nuevo tipo. 
+// Luego tenemos que crear un bloque de código. Dentro de este bloque definiremos
+// los campos que necesitamos. Éstos se definen igual que las variables, pero es necesario colocar el acceso. En este libro utilizaremos un acceso de tipo public, de forma tal que podamos leer la información contenida adentro de la estructura.
+// Por ejemplo, la estructura de nuestra agenda puede ser definida de la siguiente forma:
+
+public struct agenda
+{
+    public String Nombre;
+    public int Edad;
+    public String Telefono;
+}
+
+// Así de sencilla es la definición. Ya tenemos una estructura llamada Agenda que contiene los campos: Nombre, Edad y Telefono
+
+Nosotros podemos definir tantas estructuras como sean necesarias y también cada
+estructura puede tener la cantidad necesaria de campos
 
 // ⏲
 
