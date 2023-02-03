@@ -1324,6 +1324,74 @@ static void Main(string[]args)
 
 📚291
 
+// Cómo usar el constructor para validar información
+// El constructor no solamente puede ser utilizado para colocar la información
+// adentro de los campos, una de las grandes ventajas que éste nos da es la posibilidad de poder validar la información antes de que sea asignada a uno de sus campos. Es posible que existan ciertas reglas sobre lo que se considera información
+// válida para nuestros campos, y por supuesto, podemos implementar estas mismas en el constructor. 
+// Supongamos que el teléfono sólo se considera válido si tiene más de 8 caracteres.
+// En caso de que sea menor es inválido y no debe ser asignado para evitar problemas. Esta simple regla es fácil de programar en el constructor. En nuestro caso
+// podría quedar de la siguiente forma:
+
+public Agenda(String pNombre , int pEdad , String pTelefono)
+{
+    // llevamos a cabo la asignacion .
+    Nombre = pNombre;
+    Edad = pEdad;
+    if(pTelefono.Length > 8)
+    {
+       Telefono = pTelefono     
+    }
+    else
+    {
+       Telefono = "El numero de telefono esta Incorrecto el Formato";  
+    }
+}
+
+
+// El programa completo es el siguiente
+
+public Struct Agenda
+{
+    public String Nombre ;
+    public int Edad;
+    public String Telefono;
+
+
+    // Constructor
+
+    public Agenda(String pNombre , int pEdad , String pTelefono)
+    {
+        // Levamos a la asignacion 
+        Nombre = pNombre;
+        Edad = pEdad;
+        if(pTelefono.Length>8)
+        {
+            Telefono = pTelefono;
+        }
+        else
+        {
+            Telefono = " Numero de telefono Invalido";
+        }
+
+        public override String ToString()
+        {
+              StringBuilder sb = new StringBuilder();
+              sb.AppendFormat("Nombre : {0} , Edad : {1} , Telefono : {2}" , Nombre , Edad , Telefono); 
+              return (sb.ToString()); 
+        }
+    }
+
+    static void Main(string[]args)
+    {
+        // Agregar codigo para Iniciar Aplicacion 
+        Agenda amigo = new Agenda("Tomas",25,"(555)1234567");
+        Agenda amigo1 = new Agenda("Pedro",32,"(555)");
+        Console.WriteLine(amigo.ToString());
+        Console.WriteLine(amigo1.ToString());
+
+    }
+
+}
 
 
 // ⏲
