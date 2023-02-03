@@ -1322,7 +1322,7 @@ static void Main(string[]args)
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
-📚291
+📚291 - 294
 
 // Cómo usar el constructor para validar información
 // El constructor no solamente puede ser utilizado para colocar la información
@@ -1388,10 +1388,41 @@ public Struct Agenda
         Agenda amigo1 = new Agenda("Pedro",32,"(555)");
         Console.WriteLine(amigo.ToString());
         Console.WriteLine(amigo1.ToString());
-
     }
 
+    // Si compilamos y ejecutamos el programa tendremos el siguiente resultado
+
 }
+
+// Sobrecarga es una técnica de programación que permite tener varias versiones de una función o un
+// método. El compilador selecciona la versión a utilizar basándose en la cantidad de parámetros y los
+// tipos. Esto nos permite agrupar métodos diferentes bajo un mismo nombre o concepto, facilitando
+// la programación, solamente recordando un nombre, y no los nombres para cada versión.
+
+// La sobrecarga del constructor
+// El constructor puede ser sobrecargado y esta habilidad nos brinda mucha flexibilidad para poder utilizarlo. Supongamos que tenemos amigos que tienen teléfono
+// y otros que no. Si no tienen teléfono, no tiene sentido utilizar un constructor que
+// lo solicite. Lo mejor sería tener una segunda versión del constructor que solamente
+// necesite el nombre y la edad, y podemos hacer que esta versión coloque un mensaje que indique que no tiene teléfono.
+// Para hacer la sobrecarga colocamos la segunda versión debajo de la que ya tenemos. 
+// Por ejemplo, nuestra segunda versión queda de la siguiente forma
+
+public Agenda(String pNombre , int pEdad)
+{
+    // Llevamos a cabo la asignacion.
+    Nombre = pNombre;
+    Edad = pEdad;   
+    Telefono = "Sin Telefono";
+
+}
+
+// Como podemos ver, solamente recibimos dos parámetros, pero aun así los tres campos son asignados con un valor. Ningún campo se queda sin asignar. Para declarar
+// la variable le pasamos los 2 parámetros necesarios.
+
+Agenda amigo = new Agenda("Tomas", 36);
+
+// Veamos un ejemplo que utilice la sobrecarga del constructor de la estructura
+
 
 
 // ⏲
