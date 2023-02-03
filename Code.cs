@@ -1423,7 +1423,12 @@ Agenda amigo = new Agenda("Tomas", 36);
 
 // Veamos un ejemplo que utilice la sobrecarga del constructor de la estructura
 
-
+public struct Agenda
+{
+    public string Nombre;
+    public int Edad;
+    
+}
 
 // ⏲
 
