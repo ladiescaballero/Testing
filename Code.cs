@@ -1355,10 +1355,7 @@ public Struct Agenda
     public String Nombre ;
     public int Edad;
     public String Telefono;
-
-
     // Constructor
-
     public Agenda(String pNombre , int pEdad , String pTelefono)
     {
         // Levamos a la asignacion 
@@ -1427,7 +1424,40 @@ public struct Agenda
 {
     public string Nombre;
     public int Edad;
+    public String Telefono;
+
+    public Agenda(String pNombre , int pEdad , String pTelefono)
+    {
+        // llevamos a cabo la asignacion.
+        Nombre = pNombre;
+        Edad = pEdad;
+        if(pTelefono.Length > 8 )
+        {
+            Telefono = pTelefono;
+        }
+        else
+        {
+            Telefono = "El telefono no es valido ";
+        }
+    }
+
+    public Agenda(String pNombre , int pEdad)
+    {
+        // llevamos a cabo la asignacion sin agregar el campo telefono
+            Nombre = pNombre;
+            Edad = pEdad;
+            Telefono = " Sin Telefono ";   
+    }    
+
+    public override String ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendFormat("Nombre : {0} , Edad : {1} , Telefono : {2}",Nombre , Edad , Telefono);
+        return(sb.ToString());
+    }
+
     
+
 }
 
 // ⏲
