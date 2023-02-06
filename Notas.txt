@@ -35,4 +35,8 @@ ________________________________________________________________________________
 📚
 
 
+ Otra de Forma de Separas Paginas es poner el Siguiente elemento. Cada texto en primera linea del libro realizar la diferencia . Sea Txt o Codigo. Para Buscar alguna ubicacion Utilizar Buscador tanto del Navegador o Editor. De preferencia que sea Texto. CTRL + F
+
+🛑 Paginas 
+
 

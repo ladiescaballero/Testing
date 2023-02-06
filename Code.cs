@@ -1390,7 +1390,7 @@ public Struct Agenda
     // Si compilamos y ejecutamos el programa tendremos el siguiente resultado
 
 }
-
+    // Nota : 
 // Sobrecarga es una técnica de programación que permite tener varias versiones de una función o un
 // método. El compilador selecciona la versión a utilizar basándose en la cantidad de parámetros y los
 // tipos. Esto nos permite agrupar métodos diferentes bajo un mismo nombre o concepto, facilitando
@@ -1400,6 +1400,11 @@ public Struct Agenda
 // El constructor puede ser sobrecargado y esta habilidad nos brinda mucha flexibilidad para poder utilizarlo. Supongamos que tenemos amigos que tienen teléfono
 // y otros que no. Si no tienen teléfono, no tiene sentido utilizar un constructor que
 // lo solicite. Lo mejor sería tener una segunda versión del constructor que solamente
+
+
+
+
+🛑 Paginas 
 // necesite el nombre y la edad, y podemos hacer que esta versión coloque un mensaje que indique que no tiene teléfono.
 // Para hacer la sobrecarga colocamos la segunda versión debajo de la que ya tenemos. 
 // Por ejemplo, nuestra segunda versión queda de la siguiente forma
@@ -1513,6 +1518,13 @@ public Agenda(String pNombre)
 // una función que pida el dato, tal y como lo vimos en un capítulo anterior. Enseguida solicitamos el teléfono y aprovechamos para validar la información.
 // El programa completo queda de la siguiente manera:
 
+
+
+// Notas : CONSTRUCTOR EN LA ESTRUCTUR
+// Cuando utilizamos el constructor con nuestra estructura o cuando tenemos sobrecargas, tenemos
+// que tener cuidado con la cantidad de parámetros. Dentro de las estructuras el constructor
+// necesita tener al menos un parámetro ya que no es válido colocar un constructor sin parámetros.
+// Si olvidamos colocar los parámetros, tendremos un error durante la compilación del programa
 
 
 
