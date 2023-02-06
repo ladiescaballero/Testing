@@ -1537,6 +1537,48 @@ public Agenda(String pNombre)
 // otra estructura llamada Direccion que contenga esta información.
 // Por ejemplo, la estructura podría quedar de la siguiente forma
 
+public struct Direccion 
+{
+    public String Calle ;
+// 🛑 Paginas 302 
+    public Int Numero;
+
+    public Direccion(String pCalle , int pNumero)
+    {
+       Calle = pCalle;
+       Numero = pNumero;     
+    }
+}
+
+
+
+// Como vemos, los campos son Calle y Numero. Se ha creado un constructor para ayudarnos a colocar la información fácilmente cuando se instancie una variable de este nuevo tipo. Ahora que ya tenemos definido el nuevo tipo Direccion, podemos
+// usarlo en nuestra estructura Agenda, pero serán necesarios algunos cambios.
+// Primero veamos cómo agregar un campo de tipo Direccion a la estructura
+
+public struct Agenda
+{
+    public String Nombre;
+    public int Edad;
+    public String Telefono;
+    public Direccion Domicilio;
+}
+
+// Agregar un campo es muy sencillo, simplemente definimos la variable. Sin embargo, si dejamos la estructura con ese cambio tendremos problemas, ya que el campo
+// Domicilio no estará instanciado. Esta instanciación se puede llevar a cabo cuando se
+// asignan los datos, por ejemplo, en el constructor.
+// Cambiemos el primer constructor para instanciar y asignarle datos al campo Domicilio
+
+public Agenda(String pNombre , int pEdad, String pTelefono , String pCalle , int pNumero )
+{
+  // LLevamos a cabo la asignacion 
+     Nombre = pNombre;
+     Edad = pEdad;
+     if(pTelefono.Lengt>8)
+     {
+        
+     }
+}
 
 
 
@@ -1545,9 +1587,6 @@ public Agenda(String pNombre)
 
 
 
-
-
-
-
+// 🛑 Paginas 
 // ⏲
 
