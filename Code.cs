@@ -1456,9 +1456,19 @@ public struct Agenda
         return(sb.ToString());
     }
 
-    
-
+    static void Main(string[]args)
+    {
+        Agenda amigo = new Agenda("Tomas" , 27, "(555)12345678");
+        Agenda amigo1 = new Agenda("Luis" 41 , "(555) 14575448");
+        Agenda amigo2 = new Agenda("Carlos" , 54);
+        Console.WriteLine(amigo.ToString());
+        Console.WriteLine(amigo.ToString());
+        Console.WriteaLine(amigo2.ToString());
+    }
 }
+
+// Si compilamos la aplicación, veremos el resultado en la siguiente figura:    
+
 
 // ⏲
 
