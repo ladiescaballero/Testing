@@ -1576,11 +1576,24 @@ public Agenda(String pNombre , int pEdad, String pTelefono , String pCalle , int
      Edad = pEdad;
      if(pTelefono.Lengt>8)
      {
-        
+// 🛑 Paginas 303
+       Telefono = pTelefono;
+     }
+     else
+     {
+        Telefono = " Telefono no validos";
+        Domicilio = new Direccion(pCalle , pNumero);
      }
 }
 
+// Vemos que hemos llevado a cabo algunos cambios. En primer lugar, el constructor
+// de Agenda recibe todos los datos necesarios, incluidos los de la estructura Direccion.
+// En el interior del constructor asignamos los datos que le corresponden a Agenda y
+// en la parte final hacemos la instanciación de Domicilio por medio de new y le pasamos a su constructor los datos que le corresponden. También puede suceder que el
+// constructor de Agenda no reciba los datos de Domicilio. En ese caso, debemos instanciar también al campo domicilio y pasar algunos datos de default al constructor
 
+
+    
 
 
 
