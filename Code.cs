@@ -1401,10 +1401,7 @@ public Struct Agenda
 // y otros que no. Si no tienen teléfono, no tiene sentido utilizar un constructor que
 // lo solicite. Lo mejor sería tener una segunda versión del constructor que solamente
 
-
-
-
-🛑 Paginas 
+🛑 Paginas 295
 // necesite el nombre y la edad, y podemos hacer que esta versión coloque un mensaje que indique que no tiene teléfono.
 // Para hacer la sobrecarga colocamos la segunda versión debajo de la que ya tenemos. 
 // Por ejemplo, nuestra segunda versión queda de la siguiente forma
@@ -1438,6 +1435,7 @@ public struct Agenda
         Edad = pEdad;
         if(pTelefono.Length > 8 )
         {
+// 🛑 Paginas 296
             Telefono = pTelefono;
         }
         else
@@ -1488,6 +1486,7 @@ public struct Agenda
     }
 }
 
+// 🛑 Paginas 297
 // Si compilamos la aplicación, veremos el resultado en la siguiente figura:    
 
 // Incluso podemos hacer que el constructor le solicite la información directamente
@@ -1502,6 +1501,7 @@ public Agenda(String pNombre)
     //Pedimos la edad 
     Console.WriteLine("Dame la Edad ");
     Edad = Convert.ToInt32(Console.ReadLine());
+// 🛑 Paginas 298 
     // Pedimos el telefono
     Console.WriteaLine("Dame el telefono");
     telefono = Console.ReadLine();
@@ -1525,6 +1525,26 @@ public Agenda(String pNombre)
 // que tener cuidado con la cantidad de parámetros. Dentro de las estructuras el constructor
 // necesita tener al menos un parámetro ya que no es válido colocar un constructor sin parámetros.
 // Si olvidamos colocar los parámetros, tendremos un error durante la compilación del programa
+
+
+
+// 🛑 Paginas 301
+// Estructuras enlazadas
+// Las estructuras nos dan la facilidad de poder agrupar información que está relacionada adentro de un mismo elemento. Ya vimos que se puede colocar como dato a
+// cualquier tipo que sea válido en C#. Estos tipos válidos también corresponden a tipos definidos por el programador, es decir otras estructuras.
+// Tenemos una estructura que se llama Agenda, pero esta agenda está un poco incompleta, debido a que nos hace falta colocar la dirección o el domicilio de la persona. Esto lo podemos resolver de una manera práctica, colocando dos campos
+// nuevos como la calle y el número de la casa, pero también podríamos pensar en
+// otra estructura llamada Direccion que contenga esta información.
+// Por ejemplo, la estructura podría quedar de la siguiente forma
+
+
+
+
+
+
+
+
+
 
 
 
