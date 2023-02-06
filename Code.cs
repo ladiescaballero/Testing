@@ -1469,6 +1469,34 @@ public struct Agenda
 
 // Si compilamos la aplicación, veremos el resultado en la siguiente figura:    
 
+// Incluso podemos hacer que el constructor le solicite la información directamente
+// al usuario. Hay que recordar que podemos colocar cualquier código válido en su
+// interior. Esto lo logramos al crear una nueva sobrecarga.
+// Veamos cómo puede quedar esta nueva versión del constructor:
+
+public Agenda(String pNombre)
+{
+    // Asignamos el nombre
+    Nombre = pNombre;
+    //Pedimos la edad 
+    Console.WriteLine("Dame la Edad ");
+    Edad = Convert.ToInt32(Console.ReadLine());
+    // Pedimos el telefono
+    Console.WriteaLine("Dame el telefono");
+    telefono = Console.ReadLine();
+    if(Telefono.Length < 8 )
+    {
+        Telefono = "El numero es incorrecto , Debe Agregar  un numero Valido";
+    }    
+}
+
+// Lo primero que hacemos es asignar el nombre que hemos recibido por parámetro.
+// Luego de la forma usual pedimos la edad, notando cómo está colocada la sentencia. Sabemos que ToInt32() necesita un parámetro que es la cadena a convertir y
+// ReadLine() regresa una cadena. De esta forma, aprovechamos y colocamos todo el
+// código adentro de una sola línea. Otra opción que podríamos haber utilizado es
+// una función que pida el dato, tal y como lo vimos en un capítulo anterior. Enseguida solicitamos el teléfono y aprovechamos para validar la información.
+// El programa completo queda de la siguiente manera:
+
 
 // ⏲
 
