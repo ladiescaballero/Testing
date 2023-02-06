@@ -1447,7 +1447,23 @@ public struct Agenda
             Nombre = pNombre;
             Edad = pEdad;
             Telefono = " Sin Telefono ";   
-    }    
+    }
+
+    public Agenda(String pNombre)
+    {
+        // Asignamos el nombre
+        Nombre = pNombre;
+        //Pedimos la edad 
+        Console.WriteLine("Dame la Edad ");
+        Edad = Convert.ToInt32(Console.ReadLine());
+        // Pedimos el telefono
+        Console.WriteaLine("Dame el telefono");
+        telefono = Console.ReadLine();
+        if(Telefono.Length < 8 )
+        {
+            Telefono = "El numero es incorrecto , Debe Agregar  un numero Valido";
+        }    
+    }   
 
     public override String ToString()
     {
@@ -1496,6 +1512,9 @@ public Agenda(String pNombre)
 // código adentro de una sola línea. Otra opción que podríamos haber utilizado es
 // una función que pida el dato, tal y como lo vimos en un capítulo anterior. Enseguida solicitamos el teléfono y aprovechamos para validar la información.
 // El programa completo queda de la siguiente manera:
+
+
+
 
 
 // ⏲
