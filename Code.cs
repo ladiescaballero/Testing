@@ -1670,10 +1670,26 @@ public struct direccion
             Domicilio = new Direccion("Sin direccion ", 0);
         }
 
-                
-
-
+        public override String ToString()
+        {
+            StringBuilder sb = new StringBuider();
+            sb.AppenFormat("Nombre : {0} , Edad : {1} , Telefono : {2} , Nombre , Edad , Telefono");
+            Return(sb.ToString());
+        }        
     }
+
+    static void Main(String[]args)
+    {
+        Agenda amigo = new Agenda("Juan" , 24 , "(555) 4545 878 8" , "Av Diagonal" 484);
+        Agenda amigo1 = new Agenda("Pedro",38 , (555), "Calle dos" , 556);
+        Agenda amigo2 = new Agenda("Tomas" , 28);
+        Agenda amigo3 = new amigo("Lalal");
+        Console.WriteLine(amigo.ToString());
+        Console.WriteLine(amigo1.ToString());
+        Console.WriteLine(amigo2.ToString());
+        Console.WriteLine(amigo3.ToString());
+    }
+
 }
 
 
