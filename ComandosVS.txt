@@ -1,9 +1,12 @@
 Command VStudio
 
+https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
+
 🎈 Para cambiar entre Pestañas de Visual Studio Code Web : Alt + Numero
 🎈 Para Cambiar entre pestañas del Navegador. Ctrl + Tabs
 🎈 Cambiar de Pestañas. Otra Forma Alt + Tabs
 🎈 Para Seleccionar una fila Ctrl + L
+
 
 
 
