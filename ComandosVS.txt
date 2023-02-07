@@ -6,6 +6,8 @@ https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
 🎈 Para Cambiar entre pestañas del Navegador. Ctrl + Tabs
 🎈 Cambiar de Pestañas. Otra Forma Alt + Tabs
 🎈 Para Seleccionar una fila Ctrl + L
+🎈 Moverse con el cursor  Ctrl + Flecha Arriba , Abajo
+🎈 Mover o Cambiar de lugar una linea de Codigo Alt + Flecha Arriba , Abajo
 
 
 
@@ -17,7 +19,7 @@ Command Excel ------------------------------------------------------------------
 Command Edge -----------------------------------------------------------------------------------
 💨https://answers.microsoft.com/es-es/microsoftedge/forum/all/c%C3%B3mo-eliminar-las-pesta%C3%B1as-del-edge-al/8e43b97d-c122-4c3c-b25c-4b5fd29c00bd
 
+💥
 
 Command Windows -----------------------------------------------------------------------------------
-💥
 
