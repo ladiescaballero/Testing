@@ -1693,7 +1693,46 @@ public struct direccion
 }
 
 
+//⭕ Paginas 306
+// Podemos observar que en las variables amigo y amigo1 ya hemos colocado previamente los parámetros necesarios por el constructor modificado. Sólo queda que
+// compilemos y ejecutemos el programa
+
+// Al parecer tenemos un problema ya que obtenemos el mismo resultado que el programa anterior a pesar de los cambios. Esto sucede debido a que no hemos actualizado el método ToString() de Agenda ni creado el propio de Direccion.
+
+//⭕ Paginas 307
 
 
+// Para Direccion
+public override String ToString()
+{
+    StringBuilder sb = new StringBuilder();
+    sb.AppendFormat("Direccion : {0}  #{1}" , Calle , Numero);
+    return(sb.ToString());
+
+}
+
+// Para Agenda
+
+public override String ToString()
+{
+    StringBuilder sb = new StringBuilder();
+    sb.AppendFormat("Nombre : {0} , Edad:{1} , Telefono : {2}" , Nombre , Edad , Telefono);
+    return(sb.ToString());
+
+    // Adicionamos la cadena que viene de 
+    // Domicilio    
+
+    sb.AppendFormat(Domicilio.ToString());
+    return(sb.ToString());
+
+}
+
+// Vemos que adentro del ToString() de Agenda agregamos la cadena que nos regresa el ToString() de Domicilio. De esta forma, cuando se impriman los contenidos
+// de Agenda también se imprimirán los del campo Domicilio. El programa completo queda de la siguiente forma
+
+
+
+
+___________________________________________________________________________________________________
 //⭕ Paginas 
 //🛑 Paginas 
