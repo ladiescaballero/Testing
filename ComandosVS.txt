@@ -1,4 +1,4 @@
-Command VStudio
+Command VStudio-----------------------------------------------------------------------------------
 
 https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
 
@@ -9,25 +9,15 @@ https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Command Excel 
+Command Excel -----------------------------------------------------------------------------------
 ✔ Excel Moverse entre Pestañas Ctrl + AvPag o RegPag
 
 
 
+Command Edge -----------------------------------------------------------------------------------
+💨https://answers.microsoft.com/es-es/microsoftedge/forum/all/c%C3%B3mo-eliminar-las-pesta%C3%B1as-del-edge-al/8e43b97d-c122-4c3c-b25c-4b5fd29c00bd
 
 
-
-Command Windows
-
+Command Windows -----------------------------------------------------------------------------------
+💥
 
