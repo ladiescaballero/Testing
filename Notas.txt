@@ -3,21 +3,11 @@
 📅 17/01/2022
 ⏲ 16:25
 
-----------------------------------------------------------------------------------------------------
 
-🎈 Para cambiar entre Pestañas de Visual Studio Code Web : Alt + Numero
-🎈 Para Cambiar entre pestañas del Navegador. Ctrl + Tabs
-🎈 Cambiar de Pestañas. Otra Forma Alt + Tabs
-🎈 Para Seleccionar una fila Ctrl + L
-
-____________-----------------------------------------------------------------------------___________
-
-✔ Excel Moverse entre Pestañas Ctrl + AvPag o RegPag
 ✔ Net : CSI2 : pedro1365
 ✔ https://www.xataka.com/basics/trucos-google-drive-trucos-algun-extra-para-sacarle-maximo-partido-a-nube-google
 ✔ Ver como cambiar tipo de fuentes en visual Code
 
-____________-----------------------------------------------------------------------------___________
 
 
 ___________________________________________________________________________________________________
@@ -31,11 +21,8 @@ https://www.luisllamas.es/como-activar-grupos-de-pestanas-en-microsoft-edge/
 
 ___________________________________________________________________________________________________
 
-
-
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 📚
-
 
  Otra de Forma de Separas Paginas es poner el Siguiente elemento. Cada texto en primera linea del libro realizar la diferencia . Sea Txt o Codigo. Para Buscar alguna ubicacion Utilizar Buscador tanto del Navegador o Editor. De preferencia que sea Texto. CTRL + F
 

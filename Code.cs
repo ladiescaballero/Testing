@@ -1592,7 +1592,14 @@ public Agenda(String pNombre , int pEdad, String pTelefono , String pCalle , int
 // en la parte final hacemos la instanciación de Domicilio por medio de new y le pasamos a su constructor los datos que le corresponden. También puede suceder que el
 // constructor de Agenda no reciba los datos de Domicilio. En ese caso, debemos instanciar también al campo domicilio y pasar algunos datos de default al constructor
 
-
+public Agenda(String pNombre , int pEdad)
+{
+    // llevamos a cabo la asignacion
+    Nombre = pNombre;
+    Edad = pEdad;
+    Telefono = "Sin Telefono";
+    Domicilio = new Direccion ("Sin Direccion " , 0);
+}
     
 
 
