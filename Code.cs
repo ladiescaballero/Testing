@@ -1601,12 +1601,83 @@ public Agenda(String pNombre , int pEdad)
     Domicilio = new Direccion ("Sin Direccion " , 0);
 }
     
+// En este caso, vemos que la instanciación se lleva a cabo, pero simplemente pasamos
+// algunos parámetros de default. Si continuamos con estos cambios, el programa quedará de la siguiente manera:
+
+
+public struct direccion 
+{
+    public String Calle;
+    public int Numero;
+
+    public direccion(String pCalle , int pNumero)
+    {
+    //⭕ Paginas 304 
+    Calle = pCalle;
+    Numero = pNumero;
+    }
+
+    public struct Agenda
+    {
+        public String Nombre;
+        public int Edad;
+        public String Telefono;
+        public Direccion Domicilio;
+
+        public Agenda(String pNombre , int pEdad , String pTelefono , String pCalle , int pNumero) 
+        {
+            // llevamos a cabo la asignacion 
+            Nombre = pNombre;
+            Edad = pEdad;
+            if(Telefono.Length>8)
+            {
+              Telefono = pTelefono;      
+            }
+            else
+            {
+                Telefono = "telefono no valido ";
+            }
+            Domicilio = new Direccion(pCalle , pNumero);
+        }
+
+        public Agenda(String pNombre , int pEdad)
+        {
+            // llevamos a cabo la asignacion
+            Nombre = pNombre;
+            Edad = pEdad;
+            Telefono = "Sin Telefono";
+            Domicilio = new Direccion("Sin Direccion " 0);
+        }
+        //⭕ Paginas 305
+        public Agenda(String pNombre)
+        {
+            // Asignamos el Nombre.
+            Nombre = pNombre;
+            
+            //Pedimos la edad 
+            Console.WriteLine("Indiqueme su Edad ");
+            Edad = Convert.ToInt32(Console.ReadLine);
+
+            // Pedimos el telefono 
+            Console.WriteLine("Indiqueme su numero de telefono");
+            Telefono = Console.ReadLine();
+            
+            if(Telefono.Length<8)
+            {
+              Telefono = "Sin Telefono ";      
+            }
+           
+            Domicilio = new Direccion("Sin direccion ", 0);
+        }
+
+                
+
+
+    }
+}
 
 
 
 
-
-
-// 🛑 Paginas 
-// ⏲
-
+//⭕ Paginas 
+//🛑 Paginas 
