@@ -1730,7 +1730,44 @@ public override String ToString()
 // Vemos que adentro del ToString() de Agenda agregamos la cadena que nos regresa el ToString() de Domicilio. De esta forma, cuando se impriman los contenidos
 // de Agenda también se imprimirán los del campo Domicilio. El programa completo queda de la siguiente forma
 
+public struct Direccion
+{
+    public String Calle;
+    public int Numero;
 
+    public Direccion(String pCalle , int pNumero)
+    {
+        Calle = pCalle;
+        Numero = pNumero;
+    }
+
+    public override String ToString()
+    {
+        StringBuilder sb = new StringBuider();
+        sb.AppendFormat("Direccion : {0} #{1}" , Calle , Numero);
+        return(sb.ToString());
+    }
+
+    public struct Agenda
+    {
+        public String Nombre;
+        public int Edad;
+        public String Telefono;
+        public Direccion Domicilio;
+
+        public Agenda(String pNombre , pEdad , pTelefono , String pCalle , int pNumero)
+        {
+            // LLevamos a cabo la asignacion 
+            Nombre = pNombre;
+            Edad = pEdad;
+        }
+
+
+
+        
+    }
+
+}
 
 
 ___________________________________________________________________________________________________
