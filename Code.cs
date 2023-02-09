@@ -1824,12 +1824,38 @@ public struct Direccion
             Console.WriteLine(amigo2.ToString());
             Console.WriteLine(amigo3.ToString());     
         }
-
-
-
     }
 
 }
+
+// Ahora ejecutemos el programa y veamos el resultado
+
+// //⭕ Paginas 311
+
+// Las enumeraciones
+// Ya hemos aprendido las estructuras y ahora conoceremos otro nuevo tipo que puede ser definido por el programador. Este nuevo tipo se conoce como enumeraciones. Éstas son tipos que nosotros podemos definir, pero tendrán un número finito
+// de valores posibles, es decir, que podemos definir el tipo y los valores a guardar.
+// Las enumeraciones son útiles cuando tenemos información que sabemos que solamente puede tener uno de una serie de posibles valores. Por ejemplo, sabemos que
+// la semana tiene siete días. Entonces, un día no puede tener un valor que no sea el
+// de un día de la semana. La semana sería una enumeración. 
+// Esto lo podemos utilizar para cualquier otro ejemplo donde sepamos los valores posibles a utilizar. Otro ejemplo, supongamos que estamos haciendo un programa para una empresa que vende quesos. Tendremos un número finito de posibles tipos
+// de queso. Entonces, podemos colocarlos adentro de una enumeración.
+// Al parecer, las enumeraciones son muy sencillas, pero podemos correr el riesgo de
+// pensar que no son muy útiles. Sin embargo, nos dan grandes beneficios. También
+// nos sirven para reducir la cantidad de errores que podemos tener en nuestra aplicación al asignar y utilizar valores. Como beneficio, reducen la lógica que debemos utilizar e incluso mejoran el desempeño de nuestra aplicación. Por eso es útil
+// aprender a usarlas correctamente.
+
+// Veamos un ejemplo donde podemos utilizar la enumeración para mejorar nuestra
+// aplicación. Si nuestro programa necesita guardar por algún motivo el día de la semana podemos pensar en diferentes opciones. La primera puede ser la utilización
+// de una variable de tipo entero, ya que cada día de la semana puede ser definido
+// por un número del 1 al 7. Sin embargo, esto nos presenta algunos problemas. El
+// primer problema es que usamos un tipo que puede guardar miles de valores posibles, pero sólo usamos 7, entonces tenemos un desperdicio de memoria.
+// El segundo problema es que el tipo, al poder guardar muchos valores, puede guardar datos que no correspondan a la realidad como el día 8 de la semana. Para evitar esto necesitamos agregar lógica de control con el uso de uno o varios if. D
+
+
+//⭕ Paginas 312
+
+
 
 
 ___________________________________________________________________________________________________
