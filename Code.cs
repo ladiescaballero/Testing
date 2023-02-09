@@ -1760,8 +1760,44 @@ public struct Direccion
             // LLevamos a cabo la asignacion 
             Nombre = pNombre;
             Edad = pEdad;
+            if(pTelefono.Length > 8)
+            {
+                Telefono = pTelefono;
+                else
+                {
+                    Telefono = "Numero de telefono no valido";
+                    Domicilio = new Direccion(pCalle , pNumero);
+                }
+            }
         }
 
+        public Agenda(String pNombre , int pEdad)
+        {
+            //LLevamos a cabo la asignacion
+            Nombre = pNombre;
+            Edad = pEdad;
+            Telefono = "Debe Ingresar un numero de telefono";
+            Domiilio = new Direccion("Sin Direccion" , 0);
+        }
+
+        public Agenda(String pNombre)
+        {
+            // Asignamos el nombre;
+            Nombre = pNombre;
+
+            //Pedimos la Edad
+            Console.WriteLine("Dame la edad");
+            Edad = Convert.ToInt32(Console.ReadLine());
+
+            // Pedimos el telefono
+            Console.WriteLine("Dame el telefono");
+            Telefono = Console.ReadLine();
+            if(Telefono.Length < 8)
+            {
+               Telefono = "Sin telefono";     
+            }
+            Domicilio = new Direccion("Sin Direccion" , 0);
+        }
 
 
         
