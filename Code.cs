@@ -1576,7 +1576,7 @@ public Agenda(String pNombre , int pEdad, String pTelefono , String pCalle , int
      Edad = pEdad;
      if(pTelefono.Lengt>8)
      {
-// 🛑 Paginas 303
+//🛑 Paginas 303
        Telefono = pTelefono;
      }
      else
@@ -1612,7 +1612,7 @@ public struct direccion
 
     public direccion(String pCalle , int pNumero)
     {
-    //⭕ Paginas 304 
+//⭕ Paginas 304 
     Calle = pCalle;
     Numero = pNumero;
     }
@@ -1648,7 +1648,7 @@ public struct direccion
             Telefono = "Sin Telefono";
             Domicilio = new Direccion("Sin Direccion " 0);
         }
-        //⭕ Paginas 305
+//⭕ Paginas 305
         public Agenda(String pNombre)
         {
             // Asignamos el Nombre.
@@ -1741,6 +1741,7 @@ public struct Direccion
         Numero = pNumero;
     }
 
+//⭕ Paginas 308
     public override String ToString()
     {
         StringBuilder sb = new StringBuider();
@@ -1796,11 +1797,36 @@ public struct Direccion
             {
                Telefono = "Sin telefono";     
             }
+//⭕ Paginas 309            
             Domicilio = new Direccion("Sin Direccion" , 0);
         }
 
+        public override String ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("Nombre : {0} , Edad : {1} , Telefono : {2}" , Nombre , Edad , Telefono);
+            // Adicionamos la cadena que viene  de domicilio ...
+            sb.Append(Domicilio.ToString());
+            return(sb.ToString());
+        }
 
-        
+//⭕ Paginas 310        
+        static void Main(string[]args)
+        {
+            // Agregar aqui el codigo para iniciar la aplicacion .
+            Agenda amigo = new Agenda("Tomas" , 41 , "(555)123456789" , "Calle Principal" , 457);
+            Agenda amigo1 = new Agenda("Carlos" , 54 , "(555)" , "Calle Dos" , 4170);
+            Agenda amigo2 = new Agenda("Cesar",28);
+            Agenda amigo3 = new Agenda("Maria");
+
+            Console.WriteLine(amigo.ToString());
+            Console.WriteLine(amigo1.ToString());
+            Console.WriteLine(amigo2.ToString());
+            Console.WriteLine(amigo3.ToString());     
+        }
+
+
+
     }
 
 }
