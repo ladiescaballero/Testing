@@ -1435,7 +1435,7 @@ public struct Agenda
         Edad = pEdad;
         if(pTelefono.Length > 8 )
         {
-// 🛑 Paginas 296
+🛑 Paginas 296
             Telefono = pTelefono;
         }
         else
@@ -1486,7 +1486,7 @@ public struct Agenda
     }
 }
 
-// 🛑 Paginas 297
+🛑 Paginas 297
 // Si compilamos la aplicación, veremos el resultado en la siguiente figura:    
 
 // Incluso podemos hacer que el constructor le solicite la información directamente
@@ -1501,7 +1501,7 @@ public Agenda(String pNombre)
     //Pedimos la edad 
     Console.WriteLine("Dame la Edad ");
     Edad = Convert.ToInt32(Console.ReadLine());
-// 🛑 Paginas 298 
+🛑 Paginas 298 
     // Pedimos el telefono
     Console.WriteaLine("Dame el telefono");
     telefono = Console.ReadLine();
@@ -1528,7 +1528,7 @@ public Agenda(String pNombre)
 
 
 
-// 🛑 Paginas 301
+🛑 Paginas 301
 // Estructuras enlazadas
 // Las estructuras nos dan la facilidad de poder agrupar información que está relacionada adentro de un mismo elemento. Ya vimos que se puede colocar como dato a
 // cualquier tipo que sea válido en C#. Estos tipos válidos también corresponden a tipos definidos por el programador, es decir otras estructuras.
@@ -1540,7 +1540,7 @@ public Agenda(String pNombre)
 public struct Direccion 
 {
     public String Calle ;
-// 🛑 Paginas 302 
+🛑 Paginas 302 
     public Int Numero;
 
     public Direccion(String pCalle , int pNumero)
@@ -1576,7 +1576,7 @@ public Agenda(String pNombre , int pEdad, String pTelefono , String pCalle , int
      Edad = pEdad;
      if(pTelefono.Lengt>8)
      {
-//🛑 Paginas 303
+🛑 Paginas 303
        Telefono = pTelefono;
      }
      else
@@ -1612,7 +1612,7 @@ public struct direccion
 
     public direccion(String pCalle , int pNumero)
     {
-//⭕ Paginas 304 
+⭕ Paginas 304 
     Calle = pCalle;
     Numero = pNumero;
     }
@@ -1648,7 +1648,7 @@ public struct direccion
             Telefono = "Sin Telefono";
             Domicilio = new Direccion("Sin Direccion " 0);
         }
-//⭕ Paginas 305
+⭕ Paginas 305
         public Agenda(String pNombre)
         {
             // Asignamos el Nombre.
@@ -1693,13 +1693,13 @@ public struct direccion
 }
 
 
-//⭕ Paginas 306
+⭕ Paginas 306
 // Podemos observar que en las variables amigo y amigo1 ya hemos colocado previamente los parámetros necesarios por el constructor modificado. Sólo queda que
 // compilemos y ejecutemos el programa
 
 // Al parecer tenemos un problema ya que obtenemos el mismo resultado que el programa anterior a pesar de los cambios. Esto sucede debido a que no hemos actualizado el método ToString() de Agenda ni creado el propio de Direccion.
 
-//⭕ Paginas 307
+⭕ Paginas 307
 
 
 // Para Direccion
@@ -1741,7 +1741,7 @@ public struct Direccion
         Numero = pNumero;
     }
 
-//⭕ Paginas 308
+⭕ Paginas 308
     public override String ToString()
     {
         StringBuilder sb = new StringBuider();
@@ -1797,7 +1797,7 @@ public struct Direccion
             {
                Telefono = "Sin telefono";     
             }
-//⭕ Paginas 309            
+⭕ Paginas 309            
             Domicilio = new Direccion("Sin Direccion" , 0);
         }
 
@@ -1810,7 +1810,7 @@ public struct Direccion
             return(sb.ToString());
         }
 
-//⭕ Paginas 310        
+⭕ Paginas 310        
         static void Main(string[]args)
         {
             // Agregar aqui el codigo para iniciar la aplicacion .
@@ -1830,7 +1830,7 @@ public struct Direccion
 
 // Ahora ejecutemos el programa y veamos el resultado
 
-// //⭕ Paginas 311
+⭕ Paginas 311
 
 // Las enumeraciones
 // Ya hemos aprendido las estructuras y ahora conoceremos otro nuevo tipo que puede ser definido por el programador. Este nuevo tipo se conoce como enumeraciones. Éstas son tipos que nosotros podemos definir, pero tendrán un número finito
@@ -1852,8 +1852,7 @@ public struct Direccion
 // primer problema es que usamos un tipo que puede guardar miles de valores posibles, pero sólo usamos 7, entonces tenemos un desperdicio de memoria.
 // El segundo problema es que el tipo, al poder guardar muchos valores, puede guardar datos que no correspondan a la realidad como el día 8 de la semana. Para evitar esto necesitamos agregar lógica de control con el uso de uno o varios if. D
 
-
-//⭕ Paginas 312
+⭕ Paginas 312
 
 
 
