@@ -1854,6 +1854,38 @@ public struct Direccion
 
 ⭕ Paginas 312
 
+// esta manera, se complica nuestra aplicación. Otro problema que esto nos presenta es el despliegue de la información. Cada vez que queremos mostrar el día tenemos que poner lógica para transformar 1 a “Lunes”, 2 a “Martes”, y así sucesivamente para poder listar cada día de la semana.
+// Quizás otra solución sería el uso de una cadena para guardar el día de la semana, pero también presenta problemas. Un problema que podemos tener es que si nuestra
+// lógica funciona con “Lunes”, cuando el usuario introduzca un valor como “lunes” ya
+// no funcionará. Para corregir esto podemos usar el método ToUpper(), pero agrega
+// más lógica y proceso extra a nuestra aplicación que no es necesario. También gastamos memoria de más ya que guardar una cadena requiere más memoria que
+// guardar un simple número. Desde luego, la impresión sería más sencilla, pero la
+// administración de la información más complicada.
+// Nuestra mejor opción es el uso de las enumeraciones. Ahora aprenderemos cómo
+// usarlas y cómo el problema anterior se resolvería fácilmente con ellas.
+
+// Declaración y asignación de valores
+// Para declarar una enumeración usamos el siguiente formato
+
+enum nombre {valor1, valor2, …, valorn};
+
+// En primer lugar, tenemos que colocar la palabra clave enum seguida del nombre con
+// el que identificaremos al nuevo tipo de enumeración. Luego entre {} debemos colocar los valores que puede tener este tipo. Hay que recordar que los valores son finitos.
+// Veamos cómo declarar una enumeración para nuestro ejemplo de la semana:
+
+enum semana {Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo}
+
+// NOTA: LOS VALORES DE LAS ENUMERACIONES
+//       Cuando declaramos la enumeración llevamos a cabo el listado de todos los valores posibles.
+// Podemos pensar que internamente se guardan con un número de identificación. El primer
+// elemento tendrá el valor de cero, el segundo de uno y así en forma consecutiva. Sin embargo,
+// también es posible indicar cuál será el valor para el primer elemento de la enumeración.
+
+
+⭕ Paginas 313
+
+// En este caso, hemos declarado la enumeración con el nombre de semana. Cada uno
+// de los días que hemos listado entre {} serán los posibles valores que puede tener. Con
 
 
 
