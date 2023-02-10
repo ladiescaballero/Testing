@@ -1886,7 +1886,31 @@ enum semana{Lunes , Martes , Miercoles , Jueves , Viernes , Sabado , Viernes};
 
 // En este caso, hemos declarado la enumeración con el nombre de semana. Cada uno
 // de los días que hemos listado entre {} serán los posibles valores que puede tener. Con
+// esto, el siguiente paso sería simplemente la creación de una variable de tipo semana.
+// La declaración y asignación de la variable la hacemos de la forma tradicional.
 
+semana miDia 
+
+// Aquí declaramos la variable miDia que es de tipo semana, por lo que solamente podrá tener los valores listados en la enumeración. Si lo hubiéramos deseado, también
+// podríamos haber declarado e inicializado la variable con algún valor.
+
+semana miDia = semana.Martes;
+
+// La asignación del valor en esta variable se puede llevar a cabo en cualquier momento,
+// dentro de nuestra aplicación, después de su declaración, como en cualquier otra variable, pero con uno de los valores contenidos en semana.
+
+miDia = semana.Viernes;
+
+// Para imprimir el valor de una enumeración
+// Si deseamos mostrar el valor de una variable de tipo enumeración, lo único que necesitamos es utilizar el método ToString(). Éste nos dará una cadena con el valor correspondiente y podemos utilizarla dentro de nuestra lógica para desplegar valores.
+// El método ToString() regresa una cadena y esa cadena será el valor correspondiente. Por ejemplo, si en la enumeración listamos un valor como Lunes, entonces la
+// cadena regresada será “Lunes”.
+
+String Mensajes = "El dia es ";
+...
+...
+...
+Mensajes = Mensajes + miDia.ToString();
 
 
 ___________________________________________________________________________________________________
