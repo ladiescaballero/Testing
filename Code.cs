@@ -1873,7 +1873,7 @@ enum nombre {valor1, valor2, …, valorn};
 // el que identificaremos al nuevo tipo de enumeración. Luego entre {} debemos colocar los valores que puede tener este tipo. Hay que recordar que los valores son finitos.
 // Veamos cómo declarar una enumeración para nuestro ejemplo de la semana:
 
-enum semana {Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo}
+enum semana{Lunes , Martes , Miercoles , Jueves , Viernes , Sabado , Viernes};
 
 // NOTA: LOS VALORES DE LAS ENUMERACIONES
 //       Cuando declaramos la enumeración llevamos a cabo el listado de todos los valores posibles.
