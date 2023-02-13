@@ -2040,6 +2040,8 @@ static void Main(string[]args)
 // paradigma. Parte fundamental de la
 // programación orientada a objetos es la clase.
 
+⭕ Paginas 320
+
 // La programación orientada a objetos
 // La programación estructurada es muy sencilla e intuitiva. En ella simplemente
 // tenemos un problema y lo subdividimos en problemas cada vez más pequeños.
@@ -2050,7 +2052,22 @@ static void Main(string[]args)
 // conoce como la corrupción de información. Supongamos que tenemos una variable y ésta es utilizada en diversas partes del programa. Una forma sencilla para
 // poder tener acceso a la variable es declararla de forma global, así todo el programa la conoce. Al hacer esto cualquier parte del programa no sólo puede leerla sino también modificarla. Debido a este esquema, una parte del programa puede
 // cambiarse sin que otra sepa de este cambio y así se producen errores en la información. Para evitar esto es posible pasarle la variable como parámetro a quien la
-// necesite, pero esto complica su administración
+// necesite, pero esto complica su administración. 
+// Los programas estructurados muy grandes también son difíciles de extender y mantener, y llevar a cabo un cambio puede ser costoso. Generalmente, un cambio en una
+// parte del programa produce cambios en otras partes que quizá no estén relacionadas
+// directamente. En general, los programas estructurados son poco flexibles.
+// La programación estructurada es buena para los programas pequeños y para
+// aprender las bases de programación. Sin embargo, el mundo actual pide el desarrollo orientado a objetos. Como recomendación, después de este libro, podemos aprender análisis y diseño orientado a objetos y luego continuar aprendiendo más C# con todas las técnicas orientadas a objetos. Esto ya sería un nivel avanzando - experto de programación.
+// En la programación orientada a objetos tomamos una idea diferente en la resolución
+// de los problemas. En lugar de subdividirlos, lo que hacemos es ver cuáles son los componentes u objetos que componen el problema y la forma cómo interactúan. Nosotros programaremos estos objetos y haremos que se comuniquen entre sí. Cuando
+// los objetos hagan su labor y se comuniquen, el problema estará resuelto.
+
+// Las clases
+// El componente principal de la programación orientada a objetos es la clase. Nosotros
+// podemos pensar en la clase como si fuera un plano por medio del cual podemos crear objetos, por ejemplo, pensemos en una casa. Para hacer una casa lo primero que
+// hacemos es pensar en los cuartos que deseamos que tenga y luego diseñamos un plano. El plano no es la casa, ya que no podemos vivir ni actuar en él. Sin embargo, éste nos proporciona las características de la casa. Por medio del plano podemos construir la casa y en esta construcción sí podemos llevar a cabo nuestras actividades
+
+
 
 
 
