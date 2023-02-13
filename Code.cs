@@ -2024,8 +2024,33 @@ static void Main(string[]args)
 // creamos un tipo que tendrá un número finito de valores posibles. Podemos darle un valor
 // inicial a la enumeración e incluso convertirla a valores numéricos
 
-⭕ Paginas 318
+⭕ Paginas 319
 
+// Cómo crear
+// nuestras
+// propias clases:En este capítulo empezaremos a ver
+// temas más avanzados. Hasta ahora
+// hemos utilizado C# para la programación
+// estructurada, pero ahora iremos hacia
+// otro paradigma de programación,
+// el de la orientación a objetos. C#
+// es un lenguaje orientado a objetos, por
+// lo que se puede obtener su mayor poder
+// y beneficio si programamos con ese
+// paradigma. Parte fundamental de la
+// programación orientada a objetos es la clase.
+
+// La programación orientada a objetos
+// La programación estructurada es muy sencilla e intuitiva. En ella simplemente
+// tenemos un problema y lo subdividimos en problemas cada vez más pequeños.
+// Usamos funciones para colocar zonas especializadas de código o código que se
+// usa constantemente en su interior.
+// El paradigma estructurado es correcto, pero tiene algunas limitaciones y algunos
+// problemas cuando el programa a realizar es grande. Unos de estos problemas se
+// conoce como la corrupción de información. Supongamos que tenemos una variable y ésta es utilizada en diversas partes del programa. Una forma sencilla para
+// poder tener acceso a la variable es declararla de forma global, así todo el programa la conoce. Al hacer esto cualquier parte del programa no sólo puede leerla sino también modificarla. Debido a este esquema, una parte del programa puede
+// cambiarse sin que otra sepa de este cambio y así se producen errores en la información. Para evitar esto es posible pasarle la variable como parámetro a quien la
+// necesite, pero esto complica su administración
 
 
 
