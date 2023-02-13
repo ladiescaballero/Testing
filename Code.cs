@@ -1915,6 +1915,8 @@ Mensajes = Mensajes + miDia.ToString();
 Console.WriteLine("El dia es {0} ",miIdea);
 
 
+⭕ Paginas 314
+
 // Para pasar de enumeración a valor numérico
 // Si necesitamos pasar el valor de la enumeración a una variable numérica, lo único que necesitamos hacer es colocar un type cast. En nuestro ejemplo, Lunes al
 // ser el primer valor definido, se pasará como 0 a la variable numérica, Miercoles
@@ -1939,6 +1941,9 @@ enum Semana{Lunes = 3 , Martes , Miercoles , Jueves , Viernes , Sabado , Domingo
 // los que interactuamos en la expresión. Si fuera necesario, podemos hacer uso de
 // type cast para que la expresión quede correctamente escrita
 
+
+⭕ Paginas 315
+
 // Por ejemplo, para una expresión aritmética podemos realizar lo siguiente:
 
 int Salario = 0;
@@ -1948,9 +1953,51 @@ int pagoDia = 200;
 ..
 salario = pagoDia*((int)miDia);
 
+// En las expresiones aritméticas es muy común que usemos type cast. Si lo deseamos,
+// podemos hacer uso de los paréntesis para ayudarnos a leer la expresión. En una expresión relacional también podemos hacer uso de la enumeración. Si comparamos
+// hacia el mismo tipo no es necesario hacer uso de un type cast.
+
+if(miDia == semana.Martes)
+
+type cast
+if((int)miDia == 3)
+
+// Dentro de una expresión lógica podemos hacer uso de algo similar
+
+i((miDia>Semana.Lunes) && (int)miDia<5)
 
 
+// Ejemplo de aplicación
+// Ahora que ya conocemos los conceptos más importantes de las enumeraciones, es
+// momento de hacer una aplicación. Nuestra aplicación será sencilla y simplemente
+// probará los conceptos que hemos aprendido.
+// Nuestra aplicación puede quedar de la siguiente manera:
 
+
+// Declaramos la enumeracion
+enum Semana{Lunes,Martes,Miercoles,Jueves,Viernes};
+enum Colores{Rojo = 1 , Verde , Azul , Amarillo};
+
+static void Main(string[]args)
+{
+    int numerico = 0;
+    //Creamos una variable de tipo Semana
+    Semana miDia;
+    // Asignamos un valor 
+    miDia = Semana.Lunes;
+    // Pasamos de enumeracion a Entero
+    numerico = (int)miDia;
+    // Mostramos la Informacion
+    Console.WriteLine("El dia es {0} con valor {1} ",miDia , numerico);
+    // Creamos una variable de color
+    Colores miColor = Colores.Rojo;
+    // Pasmaos a numero Entero
+    numerico = (int)miColor;
+    // Mostramos la informacion
+    Console.WriteLine("El color es {0} con valor {}");
+
+
+}
 
 
 
