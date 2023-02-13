@@ -1973,6 +1973,7 @@ i((miDia>Semana.Lunes) && (int)miDia<5)
 // probará los conceptos que hemos aprendido.
 // Nuestra aplicación puede quedar de la siguiente manera:
 
+⭕ Paginas 316
 
 // Declaramos la enumeracion
 enum Semana{Lunes,Martes,Miercoles,Jueves,Viernes};
@@ -1994,12 +1995,36 @@ static void Main(string[]args)
     // Pasmaos a numero Entero
     numerico = (int)miColor;
     // Mostramos la informacion
-    Console.WriteLine("El color es {0} con valor {}");
-
-
+    Console.WriteLine("El color es {0} con valor {1}",miColor , numerico);
 }
 
 
+// En primer lugar, declaramos dos enumeraciones. La primera es semana y Lunes
+// tendrá como valor 0. La segunda enumeración se llama colores y la iniciaremos
+// con un valor inicial Rojo que será 1.
+// Dentro de la función Main() declaramos una variable de tipo entero, que usaremos
+// para nuestros experimentos de convertir las enumeraciones a valores numéricos.
+// Posteriormente, declaramos una variable de tipo semana llamada miDia. En la línea siguiente le damos el valor de Lunes contenido en la enumeración semana. A
+// continuación convertimos miDia a entero y se lo asignamos a la variable numérico.
+// Luego mostramos los valores de las variables. Creamos una variable de tipo colores e inmediatamente le asignamos el valor de Rojo de la enumeración colores. La
+// convertimos a valor numérico y luego la mostramos. Si ejecutamos el programa,
+// obtendremos la siguiente salida en la consola:
+
+⭕ Paginas 317
+
+// Con esto ya hemos aprendido a lo largo de este capítulo, en complemento con otros,
+// las bases del manejo de las estructuras y las enumeraciones. Su uso es recomendable y debemos utilizarlas cuando tengamos programas grandes ya que nos ayudan a
+// administrar la información y reducir la cantidad de errores.
+
+// Resumen : Las estructuras nos permiten crear un tipo nuevo y agrupar información que está
+// relacionada adentro de una unidad. Los datos adentro de la estructura se llaman campos.
+// También es posible crear variables del tipo estructura y poder asignarles información a
+// sus campos. El constructor nos ayuda a introducir la información original y a verificar que
+// sea válida. Las estructuras pueden estar enlazadas. En las enumeraciones nosotros
+// creamos un tipo que tendrá un número finito de valores posibles. Podemos darle un valor
+// inicial a la enumeración e incluso convertirla a valores numéricos
+
+⭕ Paginas 318
 
 
 
