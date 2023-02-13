@@ -1912,6 +1912,50 @@ String Mensajes = "El dia es ";
 ...
 Mensajes = Mensajes + miDia.ToString();
 
+Console.WriteLine("El dia es {0} ",miIdea);
+
+
+// Para pasar de enumeración a valor numérico
+// Si necesitamos pasar el valor de la enumeración a una variable numérica, lo único que necesitamos hacer es colocar un type cast. En nuestro ejemplo, Lunes al
+// ser el primer valor definido, se pasará como 0 a la variable numérica, Miercoles
+// será el valor 2 y así sucesivamente
+
+int valor = 0;
+...
+...
+...
+valor=(int)miDia;
+
+
+// Por ejemplo, supongamos que para nuestros propósitos en la enumeración de la semana, el día Lunes debe tener el valor 3. Para esto colocamos lo siguiente:
+
+enum Semana{Lunes = 3 , Martes , Miercoles , Jueves , Viernes , Sabado , Domingo };
+
+// De esta forma, Lunes tendrá un valor de 3, Martes de 4 y así sucesivamente hasta
+// Domingo con un valor de 9
+
+// La enumeración en expresiones
+// Como nosotros trabajamos con una variable de tipo enumeración, podemos utilizarla en cualquier tipo de expresión. Sólo debemos ser cuidadosos con los tipos con
+// los que interactuamos en la expresión. Si fuera necesario, podemos hacer uso de
+// type cast para que la expresión quede correctamente escrita
+
+// Por ejemplo, para una expresión aritmética podemos realizar lo siguiente:
+
+int Salario = 0;
+int pagoDia = 200;
+..
+..
+..
+salario = pagoDia*((int)miDia);
+
+
+
+
+
+
+
+
+
 
 ___________________________________________________________________________________________________
 //⭕ Paginas 
