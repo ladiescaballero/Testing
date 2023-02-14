@@ -2271,15 +2271,95 @@ miCubo.CalcuraVolumen();
 // que trabajamos, seguido del operador . y en nombre del dato
 
 // Desplegamos los Datos.
+   Console.WriteLine("Area={0},Volumen={1}", miCubo.area , miCubo.volumen);
 
+// Nuestro programa queda de la siguiente manera:
+
+class cubo
+{
+    // Declaramos los Datos
+    public int lado;
+    public int area;
+    public int volumen;
+    // Metodo para calcular el area.
 
 ⭕ Paginas 328
+    public void CalculaArea()
+    {
+        area = (lado * lado ) * 6;
+    }
+    //Metodo para calcular el volumen
+    public void CalculaVolumen()
+    {
+        volumen = lado*lado*lado;
+    }
+}
+
+
+class prisma
+{
+    //Declaramos los Datos
+    public int ancho;
+    public int alto;
+    public int espesor;
+    public int area;
+    public int volumen;
+}
+
+class Program
+{
+    static void Main(string[]args)
+    {
+        // Instanciamos la clase cubo 
+        cubo miCubo = new Cubo();
+        //Asignamos el valor del lado
+        miCubo.lado = 5;
+        // Invocamos los metodos.
+        miCubo.CalcularArea();
+        miCubo.CalcularVolumen();
+        // Desplegamos los Datos.
+        Console.WriteLine("Area={0},Volumen={1}", miCubo.area , miCubo.volumen);
+
+    }
+}
+
 
 ⭕ Paginas 329
+// Si ejecutamos el programa obtendremos lo siguiente
+// Una de las ventajas que tiene la programación orientada a objetos es la reutilización
+// de código. Si necesitáramos dos cubos o más, simplemente creamos nuevas instancias. Cada una de ellas tendría en su interior sus propias variables y podría llevar a
+// cabo los cálculos que fueran necesarios. 
+// Por ejemplo, modifiquemos el programa para que se tengan dos cubos. El segundo
+// cubo estará en la instancia tuCubo y tendrá un valor de lado de 8.
 
+static void Main(string[] args)
+{
+// Instanciamos a la clase cubo
+cubo miCubo = new cubo();
+cubo tuCubo = new cubo();
 ⭕ Paginas 330
+// Asignamos el valor del lado
+miCubo.lado = 5;
+tuCubo.lado = 8;
+// Invocamos los métodos
+miCubo.CalculaArea();
+miCubo.CalculaVolumen();
+tuCubo.CalculaArea();
+tuCubo.CalculaVolumen();
+// Desplegamos los datos
+Console.WriteLine(“Mi cubo Area={0}, Volumen={1}”, 
+miCubo.area, miCubo.volumen);
+Console.WriteLine(“Tu cubo Area={0}, Volumen={1}”, 
+tuCubo.area, tuCubo.volumen);
+}
+// Este cambio solamente fue necesario en Main(), ya que todo el comportamiento que
+// necesitamos se encuentra en la clase. Ejecutemos el programa y veamos el resultado.
 
 
+
+⭕ Paginas 331
+⭕ Paginas 332
+⭕ Paginas 333
 ___________________________________________________________________________________________________
 //⭕ Paginas 
 //🛑 Paginas 
