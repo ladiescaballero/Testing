@@ -2181,7 +2181,103 @@ Metodo : CalculaArea() : void
 // línea de código. Es recomendable buscar información adicional sobre éste y aprenderlo.
 
 
+⭕ Paginas 325
 
+class cubo
+{
+    // Declaramos los Datos
+    public int lado;
+    public int area;
+    public int volumen;
+}
+
+class prisma
+{
+    //Declaramos los Datos
+    public int ancho;
+    public int alto;
+    public int espesor;
+    public int area;
+    public int volumen;
+}
+
+// Como podemos observar, declaramos dos clases. En cada una hemos declarado los
+// datos que le corresponden. La declaración de los datos es muy similar a la declaración de variables, y si prestamos atención, podemos notar que ambas clases tienen
+// nombres que se repiten en sus datos como area y volumen. Esto es posible porque
+// cada clase es una entidad diferente, y estos nombres nunca se confundirán entre sí.
+// Continuemos con nuestra clase cubo. Ahora lo que necesitamos hacer es colocar los
+// métodos de la clase. Las operaciones son muy sencillas. Nuestra clase cubo quedará como se muestra en el siguiente bloque de código
+
+
+class cubo
+{
+    // Declaramos los Datos
+    public int lado;
+    public int area;
+    public int volumen;
+    // Metodo para calcular el area.
+    public void CalculaArea()
+    {
+        area = (lado * lado ) * 6;
+    }
+
+⭕ Paginas 326
+    //Metodo para calcular el volumen
+    public void CalculaVolumen()
+    {
+        volumen = lado*lado*lado;
+    }
+}
+
+// La declaración de los métodos se hace adentro del bloque de código de la clase y cada
+// uno de ellos tiene su propio bloque de código. Como podemos observar, usan los datos directamente. Esto se debe a que cualquier dato declarado en la clase es conocido
+// por todos los métodos de esa clase. Más adelante continuaremos con la clase prisma.
+
+cubo miCubo = new cubo();
+
+// Quien realiza realmente la instanciación es new y esa instancia queda referenciada
+// como miCubo. A partir de miCubo podremos empezar a trabajar con él
+
+// Cómo asignarles valores a datos publicos
+// Como ya tenemos la instancia, ya podemos comenzar a trabajar con ella. Lo primero que haremos será asignarle un valor al dato lado. Haremos la asignación
+// por medio del operador de asignación = (igual), pero también deberemos indicar a cuál de todos los datos de la clase vamos a acceder. Esto lo hacemos con e
+
+// Al Acceso Protegido
+// El acceso privado es utilizado cuando hacemos uso de la herencia. Si declaramos un dato como
+// protegido, la propia clase y las clases que hereden de ellas podrán acceder a él, leerlo y
+// modificarlo. Todas las demás clases lo verán como si su acceso fuera privado y no podrán
+// acceder a él directamente
+
+⭕ Paginas 327
+
+// operador punto. Por ejemplo, asignemos el valor de 5 al lado, realizando esto como vemos en el código a continuación:
+
+// miCubo.lado = 5;
+
+// Cómo invocar métodos de un objeto
+// Cuando invocamos el método de un objeto, éste ejecuta el código que tiene en
+// su interior. Desde el exterior de la clase solamente podemos invocar métodos que
+// sean públicos. La invocación del método es muy similar a lo que aprendimos en
+// el Capítulo 3, con todos los casos que vimos. En este caso sólo tenemos que indicar con qué objetos trabajaremos, seguido el operador . y el nombre del método con sus parámetros, si los necesita.
+// Invoquemos los métodos para calcular el área y el volumen del cubo
+
+// Invocar los Metodos.
+miCubo.CalculaArea();
+miCubo.CalcuraVolumen();
+
+// Cómo imprimir un dato público
+// Como ya tenemos los valores calculados, ahora los podemos mostrar. Para esto los
+// usaremos como cualquier variable normal, pero debemos indicar el objeto con el
+// que trabajamos, seguido del operador . y en nombre del dato
+
+// Desplegamos los Datos.
+
+
+⭕ Paginas 328
+
+⭕ Paginas 329
+
+⭕ Paginas 330
 
 
 ___________________________________________________________________________________________________
