@@ -2068,6 +2068,119 @@ static void Main(string[]args)
 // hacemos es pensar en los cuartos que deseamos que tenga y luego diseñamos un plano. El plano no es la casa, ya que no podemos vivir ni actuar en él. Sin embargo, éste nos proporciona las características de la casa. Por medio del plano podemos construir la casa y en esta construcción sí podemos llevar a cabo nuestras actividades
 
 
+⭕ Paginas 321
+
+// El plano sería equivalente a la clase y la casa construida al objeto. La clase es un plano, una descripción, y el objeto tiene esas características y puede llevar a cabo trabajo concreto. Si necesitásemos hacer otra casa igual, no sería necesario hacer un
+// nuevo plano, simplemente tomaríamos el plano ya realizado y crearíamos otra casa. Una clase nos puede servir para crear muchos objetos independientes pero que
+// tienen las mismas características. El proceso de crear un objeto a partir de una clase es lo que conocemos como instanciación.
+// Adentro de la clase, nosotros colocaremos información y más importante aún,
+// los métodos que trabajan sobre esta información, es decir, que los datos y los
+// métodos que los procesan están contenidos dentro de una sola unidad. A esto lo
+// llamamos encapsulamiento. Al encapsular datos y métodos los protegemos contra la corrupción de información.
+// Los objetos se comunicarán por medio del uso de mensajes. En estos mensajes es posible solicitarle un dato a otro objeto, pedirle que lleve a cabo un proceso, etcétera.
+// Los datos
+// Los datos son la información con la que trabajará la clase. La clase solamente debe
+// tener los datos que necesita para poder llevar a cabo su trabajo. Declarar un dato es
+// muy similar a declarar una variable, pero al igual que en las estructuras, necesitamos indicar el acceso ya que tenemos básicamente tres tipos de acceso: público, privado y protegido. Cuando nosotros tenemos un dato con acceso público cualquier
+// elemento del exterior, como la función Main() o algún otro objeto, puede acceder
+// al dato, leerlo y modificarlo. Cuando tenemos el acceso privado solamente los métodos definidos dentro de la clase podrán leerlo o modificarlo. El acceso protegido
+// es un poco más avanzado y está por afuera de los límites de este libro.
+// Un punto muy importante con relación a los datos que no debemos olvidar es que
+// los datos definidos en la clase son conocidos por todos los métodos de la misma clase. Es decir, actúan como si fueran globales para la clase. Cualquier método puede
+// acceder a ellos directamente sin necesidad de que los pasemos como parámetro.
+// En algunos casos podremos colocar el acceso a nuestros datos como público, aunque preferentemente no lo haremos. Si nos excedemos o usamos el acceso público
+// en un mal diseño, corremos el riesgo de corrupción de información. Por lo general
+
+// La Herencia : Es una característica de la programación orientada a objetos. Ésta permite crear una nueva
+// clase que hereda las características (datos y métodos) de otra clase, de forma tal que solamente
+// tengamos que agregar los elementos necesarios para la nueva. Es una gran forma de
+// reutilización de código si se usa en forma adecuada.
+
+⭕ Paginas 322
+
+// nuestros datos serán privados, aunque esto puede parecer un problema ya que si el
+// exterior necesita alguna información calculada por el objeto no podrá tener acceso
+// a ella. Para resolver esto hacemos uso de las funciones de interfaz.
+// Una función de interfaz es aquella que puede ser invocada desde el exterior y que
+// regresa una copia del valor de algún dato dentro del objeto. También podemos usarla para colocar un valor determinado en un dato. La ventaja que nos da la función
+// de interfaz es que podemos administrar el acceso a nuestra información, y podemos
+// colocar dentro de ésta código de seguridad que verifique o valide la información que
+// entra o sale. De esta forma evitamos la corrupción de información. 
+// Los métodos
+// Los métodos son las funciones que llevan a cabo el proceso o la lógica de la clase, y
+// crear un método dentro de la clase es muy parecido a la forma que hemos utilizado
+// anteriormente. Los métodos también tendrán un tipo de acceso, al igual que los datos. Trabajarán sobre los datos de la clase. No hay que olvidar que todos los métodos conocen todos los datos definidos dentro de la clase, y pueden recibir parámetros y regresar valores. A un dato definido dentro de la clase no necesitamos pasarlo
+// como parámetro ya que el método lo conoce. Solamente los métodos que necesiten
+// ser invocados desde el exterior deben tener acceso público. Si el método sólo se invoca desde el mismo interior de la clase su acceso debe ser privado. Esto lo hacemos
+// con fines de seguridad y para mantener el encapsulamiento correctamente.
+// Cómo declarar la clase y los datos
+// La declaración de la clase es un proceso sencillo. Las clases se declaran dentro de un
+// namespace y cualquiera que tenga acceso a ese namespace puede crear objetos de
+// la clase. No olvidemos que la clase es como el plano y los objetos son realmente los
+// que usamos para llevar a cabo el trabajo.
+// Para declarar la clase tendremos un esquema como el siguiente:
+
+class Nombre 
+{
+    // Datos
+    ...
+    ...
+    // Metodos 
+    ...
+
+}
+
+⭕ Paginas 323
+
+// El nombre de la clase puede ser cualquier nombre válido dentro de C#. El nombre debe ser único para el namespace, es decir no podemos tener dos clases que
+// se llamen igual adentro del mismo namespace. La clase necesita un bloque de
+// código y en su interior llevamos a cabo las declaraciones de los elementos que la
+// componen. Generalmente, declaramos primero los datos. Esto nos permite tener
+// un programa organizado y luego facilita la lectura. Además, es posible declarar
+// los métodos implementados antes.
+// La mejor forma de hacer esto es por medio de un ejemplo. Supongamos que crearemos un programa que calcula el área y el volumen de cubos y prismas rectangulares.
+// Como en esta ocasión lo hacemos vía programación orientada a objetos, lo primero
+// que hacemos es pensar en los objetos que componen el problema.
+// Los objetos son: cubo y prisma rectangular. Ahora que ya conocemos los objetos,
+// debemos pensar en los datos y las operaciones que se realizan sobre éstos.
+// Para el cubo necesitaremos como datos primordiales la longitud de su lado, el
+// área y su volumen. En el caso del prisma requerimos aún más datos, que son el
+// ancho, el alto, el espesor, el área y el volumen.
+// Enseguida debemos pensar en las operaciones que se realizan sobre estos datos.
+// El cubo es más sencillo de resolver, ya que solamente necesitamos dos métodos, uno
+// llamado CalculaArea() y el otro llamado CalculaVolumen(). Para comprender mejor
+// las clases y por motivos ilustrativos el prisma necesitará tres métodos. El primero se
+// llamará CalculaArea(), el segundo CalculaVolumen() y el tercero AreaRectangulo().
+// Como el área del prisma es igual a la suma de los rectángulos de sus caras nos apoyaremos en este método para calcularla.
+// Podemos diagramar las clases si hacemos uso de UML. La clase del cubo quedará
+// como se muestra en la siguiente figura:
+
+⭕ Paginas 324
+
+// De igual forma es posible crear el diagrama de clases correspondiente al prisma: 
+
+Nombre de la clase : Prisma
+Tipo de Datos : +Alto int
+Metodo : CalculaArea() : void
+
+// Los diagramas anteriores se pueden leer fácilmente. Hay un rectángulo que representa a la clase. El rectángulo está dividido en tres secciones. La sección superior, que es utilizada para colocar el nombre de la clase, la sección intermedia, que
+// se usa para indicar los datos que tendrá la clase y la sección inferior, que es para
+// indicar cuáles son los métodos a utilizar.
+// El acceso se muestra por medio de los signos + o -. Cuando usamos el signo más estamos indicando que ese dato o método tiene un acceso del tipo público. En el caso de que coloquemos el signo menos, el acceso es del tipo privado.
+// El formato de los datos lleva primero el acceso seguido del nombre del dato. Luego se coloca : y el tipo que tiene este dato. El tipo puede ser nativo o definido por
+// el programador. En el caso de los métodos, primero indicamos el acceso seguido del
+// nombre del método. Como ninguno de nuestros métodos necesita parámetros, entonces los dejamos vacíos. El tipo del método, es decir el tipo de valor que regresa,
+// se indica por medio de : seguido del tipo. En nuestro ejemplo hasta el momento
+// ningún método regresa algo, por lo que todos son de tipo void.
+// Ahora podemos comenzar a declarar nuestras clases:
+
+// El Uso de UML
+// UML es un lenguaje unificado de modelado, un lenguaje visual que nos sirve para llevar a cabo
+// diagramas y modelado de sistemas. Resulta muy útil en la programación y el diseño orientado a
+// objetos, ya que facilita el diseño y la depuración de la aplicación aun antes de que se escriba una
+// línea de código. Es recomendable buscar información adicional sobre éste y aprenderlo.
+
+
 
 
 
