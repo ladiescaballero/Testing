@@ -2699,6 +2699,135 @@ Prisma miPrisma = new Prisma(5,3,variableLocal);
 
 ⭕ Paginas 342
 
+// Podemos continuar llevando a cabo más sobrecargas del constructor, tantas como
+// sean necesarias. La cantidad de sobrecargas dependerá del análisis y las necesidades
+// del programa. No debemos exagerar en las sobrecargas, debemos colocar solamente aquellas que sean realmente necesarias.
+// El programa completo que tenemos luce de la siguiente manera:
+
+
+class Cubo
+{
+    // Declaramos los datos
+    public int lado;
+    public int area;
+    public int volumen;
+
+    // metodo para calcular el area
+    public void calcularArea()
+    {
+        area = (lado * lado) * 6;
+    }
+
+    // metodo para calcular el volumen
+    public voi calcularVolumen()
+    {
+        volumen = lado * lado * lado;
+    }
+}
+
+
+class Prisma
+{
+    // Declaramos los datos 
+    private int ancho;
+    private int alto;
+    private int espesor;
+    private int area;
+    private int volumen;
+   
+
+   ⭕ Paginas 343
+    // Definimos las propiedades 
+    public int Ancho
+    {
+        get
+        {   
+           return ancho;  
+        }
+        set 
+        {
+            if(value <= 0)
+            {
+                ancho = 1;
+            }
+            else
+            {
+                ancho = value;
+            }
+        }
+    }
+     public int Alto
+    {
+        get
+        {   
+           return alto;  
+        }
+        set 
+        {
+            if(value <= 0)
+            {
+                alto = 1;
+            }
+            else
+            {
+                alto = value;
+            }
+        }
+    }
+
+    public int Espesor
+    {
+        get
+        {   
+           return espesor;  
+        }
+        set 
+        {
+            if(value <= 0)
+            {
+                espesor = 1;
+            }
+            else
+            {
+                espesor = value;
+            }
+        }
+    }
+   
+    ublic int Area
+    {
+        get
+        {   
+           return area;  
+        }
+    }
+
+    ublic int volumen
+    {
+        get
+        {   
+           return area;  
+        }
+    }
+
+// LOS NOMBRES DE LAS PROPIEDADES
+// Las propiedades pueden tener cualquier nombre válido de C#. El nombre de las propiedades
+// debe reflejar de alguna forma el tipo de dato sobre el cual actúa. Si nuestro dato es costo,
+// entonces la propiedad se puede llamar Costo. El dato y la propiedad no pueden tener el mismo
+// nombre, pero recordemos que C# distingue entre mayúsculas y minúsculas
+
+⭕ Paginas 344
+    // Definimos los constructores
+    public Prisma 
+    {
+
+    }
+    
+}
+
+
+
+
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
