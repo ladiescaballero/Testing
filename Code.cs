@@ -2570,6 +2570,14 @@ public override string ToString()
     mensaje += "Area" + area.ToString() + "Volumen" + volumen.ToString();  
 }
 
+// En este ejemplo hacemos uso de la concatenación para poder generar la cadena que
+// el método regresará. Hacemos esto para comparar con el uso de StringBuilder, que se
+
+//⭕ Paginas 337
+
+
+
+
 ___________________________________________________________________________________________________
 //⭕ Paginas 
 //🛑 Paginas 
