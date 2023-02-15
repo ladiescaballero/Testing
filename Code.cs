@@ -2897,12 +2897,63 @@ class Prisma
         {
             // Instanciamos a la clase Cubo
             Cubo miCubo = new Cubo();
+            Cubo tuCubo = new Cubo();
+
+            // Instanciamos el prisma
+            Prisma prisma = new Prisma();
+            //Instanciamos con la version sobrecargada
+            Prisma MiPrisma = new Prisma(3,5,7);
+            // Asignamos el valor del lado
+            miCubo.lado = 5 ;
+            miCubo.lado = 8;
+            //invocamos los metodos
+            miCubo.CalculaArea();
+            miCubo.CalculaVolumen();
+            tuCubo.CalculaArea();
+            tuCubo.CalculaVolumen();
+
+            // Asignamos los valores al prisma
+            // quitar Comentatios para version sin constructor
+            miPrisma.Ancho = 10;
+            miPrisma.Alto  =  3;
+            miPrisma.Espesor = 5;
+
+            // Invocamos los metodos del prisma
+            miPrisma.CalcularArea();
+            miPrisma.CalcularVolumen();
+            miPrisma2.CalcularArea();
+            miPrisma2.CalcularVolumen();
+
+            // Desplegamos los datos
+            Console.WriteLine("Mi cubo Area={0} ,volumen {1}" , miCubo.Area , miCubo.Volumen);
+            Console.WriteLine("Tu cubo Area={0} ,volumen {1}" , tuCubo.Area , tuCubo.Volumen);
+            Console.WriteLine(miPrisma.ToString());
+            miPrisma.ImprimeResultados();
+            Console.WriteLine(miPrisma2.ToString());
         }
     }
+ 
+// Hemos escrito bastante código para el funcionamiento de esta aplicación. Ejecutemos el programa y nuestro resultado es el siguiente
 
-    
+// Figura 8. Cada objeto usa el constructor que le corresponde
 
 
+⭕ Paginas 349
+// Si revisamos el código que hemos presentado en el bloque anterior, podemos darnos cuenta del funcionamiento de las sobrecargas del constructor que hemos agregado, es importante reafirmar la idea que ya explicábamos en en párrafos anteriores, tenemos la posibilidad de agregar cuantas sobrecargas sean necesarias pero siemre debemos tener en cuenta la necesidad de no exagerar.
+// A través de este capítulo hemos analizado la importancia del uso de clases para la generación de nuestros programas, utilizando C#. Con esto hemos visto el inicio de los
+// elementos para programar clases. Aún queda mucho por aprender sobre la programación orientada a objetos y su programación en C#, pero éstos serán temas de un
+// libro más avanzado y especializado en la programación del experto en el lenguaje C#.
+
+RESUMEN
+// La programación orientada a objetos es un paradigma de programación diferente a la
+// programación estructurada. Tenemos que reconocer los objetos que componen el sistema así
+// como la comunicación que tienen entre ellos. La clase es el elemento fundamental de este
+// tipo de programación y actúa como el plano sobre el que los objetos son construidos. Los
+// objetos o las instancias son los que realmente llevan a cabo el trabajo. Los datos y los
+// métodos pueden tener diferentes tipos de acceso: público, privado o protegido. Las
+// propiedades nos sirven como funciones de interfaz para poder acceder a los datos privados de
+// forma segura. Las clases pueden tener un constructor que nos ayuda a inicializar la
+// información. Es posible hacer uso de la sobrecarga en el constructor.
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
