@@ -2606,6 +2606,57 @@ Console.WriteLine(miPrisma.ToString());
 // objeto. La forma como lo utilizamos con las clases es equivalente a la forma como
 // lo utilizamos con las estructuras en el capítulo anterior. El constructor es un método especial y tiene ciertas características que lo distinguen de los demás métodos.
 
+⭕ Paginas 339 
+
+// Su primera característica es que tiene el mismo nombre de la clase y su segunda característica más importante es que no tiene tipo, es decir, que no solamente no regresa nada, sino que no tiene tipo alguno. 
+// El constructor es invocado en forma automática cuando el objeto es instanciado, ya
+// que esto nos da la oportunidad de llevar a cabo cosas en el instante que se instancia el objeto, como por ejemplo, hacer inicializaciones. El constructor puede tener
+// en su interior cualquier código válido de C# y también puede tener parámetros o
+// no. Si utilizamos los parámetros tendremos que pasar los valores necesarios en el
+// momento en el que instanciamos el objeto. 
+// Veamos un ejemplo de constructor para nuestra clase prisma. En este constructor
+// no utilizaremos parámetros, veamos el siguiente ejemplo:
+
+public Prisma()
+{
+    // Datos Necesarios
+    String valor = "";
+
+    // Pedimos los datos
+    Console.WriteLine("Dame el ancho");
+    valor = Console.ReadLine();
+    ancho = Convert.ToInt32(valor);
+
+    Console.WriteLine("Dame el alto");
+    valor = Console.ReadLine();
+    alto = Convert.ToInt32(valor);
+
+    Console.WriteLine("Dame el espesor");
+    valor = Console.ReadLine(valor);
+    espesor = Convert.ToInt32(valor);
+}
+
+// NO HAY QUE CONFUNDIR EL CONSTRUCTOR
+// Mucha gente confunde el constructor y cree erróneamente que es el encargado de construir el
+// objeto. Esto es falso. El constructor no se encarga de instanciar el objeto, sólo se invoca en forma
+// automática en el momento en que el objeto se instancia. No debemos tener esta confusión.
+
+
+⭕ Paginas 340
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ___________________________________________________________________________________________________
