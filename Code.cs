@@ -2644,12 +2644,30 @@ public Prisma()
 
 ⭕ Paginas 340
 
+// Como podemos observar dentro del ejemplo, el constructor tiene acceso de tipo
+// público. Esto es importante, ya que como se invoca automáticamente, el exterior necesitará tener acceso a él.
+// El constructor se encargará de solicitarle al usuario los datos necesarios. Cuando llevemos a cabo la instanciación, será de la siguiente forma
 
+Prisma miPrisma = new Prisma();
+// Si compilamos el programa, obtendremos el siguiente resultado
 
+// CONSTRUCTORES PRIVADOS
+// En las técnicas avanzadas de programación, como por ejemplo la programación de patrones,
+// podemos encontrar constructores privados. Uno de los patrones que lo utilizan se conoce
+// como singleton. Generalmente, haremos uso de constructores públicos hasta que
+// aprendamos este tipo de técnicas avanzadas
 
+⭕ Paginas 341 
 
-
-
+// Sobrecarga del constructor
+// El constructor puede ser sobrecargado, es decir, podemos tener más de una versión
+// del constructor. Esto resulta útil ya que podemos seleccionar cómo se inicializarán
+// los datos del objeto dependiendo del tipo de constructor que utilicemos.
+// El compilador seleccionará automáticamente el tipo de constructor dependiendo
+// de los tipos y la cantidad de parámetros.
+// Ya tenemos un constructor que nos pide directamente los datos, pero ahora podemos hacer un constructor que recibe los valores con los que se inicializará el prisma
+// en el momento de la instanciación. Para esto tenemos que colocar parámetros en la
+// segunda versión del constructor.
 
 
 
