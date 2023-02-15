@@ -2575,9 +2575,40 @@ public override string ToString()
 
 //⭕ Paginas 337
 
+// ha utilizado en el capítulo donde hablamos de las estructuras. La concatenación suele utilizarse para agrupar registros obtenidos de una base de datos. Podemos hacer uso
+// de cualquiera de estos métodos según necesitemos de ellos. La impresión de los contenidos del objeto apoyándonos en este método puede ser de la siguiente forma:
+
+Console.WriteLine(miPrisma.ToString());
+
+// Si lo deseamos, podemos probar a éste en nuestro programa, y ver que obtendremos el resultado de la siguiente figur
+
+// Para imprimir solamente algunos datos
+// Si solamente necesitamos imprimir algunos datos, entonces es necesario crear un
+// método especializado para ello. Este método deberá tener acceso público para
+// que pueda ser invocado desde el exterior, y en el caso de llegar a necesitarlo, puede prepararse el método para recibir parámetros, aunque esto no es necesario.
+// Supongamos que deseamos tener disponible un método que sólo imprima los resultados para el área y el volumen.
+
+⭕ Paginas 338
+
+// El trozo de código para ello, es el que mostramos el el siguiente bloque:
+
+    public void ImprimeResultados()
+    {
+        Console.WriteLine("El area es {0} , El volumen es {1}" , area , volumen);
+    }
+
+// Figura 6. Ahora podemos comparar la impresión
+// con la ayuda de ToString() y del método especializado.
+
+
+// El constructor en las clases
+// El constructor es un método especial que podemos utilizar con las clases. Éste generalmente es usado para inicializar los valores de los datos con los que trabajará el
+// objeto. La forma como lo utilizamos con las clases es equivalente a la forma como
+// lo utilizamos con las estructuras en el capítulo anterior. El constructor es un método especial y tiene ciertas características que lo distinguen de los demás métodos.
 
 
 
 ___________________________________________________________________________________________________
-//⭕ Paginas 
+
+⭕ Paginas 
 //🛑 Paginas 
