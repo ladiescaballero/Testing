@@ -2552,7 +2552,23 @@ private int CalculaRectangulo(int a , int b)
 // embargo, CalculaArea() lo invoca sin problemas ya que pertenece a la misma clase.
 
 
+// Convertir un objeto a cadena
+// Tenemos varias opciones para imprimir la información que guarda un objeto en
+// la consola. La primera consiste en leer la propiedad e imprimir de la forma tradicional. Otra opción puede ser crear un método dentro del objeto que se especialice en la impresión de la información. Esto puede ser útil si deseamos imprimir tan
+// solo uno o algunos datos.
+// La última opción y la que aprenderemos a usar es la de programar el método ToString()
+// para la clase. Esto ya lo hemos hecho en el capítulo anterior para las estructuras. El mecanismo es similar, simplemente tenemos que implementar una versión del método
+// ToString() para nuestra clase. Este método regresa una cadena que contiene la información en el formato que deseamos y tampoco necesita recibir ningún parámetro.
+// Este método se implementa adentro de la clase y cada clase en la aplicación lo puede tener de ser necesario. Entonces, cuando necesitemos imprimir los contenidos
+// del objeto simplemente lo invocaremos e imprimiremos la cadena resultante. El método debe tener acceso público ya que es necesario que el exterior pueda invocarlo.
+// En nuestro caso, el método quedaría de la siguiente manera:
 
+public override string ToString()
+{
+    string mensaje = "";
+    mensaje += "Ancho" +ancho.ToString() + "Alto" + alto.ToString() + "Espesor" + espesor.ToString(); 
+    mensaje += "Area" + area.ToString() + "Volumen" + volumen.ToString();  
+}
 
 ___________________________________________________________________________________________________
 //⭕ Paginas 
