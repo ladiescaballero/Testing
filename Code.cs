@@ -2669,13 +2669,35 @@ Prisma miPrisma = new Prisma();
 // en el momento de la instanciación. Para esto tenemos que colocar parámetros en la
 // segunda versión del constructor.
 
+public Prisma(int pancho , int palto , int pespesor)
+{
+    // Asignamos los valores ..
+    ancho = pancho;
+    alto = palto;
+    espesor = pespesor;
+}
+
+// Cuando instanciemos el objeto con este constructor, lo usaremos así:
+
+Prisma miPrisma = new Prisma(5,3,7);
+
+// Observemos cómo los valores fueron pasados al momento de la instanciación. El
+// valor 5 será colocado en el dato ancho, 3 en el dato alto y 7 en el dato espesor.
+// Si tenemos el dato contenido en una variable, también es posible utilizarla cuando
+// instanciamos el objeto. Solamente debemos asegurarnos de que el tipo de la variable sea el mismo que el tipo del parámetro que colocamos. Si no fueran del mismo
+// tipo, lo recomendable es utilizar type cast. Supongamos que tenemos lo siguiente:
+
+int variableLocal = 12;
+...
+...
+...
+Prisma miPrisma = new Prisma(5,3,variableLocal);
+
+// Como vemos, pasamos una copia del valor de miNumero y ahora en el interior del
+// objeto miPrimsa4 en dato espesor tendrá el valor de 11
 
 
-
-
-
-
-
+⭕ Paginas 342
 
 ___________________________________________________________________________________________________
 
