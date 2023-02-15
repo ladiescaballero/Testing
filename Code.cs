@@ -2568,6 +2568,7 @@ public override string ToString()
     string mensaje = "";
     mensaje += "Ancho" +ancho.ToString() + "Alto" + alto.ToString() + "Espesor" + espesor.ToString(); 
     mensaje += "Area" + area.ToString() + "Volumen" + volumen.ToString();  
+    return mensaje:
 }
 
 // En este ejemplo hacemos uso de la concatenación para poder generar la cadena que
@@ -2820,12 +2821,86 @@ class Prisma
     // Definimos los constructores
     public Prisma 
     {
+        // Datos  necesarios
+        String valor = "";
+        // Pedimos los datos
+        Console.WriteLine("Dame el Ancho");
+        valor = Console.ReadLine();
+        ancho = Convert.ToInt32(valor);
 
+        Console.WriteLine("Dame el alto");
+        valor = Console.ReadLine();
+        alto = Convert.ToInt32(valor);
+
+        Console.WriteLine("Dame el espesor");
+        valor = Console.ReadLine();
+        espesor = Convert.ToInt32(valor);
+    }
+
+
+    // PROBLEMAS CON LAS PROPIEDADES
+    // Tenemos que decidir oportunamente el tipo de acceso que permitirá la propiedad. Si tratamos
+    // de asignarle un valor a una propiedad de sólo lectura, el compilador nos indicará un error. Lo
+    // mismo sucede si tratamos de leer una propiedad de sólo escritura. Por eso lo mejor es planificar
+    // durante la etapa de análisis el acceso que les colocaremos a las propiedades de nuestra clase
+
+    public Prisma(int pancho , int palto , int pespesor)
+    {
+    // Asignamos los valores ..
+        ancho = pancho;
+        alto = palto;
+        espesor = pespesor;
+    }   
+
+    // Definimos los metodos
+⭕ Paginas 346
+    public void CalculaVolumen()
+    {
+        volumen = ancho * alto * espesor;
     }
     
-}
+    public void CalculaArea()
+    {
+        int a1 = 0 , a2 = 0 , a3 = 0;
+        a1 = 2 * CalculaRectangulo(ancho , alto);
+        a2 = 2 * CalculaRectangulo(ancho , espesor);
+        a3 = 2 * CalculaRectangulo(alto , espesor);
+
+        area = a1 + a2 + a3;
+    }
 
 
+    private int CalculaRectangulo(int a , int b)
+    {
+        return = (a * b);
+
+    }
+
+    public override string ToString()
+    {
+    string mensaje = "";
+    mensaje += "Ancho" +ancho.ToString() + "Alto" + alto.ToString() + "Espesor" + espesor.ToString(); 
+    mensaje += "Area" + area.ToString() + "Volumen" + volumen.ToString();  
+    return mensaje:
+    }
+
+    public void ImprimeResultados()
+    {
+        Console.WriteLine("El area es {0} , El volumen es {1}" , area , volumen);
+    }
+    
+⭕ Paginas 347
+
+    class Program
+    {
+        static void Main(String[]args)
+        {
+            // Instanciamos a la clase Cubo
+            Cubo miCubo = new Cubo();
+        }
+    }
+
+    
 
 
 ___________________________________________________________________________________________________
