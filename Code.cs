@@ -2512,6 +2512,47 @@ public int Volumen
 // el objeto con el que queremos trabajar seguido del operador . y el nombre de la propiedad. La asignación se lleva a cabo por medio del operador =.
 // Por ejemplo, si deseamos indicar que el ancho tiene 5 unidades, hacemos lo siguiente:
 
+miPrisma.Ancho = 5 ;
+
+// Y si deseamos imprimir el valor de la propiedad Volumen:
+
+Console.WriteLine("El volumen es {0}" , Volumen);
+
+// Métodos públicos y privados
+// Como mencionamos anteriormente, los métodos pueden ser públicos o privados.
+// Los primeros pueden ser invocados desde el exterior del objeto y los privados solamente desde su interior. Al programar la única diferencia es el tipo de acceso que
+// colocamos. En nuestro ejemplo necesitamos dos métodos públicos para invocar al
+// cálculo del área y el volumen, y un método privado que nos apoyará en el cálculo
+// del área. Veamos cómo programarlos:
+
+public void CalculaVolumen()
+{
+    volumen = ancho *alto *espesor;
+}
+
+public void CalculaArea()
+{
+    int a1 = 0 , a2 = 0 , a3 = 0;
+    a1 = 2 * CalculaRectangulo(ancho , alto);
+    a2 = 2 * CalculaRectangulo(ancho , espesor);
+    a3 = 2 * CalculaRectangulo(alto , espesor);
+
+    area = a1 + a2 + a3;
+}
+
+
+private int CalculaRectangulo(int a , int b)
+{
+   ⭕ Paginas 336
+    return = (a * b);
+
+}
+
+// Los métodos son muy sencillos, lo importante es notar que el método CalculaRectangulo() tiene acceso privado, por lo que nadie del exterior puede invocarlo. Sin
+// embargo, CalculaArea() lo invoca sin problemas ya que pertenece a la misma clase.
+
+
+
 
 ___________________________________________________________________________________________________
 //⭕ Paginas 
