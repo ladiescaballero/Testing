@@ -2980,7 +2980,13 @@ RESUMEN
 // Para resolver esto, tenemos acceso
 // a los archivos y los flujos.
 
-
+// LOS FLUJOS
+// Los flujos también son conocidos como streams por su nombre en inglés. Se los
+// llama de esta forma porque nos recuerdan como fluye el agua, pero en este caso se
+// tratará de flujos de información. El stream es utilizado para poder mover información de un lugar a otro. A veces, moveremos la información de la memoria a otra
+// parte de la memoria, pero generalmente lo que haremos será mover la información
+// de la memoria a un dispositivo de almacenamiento como el disco duro o del dispositivo nuevamente a la memoria.
+// Cuando hacemos uso de los flujos, la información no es enviada en un solo movimiento, sino que se envía byte por byte de forma ordenada. Como el envío es de e
 
 
 
