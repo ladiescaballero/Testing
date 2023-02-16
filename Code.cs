@@ -3232,6 +3232,13 @@ RESUMEN
 // podemos obtener sobre el stream.
 
 ||
+    //Obtenemos la informacion de la cadena
+    capacidad = ms.Capacity;
+    Longitud  = ms.Length;
+    posicion  = ms.Position;
+
+    // Mostramos la informacion 
+    Console.WriteLine("Capacidad {0} , Longitud {1} , Posicion {2}" , capacidad , longitud , posicion);
 
 // Después de obtener la información, simplemente la mostramos en la consola.
 
