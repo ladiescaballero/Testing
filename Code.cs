@@ -3026,28 +3026,35 @@ RESUMEN
 
 ⭕ Paginas 354
 
-Nosotros usaremos la versión en la que podemos indicar el tamaño inicial del arreglo y para instanciar MemoryStream podemos hacerlo de la siguiente manera
+// Nosotros usaremos la versión en la que podemos indicar el tamaño inicial del arreglo y para instanciar MemoryStream podemos hacerlo de la siguiente manera
 
 ||
+// Creamos el Stream en Memory
+// La iniciamos con capacidad de 50 bytes
+   MemoryStream ms = new MemoryStream(50); 
 
-El objeto se llama ms, pero puede tener cualquier nombre válido de C#. El tamaño
-inicial que le asignamos es 50 bytes.
 
-Cómo obtener información sobre el stream
-Nosotros podemos obtener ciertos datos sobre el stream. Estos datos nos pueden
-servir en la lógica de nuestro programa y resulta útil poder conocerlos. Los datos
-que podemos obtener son: la capacidad, la longitud y la posición
+// El objeto se llama ms, pero puede tener cualquier nombre válido de C#. El tamaño
+// inicial que le asignamos es 50 bytes.
 
-Figura 3. En este diagrama podemos observar las tres propiedades del stream.
-La capacidad nos indica cuántos bytes puede almacenar el stream. En el ejemplo anterior es de 50, ya que le hemos colocado ese tamaño en su instanciación. El valor
-de la capacidad se guarda en la propiedad Capacity y ésta es de tipo entero. Si deseamos obtener la capacidad lo podemos hacer de la siguiente forma:
+// Cómo obtener información sobre el stream
+// Nosotros podemos obtener ciertos datos sobre el stream. Estos datos nos pueden
+// servir en la lógica de nuestro programa y resulta útil poder conocerlos. Los datos
+// que podemos obtener son: la capacidad, la longitud y la posición
+
+// Figura 3. En este diagrama podemos observar las tres propiedades del stream.
+// La capacidad nos indica cuántos bytes puede almacenar el stream. En el ejemplo anterior es de 50, ya que le hemos colocado ese tamaño en su instanciación. El valor
+// de la capacidad se guarda en la propiedad Capacity y ésta es de tipo entero. Si deseamos obtener la capacidad lo podemos hacer de la siguiente forma:
 
 ||
+    int capacidad = 0;
 
-Notas : CUIDADO CON EL TAMAÑO
-Los streams en memoria que se inicializan con un arreglo de bytes sin signo no pueden
-modificar su tamaño. Esto hace importante que seleccionemos adecuadamente el tamaño a
-utilizar. Podemos hacer una estimación del tamaño máximo y colocarla en el constructor.
+// Notas : CUIDADO CON EL TAMAÑO
+// Los streams en memoria que se inicializan con un arreglo de bytes sin signo no pueden
+// modificar su tamaño. Esto hace importante que seleccionemos adecuadamente el tamaño a
+// utilizar. Podemos hacer una estimación del tamaño máximo y colocarla en el constructor.
+
+
 
 ___________________________________________________________________________________________________
 
