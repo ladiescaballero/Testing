@@ -3048,6 +3048,9 @@ RESUMEN
 
 ||
     int capacidad = 0;
+    ...
+    ...
+    capacidad = ms.Capacity;
 
 // Notas : CUIDADO CON EL TAMAÑO
 // Los streams en memoria que se inicializan con un arreglo de bytes sin signo no pueden
@@ -3055,20 +3058,27 @@ RESUMEN
 // utilizar. Podemos hacer una estimación del tamaño máximo y colocarla en el constructor.
 
 ⭕ Paginas 355
-
-||
-
+  
 // El siguiente dato que podemos obtener es la longitud. Ésta nos indica el tamaño
 // de la información actual que tiene el stream. El tamaño está dado en bytes. La propiedad relacionada con esta información es Length. Esta propiedad es de tipo long.
 // A continuación veamos un ejemplo de cómo podemos obtener este dato:
 
 ||
+    long longitud = 0;
+    ...
+    ...
+    longitud = ms.Length;
+
 
 // Por último tenemos la posición. Este dato es sumamente importante ya que nos indica el lugar donde se encuentra el byte actual, es decir el siguiente a ser procesado.
 // Esta posición está referenciada con relación al inicio del stream. La propiedad para
 // este dato se llama Position y al igual que la anterior también es de tipo long. La forma de obtener estos datos es similar a las anteriores
 
 ||
+    long posicion = 0;
+    ...
+    ...
+    posicion = ms.Position;
 
 // Cómo colocar la posición en el stream
 // Una de las actividades más importantes y frecuentes que realizaremos con los streams es colocar la posición actual en un sitio determinado. Para esto hacemos uso de
