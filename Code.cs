@@ -3206,28 +3206,34 @@ RESUMEN
 ⭕ Paginas 359
 
 ||
+    long longitud = 0;
+    long posicion = 0;
+    byte buffer = new byte[50];
 
+// En primer lugar tenemos un objeto llamado ms que es de tipo MemoryStream y que
+// puede guardar hasta 50 bytes en su interior. Luego creamos la cadena que utilizaremos para guardar la frase escrita por el usuario. Como experimentaremos con el
+// stream creamos tres variables. Cada una de ellas se usa para guardar la capacidad,
+// la longitud y la posición, respectivamente. Al final creamos un arreglo de bytes llamado buffer y de tamaño 50.
+// Pedir los datos será de la forma usual y no necesitamos explicarlo en este momento.
 
-En primer lugar tenemos un objeto llamado ms que es de tipo MemoryStream y que
-puede guardar hasta 50 bytes en su interior. Luego creamos la cadena que utilizaremos para guardar la frase escrita por el usuario. Como experimentaremos con el
-stream creamos tres variables. Cada una de ellas se usa para guardar la capacidad,
-la longitud y la posición, respectivamente. Al final creamos un arreglo de bytes llamado buffer y de tamaño 50.
-Pedir los datos será de la forma usual y no necesitamos explicarlo en este momento.
+||
+    // El usuarios de los datos
+    Console.WriteLine("Dame la cadena para el flujo");
+    informacion = Console.ReadLine();
+
+// Ahora que ya tenemos una cadena, podemos escribirla adentro del stream.
+
+||
+    ms.Write(ASCIIEncoding.ASCII.GetBytes(informacion),0,informacion.Length);
+
+// Lo primero que hacemos es obtener los bytes de la cadena, pero éstos estarán codificados como ASCII. Luego indicamos que escribiremos en el stream desde su
+// inicio. Por último, indicamos la cantidad de bytes a escribir, que lo obtenemos
+// por medio de la longitud de la cadena. Ahora mostraremos la información que
+// podemos obtener sobre el stream.
 
 ||
 
-Ahora que ya tenemos una cadena, podemos escribirla adentro del stream.
-
-||
-
-Lo primero que hacemos es obtener los bytes de la cadena, pero éstos estarán codificados como ASCII. Luego indicamos que escribiremos en el stream desde su
-inicio. Por último, indicamos la cantidad de bytes a escribir, que lo obtenemos
-por medio de la longitud de la cadena. Ahora mostraremos la información que
-podemos obtener sobre el stream.
-
-||
-
-Después de obtener la información, simplemente la mostramos en la consola.
+// Después de obtener la información, simplemente la mostramos en la consola.
 
 
 ___________________________________________________________________________________________________
