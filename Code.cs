@@ -2954,6 +2954,47 @@ RESUMEN
 // propiedades nos sirven como funciones de interfaz para poder acceder a los datos privados de
 // forma segura. Las clases pueden tener un constructor que nos ayuda a inicializar la
 // información. Es posible hacer uso de la sobrecarga en el constructor.
+
+
+⭕ Paginas 351
+
+// Flujos y
+// archivos
+// Los flujos 350
+// Los stream en la memoria 351
+// El uso de archivos 363
+// Resumen 371
+// Actividades 372
+// Capítulo 11
+// A lo largo del libro hemos realizado
+// muchos programas, y cada vez que usamos
+// un programa, debemos introducirle
+// información. Esto no ha sido un gran
+// problema en los ejemplos realizados hasta
+// aquí, porque generalmente manipulamos
+// pocos datos. Sin embargo, en muchas
+// aplicaciones reales necesitaremos tener
+// alguna metodología para poder guardar
+// la información y recuperarla cuando
+// la aplicación se ejecute nuevamente.
+// Para resolver esto, tenemos acceso
+// a los archivos y los flujos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
