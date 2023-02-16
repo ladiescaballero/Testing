@@ -2986,20 +2986,68 @@ RESUMEN
 // tratará de flujos de información. El stream es utilizado para poder mover información de un lugar a otro. A veces, moveremos la información de la memoria a otra
 // parte de la memoria, pero generalmente lo que haremos será mover la información
 // de la memoria a un dispositivo de almacenamiento como el disco duro o del dispositivo nuevamente a la memoria.
-// Cuando hacemos uso de los flujos, la información no es enviada en un solo movimiento, sino que se envía byte por byte de forma ordenada. Como el envío es de e
+// Cuando hacemos uso de los flujos, la información no es enviada en un solo movimiento, sino que se envía byte por byte de forma ordenada. Como el envío es de esta forma, tenemos que tener cuidado sobre qué byte procesamos en ese momento
+// Para poder tener control sobre el byte a enviar, imaginaremos que tenemos un apuntador o indicador en nuestro flujo. Este indicador siempre nos señala cuál es el siguiente byte a enviar. Cada vez que enviamos un byte a su nuevo lugar por medio
+// del flujo, el indicador se actualiza y nos señala el siguiente byte. Esta forma de trabajo funciona muy bien si el envío de datos es secuencial, pero también debemos
+// tener un mecanismo que nos permita seleccionar a nosotros mismos el byte a enviar. Para hacer esto tenemos que indicar de alguna manera el byte y esto solamente lo podemos llevar a cabo si tenemos un punto de referencia dentro del flujo.
+// En el flujo encontramos tres puntos de referencia. El primero es el inicio del flujo.
+// Si queremos colocarnos en un byte en particular para enviar, simplemente tenemos
+// que decir a cuántos bytes de distancia desde el inicio se encuentra el byte que deseamos procesar. El segundo punto de referencia será el final del flujo. De manera
+// similar tenemos que decir a cuántos bytes de distancia se encuentra el byte a procesar desde el final del flujo. El tercer punto de referencia es la posición actual dentro del flujo, de igual forma a los casos anteriores, debemos dar la distancia desde
+// nuestra posición actual al byte que nos interesa procesar. En todos los casos, este
+// byte se volverá nuestro nuevo byte actual.
+
+// Figura 2. Aquí vemos cómo un mismo byte
+// del stream puede estar referenciado de formas diferentes
+// Los stream en la memoria
+// Empecemos a trabajar con el stream. Éste simplemente llevará la información de un
+// lugar a otro. La forma más sencilla de aprenderlo es haciendo streams en memoria.
+// Aquí veremos las operaciones básicas que podemos realizar con ellos y después este
+// conocimiento puede ser llevado a streams que se comuniquen con dispositivos de
+// almacenamiento masivo como discos duros.
+// Para trabajar con streams en la memoria nos apoyaremos de una clase conocida como MemoryStream. Cuando necesitemos usar esta clase debemos agregar el namespace al que pertenece. Para esto colocamos el siguiente código en la parte superior
+// de nuestro programa, antes de las declaraciones de las clases.
+
+|| // Adicionamos para el uso de Stream
+   using System.IO 
 
 
 
+// Esta clase crea un stream, pero el lugar donde guarda la información es un sitio en
+// memoria. La información es guardada como un arreglo de bytes sin signo. La clase MemoryStream tiene sobrecargado su constructor y seguramente podemos encontrar una versión de acuerdo con nuestras necesidades.El constructor puede crear el arreglo en la memoria vacío o puede inicializarlo a un tamaño en particular.
+// Hay que recordar que el tamaño está en bytes.
+
+// Notas: DISTANCIAS EN LOS FLUJOS
+// Como hemos visto, para seleccionar un byte dentro del flujo debemos indicar su distancia desde
+// el punto de referencia. Si es el mismo punto de referencia el que deseamos enviar, la distancia
+// será cero. Las distancias se miden de izquierda a derecha, y negativas de derecha a izquierda.
+// Por ello cuando usamos como referencia el final del flujo las distancias llevan el signo menos.
 
 
+⭕ Paginas 354
 
+Nosotros usaremos la versión en la que podemos indicar el tamaño inicial del arreglo y para instanciar MemoryStream podemos hacerlo de la siguiente manera
 
+||
 
+El objeto se llama ms, pero puede tener cualquier nombre válido de C#. El tamaño
+inicial que le asignamos es 50 bytes.
 
+Cómo obtener información sobre el stream
+Nosotros podemos obtener ciertos datos sobre el stream. Estos datos nos pueden
+servir en la lógica de nuestro programa y resulta útil poder conocerlos. Los datos
+que podemos obtener son: la capacidad, la longitud y la posición
 
+Figura 3. En este diagrama podemos observar las tres propiedades del stream.
+La capacidad nos indica cuántos bytes puede almacenar el stream. En el ejemplo anterior es de 50, ya que le hemos colocado ese tamaño en su instanciación. El valor
+de la capacidad se guarda en la propiedad Capacity y ésta es de tipo entero. Si deseamos obtener la capacidad lo podemos hacer de la siguiente forma:
 
+||
 
-
+Notas : CUIDADO CON EL TAMAÑO
+Los streams en memoria que se inicializan con un arreglo de bytes sin signo no pueden
+modificar su tamaño. Esto hace importante que seleccionemos adecuadamente el tamaño a
+utilizar. Podemos hacer una estimación del tamaño máximo y colocarla en el constructor.
 
 ___________________________________________________________________________________________________
 

@@ -10,6 +10,8 @@ https://taverasmisael.com/blog/extensiones-y-temas-para-personalizar-vscode
 🎈 Para Seleccionar una fila Ctrl + L
 🎈 Moverse con el cursor  Ctrl + Flecha Arriba , Abajo
 🎈 Mover o Cambiar de lugar una linea de Codigo Alt + Flecha Arriba , Abajo
+🎈 Para Remplazar una palabra o Texto que no deseamos. Marcar con el Mouse , Ctrl + H--Remplazar Vacio
+
 
 
 
