@@ -3054,6 +3054,33 @@ RESUMEN
 // modificar su tamaño. Esto hace importante que seleccionemos adecuadamente el tamaño a
 // utilizar. Podemos hacer una estimación del tamaño máximo y colocarla en el constructor.
 
+⭕ Paginas 355
+
+||
+
+// El siguiente dato que podemos obtener es la longitud. Ésta nos indica el tamaño
+// de la información actual que tiene el stream. El tamaño está dado en bytes. La propiedad relacionada con esta información es Length. Esta propiedad es de tipo long.
+// A continuación veamos un ejemplo de cómo podemos obtener este dato:
+
+||
+
+// Por último tenemos la posición. Este dato es sumamente importante ya que nos indica el lugar donde se encuentra el byte actual, es decir el siguiente a ser procesado.
+// Esta posición está referenciada con relación al inicio del stream. La propiedad para
+// este dato se llama Position y al igual que la anterior también es de tipo long. La forma de obtener estos datos es similar a las anteriores
+
+||
+
+// Cómo colocar la posición en el stream
+// Una de las actividades más importantes y frecuentes que realizaremos con los streams es colocar la posición actual en un sitio determinado. Para esto hacemos uso de
+// un método conocido como Seek(). Éste necesita dos parámetros. El primero es la
+// distancia desde el punto de referencia donde quedará la nueva posición actual en el
+// stream. El segundo indica el punto de referencia que utilizaremos.
+// El punto de referencia tiene que ser de tipo SeekOrigin. Este tipo tiene tres valores posibles: Begin, Current y End. El valor Begin es usado para indicar que estamos referenciados con relación al origen del stream. Cuando se utiliza el valor
+// Current nuestra posición actual será usada como punto de referencia. Si usamos
+// End, la parte final del stream será el punto de referencia para encontrar nuestra
+// nueva posición. Por ejemplo, si deseamos colocarnos en el inicio del stream, podemos hacerlo de la siguiente manera:
+
+⭕ Paginas 356
 
 
 ___________________________________________________________________________________________________
