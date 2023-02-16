@@ -3092,6 +3092,77 @@ RESUMEN
 
 ⭕ Paginas 356
 
+||
+    ms.Seek(0 , SeekOrigin.Begin); // nos colocamos a 0 distacia desde el inicio
+
+// En este caso, indicamos que nos encontramos a 0 distancia desde el inicio del stream. Si lo que deseamos es encontrarnos a 10 bytes de distancia desde el inicio, la
+// forma de usar Seek() es la siguiente:
+
+|| 
+    ms.Seek(10 , SeekOrigin.Begin);
+
+// Pero también podemos colocarnos desde otro punto de referencia. Por ejemplo, para colocarnos a 10 bytes de distancia desde el final del stream usarem
+
+||  
+    ms.Seek(-10 , SeekOrigin.End);
+    
+// Hay que observar que el valor usado es -10, ya que, como vimos anteriormente,
+// en la plaqueta de la página 251, las distancias que se miden hacia la izquierda del
+// punto de referencia son negativas.
+// Por último, si lo que deseamos es movernos con relación a nuestra posición actual,
+// por ejemplo avanzar 5 bytes, lo que usaremos es:
+
+||
+    ms.Seek(5 , SeekOrigin.Current);
+
+// Y si lo que deseamos es retroceder 10 bytes desde nuestra posición actual, usaremos
+// el código que veremos a continuación:
+
+||
+    ms.Seek(-10 , SeekOrigin.Current);
+
+
+// PROBLEMAS CON EL USO DE SEEK()
+// Si no utilizamos correctamente el método Seek(), tendremos problemas con nuestro programa.
+// Un problema común es tratar de colocar una posición actual que está antes del punto de inicio o
+// después del final del stream. Debemos tener lógica para evitar estas acciones, y para lograrlo,
+// tenemos que hacer uso de las propiedades del stream como posición, longitud y capacidad
+
+
+⭕ Paginas 357
+
+
+// Cómo leer datos del stream
+// Ahora que ya nos hemos posicionado en algún lugar en particular del stream, podemos proceder a leer información, que se lee byte por byte. Cuando hacemos una
+// lectura, el byte que se lee es el que se encuentra en la posición actual. Inmediatamente después de leer, la posición actual se actualiza y nuestra nueva posición actual será
+// la del byte consecutivo al que acabamos de leer. Esta lectura se lleva a cabo de forma
+// automática y nosotros no la controlamos.
+// Para realizar la lectura podemos usar el método Read(). Este método necesita tres
+// parámetros. El primero es un arreglo de bytes. Este arreglo es necesario porque será el lugar donde se guarde la información leída por el stream. El segundo nos da la
+// capacidad de colocar un offset para el arreglo de bytes. Generalmente usaremos el
+// valor cero en este parámetro, ya que queremos que la información leída se coloque
+// desde el inicio en el arreglo. El tercero es la cantidad de bytes a leer.
+// El arreglo de bytes para guardar la información es colocado de la siguiente manera:
+
+||
+
+// En este caso lo llamamos búfer y tendrá capacidad para 50 bytes.
+// Supongamos que deseamos leer cinco bytes a partir de la posición actual donde nos
+// encontramos. Para ello hacemos uso de Read() de la siguiente manera:
+
+||
+
+// Después de ejecutarse esta línea, buffer contendrá los cinco bytes leídos y los podemos encontrar al inicio de buffer.
+// Cómo escribir información el stream
+// No solamente es posible leer información del stream, también podemos agregarla o
+// escribirla. Para esto tendremos un método especializado que se llama Write(). Para
+
+
+// EVITAR ERRORES CON LA LECTURA
+// Es posible tener problemas con la lectura de un stream, como el olvidar crear el búfer. Otro
+// problema es tratar de leer de un stream que ya se cerró o no ha sido abierto. Un error menos
+// frecuente es dar un valor negativo en el segundo o tercer parámetro. Si los valores se controlan por
+// variables debemos colocar una lógica que impida poner valores inválidos en los parámetros.
 
 ___________________________________________________________________________________________________
 
