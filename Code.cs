@@ -3175,6 +3175,8 @@ RESUMEN
 // Un ejemplo práctico de esto es el siguiente:
 
 ||
+    //Escribimos los datos en la cadena
+    ms.Write(miBuffer ,0 ,15);
 
 // Cómo cerrar el stream
 // Algo que no debemos olvidar hacer es cerrar el stream. Cuando éste está cerrado,
@@ -3183,6 +3185,7 @@ RESUMEN
 // de utilizar el método se muestra a continuación:
 
 ||
+    ms.Close();
 
 // Programa de ejemplo
 // Ahora podemos crear un pequeño programa de ejemplo que utilice lo que hemos
@@ -3192,9 +3195,39 @@ RESUMEN
 // Como siempre, tenemos que empezar por definir las variables que son necesarias.
 
 ||
+    // Creamos el Stream En memory
+    // La Iniciamos con una capacidad de 50 bytes
+    MemoryStream ms = new MemoryStream(50);
+    // Cadena Con Informacion 
+    String informacion = "";
+    // Variables Necesarias
+    int capacidad = 0;
+
+⭕ Paginas 359
+
+||
 
 
+En primer lugar tenemos un objeto llamado ms que es de tipo MemoryStream y que
+puede guardar hasta 50 bytes en su interior. Luego creamos la cadena que utilizaremos para guardar la frase escrita por el usuario. Como experimentaremos con el
+stream creamos tres variables. Cada una de ellas se usa para guardar la capacidad,
+la longitud y la posición, respectivamente. Al final creamos un arreglo de bytes llamado buffer y de tamaño 50.
+Pedir los datos será de la forma usual y no necesitamos explicarlo en este momento.
 
+||
+
+Ahora que ya tenemos una cadena, podemos escribirla adentro del stream.
+
+||
+
+Lo primero que hacemos es obtener los bytes de la cadena, pero éstos estarán codificados como ASCII. Luego indicamos que escribiremos en el stream desde su
+inicio. Por último, indicamos la cantidad de bytes a escribir, que lo obtenemos
+por medio de la longitud de la cadena. Ahora mostraremos la información que
+podemos obtener sobre el stream.
+
+||
+
+Después de obtener la información, simplemente la mostramos en la consola.
 
 
 ___________________________________________________________________________________________________
