@@ -3145,12 +3145,14 @@ RESUMEN
 // El arreglo de bytes para guardar la información es colocado de la siguiente manera:
 
 ||
+    byte[] buffer = new byte[50];
 
 // En este caso lo llamamos búfer y tendrá capacidad para 50 bytes.
 // Supongamos que deseamos leer cinco bytes a partir de la posición actual donde nos
 // encontramos. Para ello hacemos uso de Read() de la siguiente manera:
 
 ||
+    ms.Read(buffer , 0 , 5);
 
 // Después de ejecutarse esta línea, buffer contendrá los cinco bytes leídos y los podemos encontrar al inicio de buffer.
 // Cómo escribir información el stream
@@ -3163,6 +3165,37 @@ RESUMEN
 // problema es tratar de leer de un stream que ya se cerró o no ha sido abierto. Un error menos
 // frecuente es dar un valor negativo en el segundo o tercer parámetro. Si los valores se controlan por
 // variables debemos colocar una lógica que impida poner valores inválidos en los parámetros.
+
+⭕ Paginas 358
+
+// el uso de este método utilizaremos tres parámetros. En el primer parámetro tenemos que colocar el búfer o el arreglo de bytes desde el que tomaremos la información para colocarla en el stream. El segundo parámetro es la posición en el stream
+// desde donde empezaremos a escribir. Generalmente utilizaremos el valor de cero, y
+// de esta forma empezará a escribirse desde el inicio del stream. El último parámetro
+// es la cantidad máxima de bytes que se escribirán.
+// Un ejemplo práctico de esto es el siguiente:
+
+||
+
+// Cómo cerrar el stream
+// Algo que no debemos olvidar hacer es cerrar el stream. Cuando éste está cerrado,
+// los recursos que se hayan necesitado se liberan. Si el stream está cerrado no es posible llevar a cabo ningún tipo de operación sobre él. El cierre del stream se lleva a
+// cabo por medio del método Close(), que no necesita ningún parámetro. La forma
+// de utilizar el método se muestra a continuación:
+
+||
+
+// Programa de ejemplo
+// Ahora podemos crear un pequeño programa de ejemplo que utilice lo que hemos
+// realizado con los streams. El programa será sencillo, ya que únicamente nos interesa conocer y experimentar con el código. Nuestro programa le pedirá al usuario una
+// cadena que será colocada en el stream y luego podremos leer diferentes partes del
+// stream con los métodos que hemos aprendido.
+// Como siempre, tenemos que empezar por definir las variables que son necesarias.
+
+||
+
+
+
+
 
 ___________________________________________________________________________________________________
 
