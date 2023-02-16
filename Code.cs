@@ -3243,6 +3243,50 @@ RESUMEN
 // Después de obtener la información, simplemente la mostramos en la consola.
 
 
+⭕ Paginas 360 
+
+// Figura 4. El programa ya tiene el stream y hemos obtenido su información
+
+// Ahora podemos empezar a experimentar con stream. Nos colocaremos en diferentes posiciones y leeremos información desde ahí. Empecemos por lo más sencillo.
+// Leeremos los primeros cinco bytes que se encuentran en el stream.
+
+||
+    // Colocamos y leemos datos basandonos en el inicio
+    ms.Seek(0 , SeekOrigin.Begin); // nos colocamos a 0 distancia desde el inicio
+    ms.Read(buffer , 0 , 5); // Desde donde nos encontramos , 5 caracteres    
+    // Mostramos la informacion 
+    Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
+
+
+// Lo primero que hacemos es usar el método Seek(). Con este método decimos que
+// queremos encontrarnos a distancia cero desde el inicio del stream. Evidentemente
+// ésta es la primera posición disponible. Como nuestra posición actual ya está definida, procedemos a hacer uso del método Read(). En este caso leemos cinco bytes desde donde nos encontramos. Los bytes leídos desde el stream ahora se encuentran
+// guardados en el arreglo de bytes que llamamos búfer.
+
+⭕ Paginas 361
+
+// Para mostrar lo que acabamos de obtener usamos el método WriteLine(), y como
+// solamente tenemos una colección de bytes, debemos codificarlas adecuadamente con
+// GetString(). La codificación que deseamos es ASCII. En la consola aparecen los primeros cinco caracteres de la frase que escribimos.
+
+// Figura 5. Podemos observar que los primeros cinco caracteres son mostrados.
+
+// En el código que veremos a continuación, haremos una prueba, realizando otra
+// lectura en una posición diferente.
+
+||
+    ms.Seek(0 , SeekOrigin.Begin); 
+    ms.Read(buffer , 0 , 5);  
+    Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
+
+// En este caso, por medio del método Seek() nos posicionamos a 10 bytes de distancia desde que es iniciado el stream. Nuevamente procedemos a leer cinco bytes desde esa posición que serán colocados en el buffer. Para poder comprobar que esto es
+// óptimo y que funciona en forma adecuada lo mostramos en la consola.
+
+
+
+
+
+
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
