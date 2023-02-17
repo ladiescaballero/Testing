@@ -3332,16 +3332,26 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // Simplemente obtenemos nuestra posición actual y la mostramos en la consola. Esto lo podemos hacer en cada operación y verificar cómo se altera la posición actual.
 // Desde nuestra nueva posición actual podemos continuar leyendo.
 
-|| Lectura relativa desde la posicion actual
+|| 
+//Lectura relativa desde la posicion actual
 ms.Read(buffer , 0 , 5 ); // Desde nos encontramos , 5 Caracteres
 Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
    
 // Ahora no hemos utilizado el método Seek() ya que deseamos continuar leyendo desde donde nos encontramos.
 // Por último, no debemos olvidar cerrar el stream.
 
+// Cerremos el Flujo no Olvidar
+   ms.Close();
+
 // A continuación, ejecutemos el programa para ver su funcionamiento:
 
 // Figura 8. Esta figura nos muestra la ejecución completa del programa.
+
+
+⭕ Paginas 365
+
+
+
 
 ___________________________________________________________________________________________________
 
