@@ -3283,6 +3283,48 @@ RESUMEN
 // óptimo y que funciona en forma adecuada lo mostramos en la consola.
 
 
+⭕ Paginas 362
+
+// Figura 6. En este caso podemos observar
+// los bytes leídos desde la posición donde nos encontramos.
+
+// Pero sabemos que no solamente podemos utilizar el inicio del stream como referencia para indicar la posición actual. Ahora realizaremos otra prueba con el final
+// del stream como punto de referencia.
+
+// Lectura Relativa al final del flujo
+ms.Seek(-10, SeekOrigin.End) // Nos Colocamos a 10 de distancia desde el final
+ms.Read(buffer , 0 , 5); Desde nos encontramos a 5 caracteres
+Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
+
+
+// Para este ejemplo usamos nuevamente el método Seek(), pero con la diferencia que
+// ahora indicaremos que el punto de referencia es el final del stream. Nuestra nueva
+// posición actual se encontrará a una distancia de diez bytes desde el final del stream.
+// Por esta razón, vamos a colocar el valor -10 en el primer parámetro. Ya colocados
+// en esta distancia simplemente procedemos a leer sólo cinco bytes. Al final de la lectura mostramos lo que hemos obtenido en la consola
+
+
+⭕ Paginas 363
+
+
+// Figura 7. Ahora observamos los bytes
+// leídos con referencia al punto final del stream
+
+// Debemos recordar que cuando se lleva a cabo una lectura o escritura en el stream, la posición actual se modifica. La última posición colocada explícitamente
+// se encontraba a diez bytes del final del stream, pero después de la lectura se ha
+// modificado en cinco bytes.
+// Comprobemos esto de forma sencilla:
+
+||
+
+
+// PARA EVITAR PROBLEMAS CON LOS STREAM
+// Un problema con el que nos podemos encontrar cuando empezamos a utilizar los streams es
+// olvidar indicar el namespace necesario. Coloquemos la siguiente línea en la parte superior de
+// nuestro código: using System.IO;. Si no lo hacemos, el programa no podrá reconocer las clases
+// y los métodos relacionados con los stream y tendremos problemas de compilación.
+
+
 
 
 
