@@ -3316,7 +3316,9 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // Comprobemos esto de forma sencilla:
 
 ||
-
+    //Obtenemos nuestra Posicion Actual 
+    posicion = ms.Position;
+    Console.WriteLine("la Posicion Es {0}" , posicion);
 
 // PARA EVITAR PROBLEMAS CON LOS STREAM
 // Un problema con el que nos podemos encontrar cuando empezamos a utilizar los streams es
@@ -3325,9 +3327,21 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // y los métodos relacionados con los stream y tendremos problemas de compilación.
 
 
+⭕ Paginas 364
 
+// Simplemente obtenemos nuestra posición actual y la mostramos en la consola. Esto lo podemos hacer en cada operación y verificar cómo se altera la posición actual.
+// Desde nuestra nueva posición actual podemos continuar leyendo.
 
+|| Lectura relativa desde la posicion actual
+ms.Read(buffer , 0 , 5 ); // Desde nos encontramos , 5 Caracteres
+Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
+   
+// Ahora no hemos utilizado el método Seek() ya que deseamos continuar leyendo desde donde nos encontramos.
+// Por último, no debemos olvidar cerrar el stream.
 
+// A continuación, ejecutemos el programa para ver su funcionamiento:
+
+// Figura 8. Esta figura nos muestra la ejecución completa del programa.
 
 ___________________________________________________________________________________________________
 
