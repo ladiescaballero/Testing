@@ -3350,10 +3350,38 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 
 ⭕ Paginas 365
 
+// El uso de archivos
+// Como hemos aprendido, los streams no solamente funcionan en la memoria, sino
+// que también nos pueden servir para mover información de la memoria a un dispositivo de almacenamiento masivo. Este dispositivo generalmente será el disco duro. 
+// Nosotros podemos crear, escribir y leer archivos en el disco duro apoyándonos en
+// los streams. En esta sección del libro haremos dos programas, uno que escriba datos en el disco, y otro que los lea y los presente en la consola.
+// Todas las operaciones que hemos aprendido para los streams serán válidas y veremos que es sencillo llevar esto a cabo
 
+// Cómo crear un stream a archivo
+// Lo primero que tenemos que hacer es crear un stream a archivo. En lugar de crear
+// el stream en la memoria, éste utilizará un medio de almacenamiento masivo. Para
+// poder llevar a cabo esto, necesitamos utilizar la clase FileStream. Esta clase nos provee de toda la funcionalidad que necesitamos.
+// El constructor de esta clase necesita dos parámetros. El primero tiene que ser una
+// cadena que contenga el nombre del archivo con el que trabajaremos. Es útil que el
+// nombre del archivo también tenga su extensión.
+// El segundo parámetro es más interesante. En este parámetro colocaremos el modo
+// del archivo, que indica cómo funcionará y se manipulará el archivo. El valor colocado debe ser del tipo de la enumeración FileMode. Los valores posibles son: Append,
+// Create, CreateNew, Open, OpenOrCreate, Truncate.
+// Es importante conocer lo que significa cada uno de estos modos, por lo que lo comentaremos aquí. El modo Create nos permite crear un nuevo archivo. En caso de
+// que el archivo ya existiera, simplemente se sobrescribe. El modo CreateNew también
+// nos permite crear un archivo, pero si el archivo ya existe, se produce una excepción.
+// Las excepciones y su manejo lo veremos en un capítulo posterior.
+// El modo Open nos permite abrir un archivo. Si el archivo que intentamos abrir no
+// existe, entonces se produce una excepción. En el modo OpenOrCreate si el archivo
+// existe, se abre, pero en el caso de que el archivo no exista, se crea. 
+// En el modo Append, si el archivo existe será abiero, y la posición actual será colocada al final del archivo, de forma tal que cualquier información escrita, sea
 
-
-___________________________________________________________________________________________________
+// COLOCAR EL NOMBRE DEL ARCHIVO
+// El nombre del archivo no necesariamente necesita ser colocado explícitamente. Podemos usar
+// una variable de tipo cadena para contenerlo. También es posible colocar toda la ruta al archivo
+// en este nombre. Si no colocamos la ruta del archivo, éste será creado en el mismo directorio que
+// el ejecutable de nuestra aplicación.
+// ___________________________________________________________________________________________________
 
 ⭕ Paginas 
 //🛑 Paginas 
