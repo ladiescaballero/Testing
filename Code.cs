@@ -3392,8 +3392,8 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // 0 bytes. Por ejemplo, podemos crear un stream a disco en modo de creación, como
 // podemos ver en el código a continuación: 
 
-
-||
+|| 
+    FileStream fs = new FileStream("MiTexto.txt" , FileMode.Create);
 
 // El archivo a crear se llama miTexto.txt y será creado en el mismo directorio que el
 // ejecutable de nuestra aplicación. El nombre del stream es fs y ya podemos llevar a
@@ -3405,6 +3405,8 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // ellas la de escritura. Para escribir el archivo usaremos el método Write(), que pertenece al stream. Por ejemplo, si deseamos escribir una cadena al archivo, podemos hacerlo de la siguiente forma
 
 ||
+    // Escribimos al Stream la cadena Capturada.
+       fs.Write(ASCIIEncoding.ASCII.GetBytes(cadena) , 0 , cadena.Length): 
 
 // El método necesita tres parámetros, el primer parámetro es el arreglo de bytes que
 // escribiremos, el segundo es la posición a partir de donde empezaremos a escribir con
@@ -3421,6 +3423,28 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // El cierre del archivo es muy sencillo ya que únicamente debemos cerrar el stream.
 // Sabemos que esto lo realizamos por medio del método Close().
 
+
+⭕ Paginas 367
+
+|| 
+
+
+Ejemplo de un programa para escribir cadenas a disco
+Ahora que ya conocemos los elementos necesarios para utilizar los streams a disco,
+podemos hacer un ejemplo sencillo. Haremos un programa que le preguntará al
+usuario cadenas, y cada una de éstas serán escritas a disco. Cuando el usuario dé
+una cadena vacía, es decir un return, el archivo se cerrará y se terminará la aplicación. Luego podremos utilizar un programa, como el Bloc de Notas, para poder
+leer el archivo que creamos.
+Empecemos por definir las variables necesarias y crear el archivo:
+
+||
+
+Luego, podemos hacer uso de un ciclo do while, que se repetirá constantemente hasta que el usuario dé una cadena vacía. En el interior del ciclo llevaremos a cabo la
+petición de la cadena y la escritura de ésta a disco.
+
+||
+
+Para finalizar simplemente cerramos el archivo
 
 ___________________________________________________________________________________________________
 
