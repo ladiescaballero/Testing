@@ -3481,12 +3481,41 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
       } while(cadena !=""); 
        // Cerramos el stream
        fs.Close();  
-        
-
-
     }
 
+⭕ Paginas 369
 
+// Una vez escrito el programa, sólo nos queda compilar a ambos y ejecutarlos.
+// Es posible escribir varias cadenas y luego simplemente presionar la tecla ENTER
+// para finalizar. Toda la información que se ha escrito en el programa será almacenada en el archivo. Luego con el Bloc de Notas podemos abrir el archivo y ver que
+// efectivamente se encuentra la información que escribimos. 
+
+// Figura 9. En el programa hemos escrito
+// las frases y se han guardado en el archivo.
+
+// CÓMO ENCONTRAR NUESTRO ARCHIVO
+// Dentro de la carpeta que contiene nuestro proyecto o solución creado, debemos buscar otra
+// carpeta con el mismo nombre. En su interior ésta última debe haber otra carpeta con el nombre
+// bin. En ésta se encuentran dos carpetas, Debug y Release. En el interior de alguna de ellas estará
+// el archivo creado por nuestro programa.
+
+⭕ Paginas 370
+
+// Figura 10. Con el bloc de notas podemos
+// verificar que la información ha sido escrita.
+
+// Cómo hacer una aplicación que lee archivos
+// Como ya tenemos el código para escribir información a un archivo, ahora sería bueno poder tener una aplicación que lea esa información. El proceso es sencillo ya que
+// conocemos los streams. Básicamente, lo que tenemos que llevar a cabo es la apertura
+// de un stream a archivo y luego proceder a leer los contenidos. Debemos recordar que
+// estamos leyendo bytes, por lo que es necesario procesarlos o convertirlos a un tipo adecuado para nuestro programa. En el programa anterior usamos cadenas ya que ahora
+// los bytes leídos serán colocados en una cadena. Desde luego, cuando hemos finalizado con la lectura debemos cerrar el stream del archivo. Para crear esta aplicación empecemos por definir un arreglo de bytes. La finalidad de este arreglo de bytes es recibir la información que proviene del archivo vía el stream. El tamaño del arreglo debe
+// ser lo suficientemente grande para contener la cantidad de información. Otra opción
+// es leer el stream en grupos de bytes del mismo tamaño que nuestro arreglo, pero esto
+// requiere de lógica extra que controle el proceso. Con fines de experimentación, colocaremos el tamaño del arreglo en 100 bytes ya que en nuestro programa anterior no
+// hemos colocado cadenas muy grandes. El arreglo queda de la siguiente forma:
+
+// Variables necesarias
 
 
 
