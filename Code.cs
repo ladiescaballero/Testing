@@ -3520,6 +3520,7 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 ⭕ Paginas 371
 
 ||
+    
 
 Luego podemos proceder a abrir nuestro stream:
 
@@ -3535,6 +3536,7 @@ su ruta completa. Si el archivo que queremos abrir no existe o no está donde in
 El siguiente paso consiste en leer los contenidos del archivo:
 
 ||
+
 
 El método que utilizamos para la lectura es Read(). Este método pertenece al stream. El primer parámetro que colocamos es el arreglo de bytes donde se guardarán los bytes leídos. En el segundo parámetro indicamos que leeremos desde el
 inicio del stream y por último indicamos la cantidad de bytes a leer. En este caso
