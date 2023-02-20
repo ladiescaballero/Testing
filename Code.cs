@@ -3427,15 +3427,16 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 ⭕ Paginas 367
 
 || 
+    // Cerramos el Stream
+       fs.Close();
 
-
-Ejemplo de un programa para escribir cadenas a disco
-Ahora que ya conocemos los elementos necesarios para utilizar los streams a disco,
-podemos hacer un ejemplo sencillo. Haremos un programa que le preguntará al
-usuario cadenas, y cada una de éstas serán escritas a disco. Cuando el usuario dé
-una cadena vacía, es decir un return, el archivo se cerrará y se terminará la aplicación. Luego podremos utilizar un programa, como el Bloc de Notas, para poder
-leer el archivo que creamos.
-Empecemos por definir las variables necesarias y crear el archivo:
+// Ejemplo de un programa para escribir cadenas a disco
+// Ahora que ya conocemos los elementos necesarios para utilizar los streams a disco,
+// podemos hacer un ejemplo sencillo. Haremos un programa que le preguntará al
+// usuario cadenas, y cada una de éstas serán escritas a disco. Cuando el usuario dé
+// una cadena vacía, es decir un return, el archivo se cerrará y se terminará la aplicación. Luego podremos utilizar un programa, como el Bloc de Notas, para poder
+// leer el archivo que creamos.
+// Empecemos por definir las variables necesarias y crear el archivo:
 
 ||
 
