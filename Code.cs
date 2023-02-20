@@ -3517,7 +3517,32 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 
 // Variables necesarias
 
+⭕ Paginas 371
 
+||
+
+Luego podemos proceder a abrir nuestro stream:
+
+||
+
+Para esto creamos una instancia de la clase FileStream y la nombramos fs. En el
+constructor indicamos que nuestro archivo es miTexto.txt. Debemos notar que el
+modo del stream en este caso es Open ya que consideramos que el archivo existe y
+lo abriremos para trabajar con él. Como el archivo fue creado por el programa anterior, deberemos copiarlo de la carpeta donde se encuentra a la carpeta correspondiente de este proyecto. La ruta es similar, solamente que está referenciada a
+nuestro proyecto actual. Si no existe la carpeta Debug o Release, deberemos compilar nuestra aplicación para que sean creadas. Hay que copiar el archivo antes de
+ejecutar el programa. Otra solución es colocar el nombre del archivo a abrir con
+su ruta completa. Si el archivo que queremos abrir no existe o no está donde indicamos, el programa generará una excepción.
+El siguiente paso consiste en leer los contenidos del archivo:
+
+||
+
+El método que utilizamos para la lectura es Read(). Este método pertenece al stream. El primer parámetro que colocamos es el arreglo de bytes donde se guardarán los bytes leídos. En el segundo parámetro indicamos que leeremos desde el
+inicio del stream y por último indicamos la cantidad de bytes a leer. En este caso
+leemos la totalidad de los bytes en el archivo, por eso indicamos como valor la
+longitud del stream.
+Con esto, ahora nuestro arreglo contiene una copia de los bytes del stream y desplegaremos la información en la consola como cadena
+
+||
 
 ___________________________________________________________________________________________________
 
