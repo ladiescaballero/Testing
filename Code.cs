@@ -3439,11 +3439,23 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // Empecemos por definir las variables necesarias y crear el archivo:
 
 ||
+    // Variables Necesarias
+       String cadena = "";
+       // Creamos el stream al archivo
+       // Experimentar con append y create 
+       FileStream fs = new FileStream("MiTexto.txt" , FileMode.Create); 
 
-Luego, podemos hacer uso de un ciclo do while, que se repetirá constantemente hasta que el usuario dé una cadena vacía. En el interior del ciclo llevaremos a cabo la
-petición de la cadena y la escritura de ésta a disco.
+// Luego, podemos hacer uso de un ciclo do while, que se repetirá constantemente hasta que el usuario dé una cadena vacía. En el interior del ciclo llevaremos a cabo la
+// petición de la cadena y la escritura de ésta a disco.
 
 ||
+   // Capturamos cadenas
+      do{
+       // Leemos la cadena del usuario
+       cadena = Console.ReadLine();
+       // Escribimos al stream la cadena capturada 
+        fs.Write(ASCIIEncoding.ASCII.GetBytes(cadena) , 0 , cadena.Length);
+      }while(cadena !=""); 
 
 Para finalizar simplemente cerramos el archivo
 
