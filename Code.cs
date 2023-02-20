@@ -3457,7 +3457,38 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
         fs.Write(ASCIIEncoding.ASCII.GetBytes(cadena) , 0 , cadena.Length);
       }while(cadena !=""); 
 
-Para finalizar simplemente cerramos el archivo
+
+⭕ Paginas 368
+
+    // Cerramos el stream
+       fs.Close(); 
+    // Para finalizar simplemente cerramos el archivo
+    // El programa completo queda de la siguiente manera:
+
+    static void Main(string[]args)
+    {
+        // Variables necesarias
+        String cadena = "";
+        // Creamos el stream al archivo
+        // Experimentar con append y create
+        FileStream fs = new FileStream("MiTexto.txt" , FileMode.Create);
+        // Capturamos cadenas
+       do{
+       // Leemos la cadena del usuario
+        cadena = Console.ReadLine();
+       // Escribimos al stream la cadena capturada 
+        fs.Write(ASCIIEncoding.ASCII.GetBytes(cadena) , 0 , cadena.Length);
+      } while(cadena !=""); 
+       // Cerramos el stream
+       fs.Close();  
+        
+
+
+    }
+
+
+
+
 
 ___________________________________________________________________________________________________
 
