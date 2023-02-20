@@ -3381,7 +3381,48 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // una variable de tipo cadena para contenerlo. También es posible colocar toda la ruta al archivo
 // en este nombre. Si no colocamos la ruta del archivo, éste será creado en el mismo directorio que
 // el ejecutable de nuestra aplicación.
-// ___________________________________________________________________________________________________
+// 
+
+
+
+⭕ Paginas 366
+
+// agregada al archivo sin modificar lo anterior. En el caso de que el archivo no exista, será creado un nuevo archivo.
+// El modo Truncate es especial y debemos tener cuidado con él ya que abre el archivo. Entonces, los contenidos se eliminan hasta que el archivo tenga una longitud de
+// 0 bytes. Por ejemplo, podemos crear un stream a disco en modo de creación, como
+// podemos ver en el código a continuación: 
+
+
+||
+
+// El archivo a crear se llama miTexto.txt y será creado en el mismo directorio que el
+// ejecutable de nuestra aplicación. El nombre del stream es fs y ya podemos llevar a
+// cabo las operaciones necesarias sobre él.
+
+// Cómo escribir información en el archivo
+// Ya que tenemos el stream, es posible empezar a trabajar con él, y al igual que con
+// los streams de la memoria, podemos llevar a cabo diferentes operaciones, entre
+// ellas la de escritura. Para escribir el archivo usaremos el método Write(), que pertenece al stream. Por ejemplo, si deseamos escribir una cadena al archivo, podemos hacerlo de la siguiente forma
+
+||
+
+// El método necesita tres parámetros, el primer parámetro es el arreglo de bytes que
+// escribiremos, el segundo es la posición a partir de donde empezaremos a escribir con
+// respecto a nuestra posición actual, y el último parámetro nos sirve para indicar la
+// cantidad de bytes que colocaremos. Es importante no olvidar que esta posición se
+// actualiza después de hacer uso del método Write().
+// En nuestro ejemplo a realizar vamos a suponer que una cadena será escrita al archivo. A esta cadena la tenemos que colocar como un arreglo de bytes, pero éstos
+// deben estar codificados como ASCII, para lo cual usaremos la clase ASCIIEncoding.
+// Para poder obtener los bytes de la cadena deberemos hacer uso del método GetBytes()
+// por el que se pasa la cadena escrita como parámetro.
+// La cantidad de bytes que deseamos colocar será la longitud de la cadena, que obtenemos al hacer uso de la propiedad Length.
+
+// Cómo cerrar el archivo
+// El cierre del archivo es muy sencillo ya que únicamente debemos cerrar el stream.
+// Sabemos que esto lo realizamos por medio del método Close().
+
+
+___________________________________________________________________________________________________
 
 ⭕ Paginas 
 //🛑 Paginas 
