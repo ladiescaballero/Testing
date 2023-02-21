@@ -3820,12 +3820,208 @@ MuestraValor(a);
 // es incorrecto, la línea con el formato adecuado debe ser como la siguiente:
 
 ||
+    Console.WriteLine("Mostramos el resultado {0}",r);
 
 // Después de corregir, nuevamente debemos compilar y ejecutar. Todo debe estar
 // bien y el programa puede ejecutarse sin problema. El resultado lo vemos en el ejemplo que se muestra en la siguiente figura
 
+⭕ Paginas 385
+
+// Figura 7. El programa por fin se ejecuta y podemos ver en la consola los resultados
+
+// Ya vimos cómo localizar el código que nos genera excepciones. Pero lo mejor sería
+// poder evitarlas o controlarlas de alguna manera.
+
+// Cómo manejar los errores
+// No es posible evitar las excepciones completamente. Esto se debe a que no siempre
+// tenemos control sobre la información o el manejo que va a tener el usuario en nuestro programa. Por ejemplo, en el programa anterior, la excepción se eliminó al dividir entre la variable que no tiene el valor de cero. Pero imaginemos que el usuario es el que debe colocar el valor del divisor. En este caso no podemos forzar a una
+// variable con un valor diferente de cero. En algunas ocasiones el usuario colocará un
+// valor adecuado, pero también es posible que dé el valor de cero. En esos casos, el
+// programa terminará por el error.
+// Como no podemos preveer todas las excepciones que pueden ocurrir, lo mejor que
+// podemos hacer es tener una forma de manejar o administrar los errores. Esto permitirá que el programa detecte la excepción y entonces puede hacer algo para salvar la ejecución de programa. 
+// C# nos permite hacer esto ya que provee un sistema de manejo estructurado de excepciones. Para ver cómo poder lograr esto, modificaremos el programa y le daremos el manejo de las excepciones. El programa modificado queda así:
+
+
+⭕ Paginas 386
+
+static void Main(string[] args)
+    {
+// Variables necesarias
+    int a = 5;
+    int b = 10;
+    int c = 0;
+    int r = 0;
+    // Pedimos el dato al usuario
+    Console.WriteLine(“Dame el valor del divisior”);
+    a = Convert.ToInt32(Console.ReadLine());
+    // Hacemos la division
+    r = b / a;
+    // Mostramos el resultado
+    Console.WriteLine(“El resultado es {0}”, r);
+    // Mostramos el resultado 5 veces
+    for (int n = 0; n < 5; n++)
+    {
+    Console.WriteLine(“El resultado es {0}”, r);
+    }
+    // Invocamos la funcion
+    MuestraValor(a);
+    }
+    static void MuestraValor(int n)
+    {
+    Console.WriteLine(“El resultado es {0}”, n);
+    }
+ }
+}
+
+⭕ Paginas 387
+
+// Veamos cómo este programa puede ejecutarse correctamente a veces y con problemas en otros casos. Si ejecutamos el programa y damos como valor 5, el programa
+// se ejecuta correctamente. Cuando ejecutemos el programa nuevamente, si el valor
+// que damos es cero, entonces la excepción ocurrirá. Esto lo vemos claramente en las
+// dos figuras que se mostrarán a continuación.
+// Es sencillo saber qué métodos pueden generar excepciones. Simplemente debemos
+// ir a MSDN y buscar la documentación del método a utilizar. Dentro de esta documentación hay una sección que describe las posibles excepciones que pueden ocurrir. De esta forma hacemos que nuestro programa las evite.
+
+// Figura 8. En esta figura observamos el caso
+// en el cual la aplicación funciona correctamente.
+
+// Para llevar a cabo la administración de excepciones vamos a tener tres bloques de
+// código conocidos como: try, catch y finally.
+
+
+⭕ Paginas 388
+
+// Lo primero que tenemos que hacer es detectar dónde se encuentra el código peligroso, es decir, dónde puede ocurrir la excepción. En nuestro caso es fácil de identificar ya que sabemos que es la división.
+
+// Figura 9. Ahora podemos observar cómo la excepción
+// se ha levantado y el programa finaliza su ejecución.
+
+// El código que tiene el riesgo de levantar la excepción debe ser colocado en el bloque de try. Por ejemplo, en nuestro caso colocaremos lo siguiente:
+
+// // Codigo peligroso, lo colocamos en try para 
+// administrar la excepcion
+
+// NO EXAGERAR CON LAS EXCEPCIONES
+
+// Existen muchos métodos y sentencias que pueden generar excepciones. Pero no es bueno exagerar. Una gran cantidad de excepciones se evitan simplemente al usar correctamente los métodos y hacer buen uso de nuestras variables y sus valores. Solamente debemos implementar la
+// administración de excepciones en las partes del programa que realmente lo necesiten.
+
+⭕ Paginas 389
+
+    try
+    {
+        // Hacemos la division
+        r = b / a;
+    }
+
+El código adentro de try tiene dos opciones: levantar o no la excepción. Si la excepción se levanta entonces en el bloque de catch podemos colocar el código que se
+encargue de evitar que el programa termine inesperadamente. Aquí podemos poner
+código que corrija lo ocurrido.
+En nuestro caso, no hay mucho que hacer, simplemente podemos enviar un mensaje al usuario y dar un valor adecuado a la variable de resultado.
+
+||
+    catch(Exception e)
+    {
+        // Aqui colocamos el codigo que salva la a plicacion
+        Console.WriteLine("No es posible Dividir entre cero ");
+        r = 0;
+    }
+
+Vemos que este bloque tiene un parámetro llamado e. Adentro de este parámetro
+podemos encontrar información relacionada con la excepción. Lo que coloquemos
+en el interior del bloque depende de la lógica de nuestra aplicación. Si no hubiera
+excepción el código adentro del bloque catch no se ejecuta.
+Tenemos otro bloque llamado finally. Este bloque es opcional. El código que se coloque en el bloque finally se ejecuta siempre sin importar si la excepción se llevó a
+cabo o no. Siempre se ejecuta una vez que try o catch han finalizado de ejecutarse.
+Finally puede ser utilizado para limpiar o liberar cualquier recurso que se haya utilizado en try o catch. En nuestro caso puede utilizarse simplemente para darle al
+usuario el valor del resultado.
+
+||
+    finally
+    {
+        // Mostramos el resultao 
+        Console.WriteLine("El resultado es {0}" , r);
+    }
+
+
+⭕ Paginas 390
+
+Nuestro programa completo con la administración de la excepción es el siguiente:
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+namespace Cap12_2
+{
+class Program
+{
+static void Main(string[] args)
+{
+// Variables necesarias
+int a = 5;
+int b = 10;
+int c = 0;
+int r = 0;
+// Pedimos el dato al usuario
+Console.WriteLine(“Dame el valor del divisior”);
+a = Convert.ToInt32(Console.ReadLine());
+// Codigo peligroso, lo colocamos en try para 
+administrar la excepcion
+try
+{
+// Hacemos la division
+r = b / a;
+}
+catch (Exception e)
+{
+// Aqui colocamos el codigo que salva la aplicacion
+Console.WriteLine(“No es posible dividir entre cero”);
+r = 0;
+}
+finally
+{
+// Mostramos el resultado
+Console.WriteLine(“El resultado es {0}”, r);
+
+
+// Mostramos el resultado 5 veces
+for (int n = 0; n < 5; n++)
+{
+Console.WriteLine(“El resultado es {0}”, r);
+}
+// Invocamos la funcion
+MuestraValor(a);
+}
+static void MuestraValor(int n)
+{
+Console.WriteLine(“El resultado es {0}”, n);
+}
+}
+}
+
+// Veamos si esto funciona adecuadamente. Compilemos el programa y al ejecutarlo vamos a dar el valor de cero. El programa ahora no deberá generar problemas,
+// pues hemos capturado la excepción y ejecutado código que evita que el programa
+// finalice de forma no adecuada.
+
+
+// RESUMEN
+// La depuración nos permite corregir los problemas que pueda tener nuestro programa. Los
+// errores de compilación impiden que el programa pueda ser compilado y muchas veces son
+// simples errores de sintaxis. Tenemos una ventana que nos muestra la lista de errores,
+// siempre debemos corregir el primer error de la lista, ya que muchos errores se generan
+// en cascada. La depuración es un proceso iterativo. Si tenemos código peligroso que puede
+// generar excepciones, es recomendable administrar ese código para evitar que la
+// excepción termine con nuestro programa, cuando administramos la excepción, podemos
+// colocar código que salve al programa. 
 ___________________________________________________________________________________________________
 
-⭕ Paginas 
+                                E N D
 
+
+
+
+
+
+⭕ Paginas 
 //🛑 Paginas 
