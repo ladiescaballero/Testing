@@ -3602,6 +3602,88 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 // disco con los archivos, podemos abrir el archivo de diferentes formas y llevar a cabo
 // manipulaciones de los archivos como borrarlos, renombrarlos, copiarlos o moverlos.
 
+
+⭕ Paginas 375
+
+Depuración
+Hemos llegado al último capítulo del libro
+y en este capítulo aprenderemos
+las técnicas básicas de depuración.
+La depuración es utilizada para corregir
+problemas en el programa. Algunas veces
+los programas tienen errores de sintaxis,
+pero principalmente de lógica.
+Al depurarlos podemos observar
+su comportamiento de mejor forma
+y detectar el comportamiento que está
+dando problemas
+
+⭕ Paginas 376
+
+
+// CÓMO EMPEZAR A DEPURAR UN PROGRAMA
+// Para depurar un programa nosotros tenemos varias herramientas, pero es importante en primer lugar conocer los posibles errores que podemos tener. Básicamente
+// podemos tener dos clases de errores bien diferenciados: por un lado los errores de
+// compilación y por otro los errores en tiempo de ejecución.
+// Los errores de compilación son aquellos que impiden que el programa logre compilarse y generalmente son más fáciles de resolver. Muchos de estos errores se deben
+// a problemas de sintaxis, es decir, son responsabilidad del usuario.
+// Los errores en tiempo de ejecución son aquellos que suceden cuando el programa
+// se está ejecutando. Estos errores pueden deberse a problemas de lógica, es decir, que
+// el algoritmo no fue diseñado correctamente. Pero también pueden ocurrir debido a
+// un mal control de la información, por ejemplo, podemos tratar de leer más allá de
+// los límites correspondientes a un arreglo determinado.
+
+
+
+// Para corregir los errores de compilación
+// La mejor forma de poder aprender a depurar programas es con la práctica. Para esto crearemos un pequeño programa de ejemplo. El siguiente programa tiene varios
+// errores para poder identificar y corregir. En el siguiente bloque de código, los errores han sido colocados en forma deliberada.
+
+
+// LOS PROBLEMAS DE SINTAXIS
+// Los problemas de sintaxis son sencillos de corregir, se deben a que se ha escrito algo de forma incorrecta. Algunas veces los nombres de variables se han escrito erróneamente, o hemos
+// olvidado colocar ; al final de la sentencia. Una revisión rápida de la línea donde está el error nos
+// permite encontrarlo, con la práctica también se reduce la incidencia de estos errores.
+
+||
+    static void Main(string[]args)
+    {
+        // Variables nesarias
+        int a = 5;
+        int b = 10; 
+        int c = 0;
+        int r = 0;
+
+        // Hacemos la Division 
+        r = b / c;
+        // Mostramos el resultado 
+        Console.WriteLine("El resultado es {} , r);
+
+        // Mostramos el resultado 5 veces
+        for(int n = 0 ; n < 5 ; n++)
+        {
+            Console.WriteLine("El resultado es {0}", r);
+        }
+
+        // Invocamos la funcion
+        MuestraValor();
+    }
+
+    static void MuestraValor(int n)
+    {
+        Console.WriteLine("El resultado es {0} ", n);
+    }
+
+// PARA EVITAR ERRORES CON LOS BLOQUES DE CÓDIGO
+// Cuando trabajamos con bloques de código un error común es olvidar cerrarlo. Para evitar esto,
+// es buena costumbre cerrar el bloque de código inmediatamente después de abrirlo y luego colocar el código que va a llevar en su interior. Si abrimos y colocamos el código, puede suceder
+// que olvidemos cerrarlo.
+
+
+
+⭕ Paginas 377
+
+
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
