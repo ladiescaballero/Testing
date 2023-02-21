@@ -3805,8 +3805,27 @@ MuestraValor(a);
 // tiempo nos acostumbraremos a la descripción y sabremos inmediatamente qué hacer para resolver el problema. Muchos programadores con malos hábitos solamente van a la línea del error,
 // pero no leen la descripción del error. Esto los lleva a tiempos más largos para resolverlo.
 
+⭕ Paginas 384
+
+    // Hacemos la division
+       r = b / a;
+
+// Si procedemos con la compilación, no aparece ningún problema, pero veamos qué
+// sucede cuando ejecutemos nuevamente el programa
+
+// Figura 6. Una nueva excepción ha ocurrido en el programa.
+
+// El programa nuevamente tiene problemas de ejecución. Si observamos la información que nos provee el depurador inmediatamente nos damos cuenta de que la
+// excepción ha ocurrido porque no estamos colocando el formato correcto en la cadena. Al ver la línea de código podemos identificar que efectivamente el formato
+// es incorrecto, la línea con el formato adecuado debe ser como la siguiente:
+
+||
+
+// Después de corregir, nuevamente debemos compilar y ejecutar. Todo debe estar
+// bien y el programa puede ejecutarse sin problema. El resultado lo vemos en el ejemplo que se muestra en la siguiente figura
 
 ___________________________________________________________________________________________________
 
 ⭕ Paginas 
+
 //🛑 Paginas 
