@@ -3714,9 +3714,46 @@ dando problemas
 // Figura 2. Podemos observar que la línea
 // donde se encuentra el problema ha sido señalada.
 
-
 // El problema señalado indica que se tiene una nueva línea en una constante. Esto
 // generalmente ocurre cuando usamos una cadena y olvidamos cerrarla. Si observamos la línea veremos que efectivamente la cadena de formato no se ha cerrado. Procedamos a cerrar la cadena. De tal forma que la línea quede de la siguiente forma:
+
+
+⭕ Paginas 380
+
+// Mostramos el resultado
+    Console.WriteLine("El resultado es {}" , r);
+
+
+// Siempre que corregimos un problema, es bueno realizar una compilación. Esto actualizará la lista de errores y podemos proceder con el siguiente. Después de la compilación nuestra lista de errores se ha reducido a únicamente dos. 
+// El siguiente error que corregiremos es muy común. Si vemos la descripción nos indica que se estaba esperando }. Este error ocurre cuando hemos olvidado cerrar un
+// bloque de código. Puede ser a nivel de namespace, clase, método, ciclo, etc. La mejor forma de resolverlo es verificar nuestros bloques de código y adicionar el cierre
+// donde corresponde. En muchas ocasiones el cierre no necesariamente es donde lo
+// señala el editor, por lo que se necesita revisar correctamente dónde colocar el cierre.
+// En nuestro caso es muy sencillo y lo adicionamos al final.
+// Ya cerrado el bloque de código, podemos compilar y ver la lista de errores. Ahora
+// únicamente nos aparece un error en la lista. Inicialmente teníamos cinco, hemos corregido dos y solo queda uno. Estos cambios en la cantidad de errores son muy comunes. Esto se debe a que los errores pueden suceder en cascada, como comentábamos, un error en la parte superior puede crear errores fantasma en otras partes. 
+// El error que tenemos que corregir en este momento es muy sencillo y ocurre
+// cuando olvidamos terminar la sentencia con ;. Simplemente lo adicionamos en
+// la línea que corresponde. Al parecer ya hemos terminado de corregir los problemas. Compilemos y veamos qué sucede.
+// Después de corregir el último error, han aparecido dos errores más. Como mencionábamos la depuración es iterativa y podemos pensar que el compilador hace varias pasadas. En este caso se nos presentan dos problemas en los métodos. 
+// El primer error que tenemos nos indica que no se tiene una definición para WrteLine.
+// Este tipo de error ocurre generalmente en dos casos. El primero es cuando estamos intentando usar algo, ya sea método, variable, objeto, etc. que no hemos definido. Para
+// corregirlo simplemente definimos lo que necesitamos usar. El segundo caso es más común y se relaciona a un error de escritura, es decir que hemos escrito mal el nombre
+// de lo que queremos utilizar y al no reconocerlo el compilador nos marca este error. 
+
+
+// PARA EVITAR ERRORES DE ESCRITURA
+// Una forma de evitar errores de escritura para variables y métodos es apoyarnos en la función de
+// auto completar del editor. Esta función nos muestra el elemento que podemos colocar cuando
+// escribimos las primeras letras del nombre. Al dar la tecla de ENTER, lo escribe por nosotros. Hacer una buena selección de nombres también ayuda a reducir los errores de escritura.
+
+
+
+
+
+
+
+
 
 ___________________________________________________________________________________________________
 
