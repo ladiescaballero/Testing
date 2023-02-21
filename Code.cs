@@ -3558,11 +3558,49 @@ Console.WriteLine(ASCIIEncoding.ASCII.GetString(buffer));
 
 ||
     
+    // Cerramos el Stream
+       fs.Close();
 
 // Nuestro programa completo queda de la siguiente manera:
 
-||
 
+||
+    Static void Main(String[]args)
+    {
+        // Variables necesarias
+        byte[100] infoArchivo = new Byt[100];
+
+        // Creamos el Stream De lectura
+        FileStream fs = new FileStream("miTexto.txt" , FileMode.Open);
+        fs.Read(infoArchivo , 0 , (int)fs.Length);
+        // Mostramos la informacion
+        Console.WriteLine(ASCIIEncoding.ASCII.GetString(infoArchivo));
+        // Cerramos el Stream
+       fs.Close();
+    }
+
+
+⭕ Paginas 373
+
+// Ahora ya podemos compilar y ejecutar la aplicación. En la consola podemos leer las
+// cadenas que guardamos con el otro programa.
+
+// Figura 11. Podemos observar que nuestro
+
+// programa efectivamente ha leído la información del archivo.
+// Con esto hemos aprendido el trabajo básico de los flujos y los archivos en C#. También hemos llevado a cabo una serie de manipulaciones sobre los archivos.
+
+// RESUMEN
+
+// Los flujos o streams permiten mover información de un lugar a otro. Puede moverse entre
+// diferentes partes de la memoria o entre la memoria y los dispositivos de almacenamiento. Para
+// ello necesitamos el namespace System.IO para poder utilizarlo. Para trabajar correctamente
+// con el stream podemos colocarnos en cualquier parte de éste referente al inicio, fin o posición
+// actual. Una vez en la posición adecuada podemos llevar a cabo la lectura de los bytes en el
+// stream. Una vez abierto el stream, y después de trabajar con él, es necesario cerrarlo para
+// liberar cualquier recurso utilizado. Los streams también se pueden utilizar para el acceso al
+// disco con los archivos, podemos abrir el archivo de diferentes formas y llevar a cabo
+// manipulaciones de los archivos como borrarlos, renombrarlos, copiarlos o moverlos.
 
 ___________________________________________________________________________________________________
 
