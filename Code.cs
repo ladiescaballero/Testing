@@ -3748,11 +3748,62 @@ dando problemas
 // escribimos las primeras letras del nombre. Al dar la tecla de ENTER, lo escribe por nosotros. Hacer una buena selección de nombres también ayuda a reducir los errores de escritura.
 
 
+⭕ Paginas 381
 
+// En nuestro ejemplo, el error está referenciado a un problema de escritura. Simplemente debemos ir al código y escribir WriteLine de la forma correcta. Compilemos
+// y continuamos con el siguiente error
+// Nuevamente nos queda un error. Este error nos dice que no hay un método sobrecargado. Este error suele pasar cuando tenemos una función o método y estamos
+// pasando una cantidad errónea de parámetros o los parámetros son de un tipo no
+// correcto. En nuestro programa vemos que el método MuestraValor() necesita de un
+// parámetro, pero en la invocación no se está pasando ningún valor y esto genera el
+// problema. Para resolverlo simplemente debemos colocar el valor a pasar. Por ejemplo podemos colocar la línea de la siguiente forma:
 
+// Invocamos la funcion
+MuestraValor(a); 
 
+// Ahora podemos compilar nuevamente. La ventana de salida nos indica que se ha
+// compilado exitosamente la aplicación. Esto significa que ya no tenemos errores de
+// compilación, pero aún es posible tener errores en tiempo de ejecución.
+// Cómo corregir los errores en tiempo de ejecución
+// Los errores en tiempo de ejecución se hacen notar cuando el programa está corriendo. El error puede provocar que el programa deje de funcionar o se termine repentinamente. En otros casos el programa no da resultados correctos.
+// Cuando el programa no da resultados correctos, esto puede deberse a que nuestro
+// algoritmo no está adecuadamente implementado. En este caso, lo mejor es primero revisar el análisis y tratar de encontrar el error a nivel de algoritmo. Si encontramos el error en el algoritmo, simplemente debemos corregirlo y luego modificar el
+// programa para que se ejecute de acuerdo con el algoritmo correcto.
+// En el caso de que nuestro algoritmo esté correcto y el programa nos provee con resultados erróneos entonces es posible que la implementación, es decir la forma como pasamos el algoritmo a programa, este equivocada. La mejor forma de corregir
+// esto es ir depurando paso a paso el programa, viendo cómo cambian los valores y
+// de esta forma encontrar dónde falló la implementación. Las técnicas para llevar a
+// cabo esto las veremos un poco más adelante.
+// Ahora podemos ver los errores en tiempo de ejecución que provocan la finalización
+// inesperada del programa. Muchos de estos errores se deben a que hemos realizado
+// una operación indebida con nuestro programa. A los errores de este tipo se les llama excepciones y cuando ocurren se dice que se han levantado o aventado.
+// Veamos cómo ocurren estos errores. Simplemente ejecutemos el programa anterior.
+// El programa está listo para levantar una excepción.
 
+⭕ Paginas 382
 
+// Figura 3. En cuanto el programa levanta una excepción, finaliza
+// su ejecución de forma inesperada y nos presenta un diálogo con información.
+
+// Como vemos el programa ha levantado una excepción. Para poder depurar el programa debemos ejecutarlo en modo de depuración. Para esto seleccionamos el menú de Debug o Depurar y presionamos Start Debugging. 
+
+// Figura 4. Aquí podemos seleccionar dónde llevar a cabo la depuración.
+
+⭕ Paginas 383
+
+// Ya que nos encontramos en el depurador, el lugar donde se generó la excepción aparece marcado en forma muy clara, y junto a él tendremos un cuadro de diálogo que
+// contiene la información correspondiente
+
+// Figura 5. El cuadro de dialogo nos indica el tipo de excepción que se levantó
+
+// Si observamos el cuadro de diálogo veremos que la excepción, es decir el error,
+// fue provocado por un intento de dividir entre cero. La división entre cero no está definida y por eso es una operación inválida. Ahora que ya sabemos qué provoca el problema, simplemente podemos corregir el código. 
+// Podemos pensar que la corrección es sencilla y simplemente dividir entre la variable que tiene un valor de cero, puede ser algo como lo que se muestra en el siguiente bloque de código, a modo de ejemplo:
+
+// LA DESCRIPCIÓN DEL ERROR
+
+// Debemos acostumbrarnos a leer la descripción del error, es un punto muy importante. Con el
+// tiempo nos acostumbraremos a la descripción y sabremos inmediatamente qué hacer para resolver el problema. Muchos programadores con malos hábitos solamente van a la línea del error,
+// pero no leen la descripción del error. Esto los lleva a tiempos más largos para resolverlo.
 
 
 ___________________________________________________________________________________________________
