@@ -3680,9 +3680,43 @@ dando problemas
 // que olvidemos cerrarlo.
 
 
+⭕ Paginas 378
 
-⭕ Paginas 377
+// El programa tiene varios errores, algunos de ellos muy comunes, por lo que es importante aprender a reconocerlos y resolverlos.
+// Para comenzar, lo primero que hacemos es llevar a cabo una compilación. Si hay
+// un error de compilación, inmediatamente aparece una ventana. Esta ventana se conoce como lista de errores. Podemos observar esta ventana en la siguiente figura.
 
+// Figura 1. Después de compilar el programa,
+// podemos encontrar fácilmente la lista de errores.
+
+// La ventana de la lista de errores contiene información importante que nos permite
+// encontrar el error rápidamente. La lista tiene varias columnas. La primera columna
+// nos indica si el elemento listado es un error o una advertencia. Esto depende del
+// icono mostrado. Un icono con señal amarilla es una advertencia y el icono rojo un
+// error. En la segunda columna tenemos el número secuencial de error.
+// La tercera línea es muy importante, ya que es una descripción del error. Esta descripción nos da pistas sobre la posible causa del error. La siguiente columna indica
+// el documento en el cual ocurrió el error. Esto es útil cuando tenemos programas
+// que se constituyen en varios documentos. Las dos siguientes líneas nos dicen el lugar donde está el posible error indicando la línea y la columna. Un punto importante a tomar en cuenta es que la posición es solamente un indicador. Nuestra última columna indica el proyecto en el cual ocurrió el error, esto llega a ser útil cuan
+
+
+⭕ Paginas 379
+
+// Si observamos el editor, veremos que hay texto que aparece con un subrayado rojo. Esto indica el texto que está relacionado con la lista de errores y facilita su localización.
+// Empecemos a corregir los errores. La depuración es un proceso iterativo, por lo
+// que tenemos que ir corrigiendo errores hasta que no quede ninguno. En algunas
+// ocasiones, cuando corrijamos un error aparecerán listados nuevos errores. No debemos preocuparnos por esto y tenemos que continuar corrigiendo los errores
+// listados hasta que no quede ninguno.
+// Cuando corregimos los problemas de nuestro programa, debemos referirnos a la lista de errores. Siempre tenemos que empezar con el primer problema. Esto se debe
+// a que a veces un error en la parte superior del programa puede ocasionar que líneas que sean correctas parezcan que tienen problemas.
+// En la lista debemos dar doble clic al primer error. Esto nos lleva automáticamente
+// al código y señala la parte con el problema. Esto lo podemos observar en el ejemplo que se muestra en la siguiente figura.
+
+// Figura 2. Podemos observar que la línea
+// donde se encuentra el problema ha sido señalada.
+
+
+// El problema señalado indica que se tiene una nueva línea en una constante. Esto
+// generalmente ocurre cuando usamos una cadena y olvidamos cerrarla. Si observamos la línea veremos que efectivamente la cadena de formato no se ha cerrado. Procedamos a cerrar la cadena. De tal forma que la línea quede de la siguiente forma:
 
 ___________________________________________________________________________________________________
 
