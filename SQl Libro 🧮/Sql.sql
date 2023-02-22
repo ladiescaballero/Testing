@@ -53,8 +53,15 @@
        ........ 
 
  🧨 <Paginas 32 > 
-    
-
+    -- FIGURA 1.3 
+    -- Ilustración de la base 
+    -- de datos simplificada 
+    -- de un hospital    
+    ....
+    -- 1.2 Características de los sistemas de administración 
+    -- de bases de datos  
+    ...
+    -- 1.2.1 Definición de base de datos      
 
  🧨 <Paginas > 
  🧨 <Paginas > 
