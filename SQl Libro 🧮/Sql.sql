@@ -1,30 +1,60 @@
-🧨 <Paginas 28>
+ 🧨 <Paginas 20>
+    -- Contenido breve
+    -- Glosario
 
-Capítulo 1 Introducción a la 
-administración de base 
-de datos
+ 🧨 <Paginas 21>
+    -- Glosario
 
--- Quizás usted no se haya dado cuenta, pero su vida se ve afectada de forma dramática por la tec- 
--- nología de base de datos. Las bases de datos computarizadas son vitales para el funcionamiento 
--- de las organizaciones modernas. Usted está en contacto con las bases de datos diariamente a tra- 
--- vés de actividades como comprar en el supermercado, retirar efectivo de un cajero automático, 
--- ordenar un libro en línea y registrarse en una clase. Las comodidades de su vida diaria, en parte, 
--- se deben a la proliferación de las bases de datos computarizadas y a su tecnología.
--- La tecnología de bases de datos no solamente mejora las operaciones diarias de las orga- 
--- nizaciones, sino también la calidad de las decisiones que afectan nuestras vidas. Las bases de 
--- datos contienen un ﬂujo de datos acerca de muchos aspectos de nuestras vidas: preferencias de 
--- consumo, uso de telecomunicaciones, historial crediticio, hábitos al ver la televisión, etc. La 
--- tecnología de base de datos ayuda a resumir este volumen de datos en información útil para la 
--- toma de decisiones. Los directivos utilizan la información obtenida para la toma de decisiones 
--- a largo plazo, como invertir en plantas y equipo, ubicar tiendas, agregar elementos nuevos al 
--- inventario e iniciar nuevos negocios
- 
+ 🧨 <Paginas 22>
+    -- Glosario
+
+ 🧨 <Paginas 23> 
+    -- Glosario
+
+ 🧨 <Paginas 24> 
+    -- Glosario
+
+ 🧨 <Paginas 25> 
+    -- Glosario
+
+ 🧨 <Paginas 26>
+
+ 🧨 <Paginas 27>
+    -- Introducción 
+    -- a los ambientes 
+    -- de base de datos
+
+ 🧨 <Paginas 27>
+    -- Vacio
+
+ 🧨 <Paginas 28>
+    -- Introducción a la 
+    -- administración de base 
+    -- de datos
 
  🧨 <Paginas 29>
+    -- Panorama general
+    
+ 🧨 <Paginas 30>
+    -- 1.1 Características de la base de datos
+    ....
+
+ 🧨 <Paginas 31>    
 
 
 
 
- ---------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+
+
+
+
+
+
+ ---------------------------------------------------------------------------------------------------
  🧨 <Paginas 0> 
