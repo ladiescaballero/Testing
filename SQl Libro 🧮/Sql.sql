@@ -1,5 +1,6 @@
 🧨 <Paginas 39 > 
  
+   1.3.2 El mercado actual del software de base de datos
    
  
  
