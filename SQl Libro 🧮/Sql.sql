@@ -1,7 +1,37 @@
+🧨 <Paginas 39 > 
+ 
+   
  
  
- 
- 
+ 🧨 <Paginas 38 >
+
+   -- TABLA 1.2
+   -- Breve evolución de la 
+   -- tecnología de base de 
+   -- datos
+
+   -- 1.3.1 Evolución de la tecnología de bases de datos
+
+ 🧨 <Paginas 37 >
+
+   -- 1.2.5 Funciones de terceros
+   -- Desarrollo de la tecnología de base de datos 
+   -- y la estructura de mercado
+
+ 🧨 <Paginas 36 >
+
+   --   FIGURA 1.9
+   -- Forma de Microsoft 
+   -- Access para asignar 
+   -- cursos a un profesor 
+   
+   -- FIGURA 1.10 
+   -- Reporte de Microsoft 
+   -- Access de la carga de 
+   -- trabajo de un profesor
+
+   -- 1.2.4 Funciones de soporte para las operaciones 
+   -- de base de datos
  
  🧨 <Paginas 35 >
    --   FIGURA 1.7 
