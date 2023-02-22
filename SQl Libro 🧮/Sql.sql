@@ -1,5 +1,20 @@
+ 
+ 
+ 
+ 
+ 
  🧨 <Paginas 35 >
-        
+   --   FIGURA 1.7 
+   -- Ventana de diseño de 
+   -- consultas de Microsoft Access   
+
+   -- FIGURA 1.8 
+   -- Resultado de ejecutar 
+   -- la consulta de la 
+   -- figura 1.7
+
+   -- 1.2.3 Desarrollo de aplicaciones e interfase 
+   -- del lenguaje procedural
 
  🧨 <Paginas 34 >
  
