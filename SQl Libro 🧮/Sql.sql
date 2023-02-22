@@ -40,8 +40,22 @@
     ....
 
  🧨 <Paginas 31>    
+    -- FIGURA 1.1
+    -- Ilustración simplificada de la base de 
+    -- datos universitaria
+    ....
+    -- FIGURA 1.2 
+    -- Ilustración de la base 
+    -- de datos simplificada 
+    -- del departamento de 
+    -- distribución de agua
+       ........
+       ........ 
 
- 🧨 <Paginas > 
+ 🧨 <Paginas 32 > 
+    
+
+
  🧨 <Paginas > 
  🧨 <Paginas > 
  🧨 <Paginas > 

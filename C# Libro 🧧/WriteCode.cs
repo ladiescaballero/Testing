@@ -23,3 +23,15 @@ indice = datos.IndexOf(7);
 
 
 
+Formula Excel 2022 I'm
+
+=INDICE('USD BancoCentral' !$C$5:$N$35;COINCIDIR(DATOS!T26;'USD BancoCentral'!$B$5:$B$35;0);CONCIDIR(DATOS!U26;'USD BancoCentral'!$C$3:$N$3;0))
+
+
+
+Formula Excel 2023 Copy
+
+=INDICE('USD BancoCentral'!$C$5:$N$35;COINCIDIR(Datos!U26;'USD BancoCentral'!$B$5:$B$35;0);COINCIDIR(Datos!V26;'USD BancoCentral'!$C$3:$N$3;0))
+
+
+
