@@ -4,6 +4,8 @@ https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/
 https://taverasmisael.com/blog/extensiones-y-temas-para-personalizar-vscode
 
 
+https://desarrolloweb.com/faq/como-convertir-tabs-a-espacios-en-visual-studio-code
+
 🎈 Para cambiar entre Pestañas de Visual Studio Code Web : Alt + Numero
 🎈 Para Cambiar entre pestañas del Navegador. Ctrl + Tabs
 🎈 Cambiar de Pestañas. Otra Forma Alt + Tabs
