@@ -1,9 +1,20 @@
+🧨 <Paginas 46 > 
+
+
+
+
 🧨 <Paginas 45 > 
 
+    -- 1.5.2 Administración de recursos de información
+    -- administrador de 
+    -- datos 
+    -- una posición gerencial 
+    -- que realiza la planeación 
+    -- y establece las políticas 
+    -- para los recursos de 
+    -- información de una organización.
 
-
-
-
+    -- FIGURA 1.15 Ubicación en el organigrama de los administradores de datos y de bases de datos
 
 🧨 <Paginas 44 > 
 
