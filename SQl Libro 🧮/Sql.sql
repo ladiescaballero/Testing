@@ -1,3 +1,21 @@
+🧨 <Paginas 52 >
+
+
+
+
+🧨 <Paginas 51 >
+
+    -- FIGURA 2.2 
+    -- Ciclo de vida tradicional del desarrollo 
+    -- de sistemas
+
+    -- 2.1.2 Proceso del desarrollo de sistemas de información
+
+🧨 <Paginas 50 >
+
+    -- 2.1.1 Componentes de los sistemas de información 
+    -- FIGURA 2.1 Panorama del sistema de procesamiento de préstamos a estudiantes
+
 🧨 <Paginas 49 >
 
     -- Introducción al desarrollo 
