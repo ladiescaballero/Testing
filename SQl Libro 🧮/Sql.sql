@@ -1,4 +1,29 @@
-🧨  <Paginas 43 > 
+🧨 <Paginas 45 > 
+
+
+
+
+
+
+🧨 <Paginas 44 > 
+
+    -- FIGURA 1.14 
+    -- Clasificación de roles
+
+    -- TABLA 1.5 
+    -- Responsabilidades 
+    -- del administrador 
+    -- de base de datos
+
+    -- administrador de 
+    -- base de datos 
+    -- una posición de apoyo 
+    -- que se especializa en la 
+    -- administración de bases 
+    -- de datos individuales y 
+    -- DBMS.
+
+🧨 <Paginas 43 > 
 
 	--  FIGURA 1.13 
 	--  Arreglos típicos de 
@@ -8,7 +33,7 @@
 	 
     -- 1.5 Impactos organizacionales de la tecnología de base de datos
 
-
+    -- 1.5.1 Interactuando con las bases de datos
 
 
 🧨 <Paginas 42 > 
