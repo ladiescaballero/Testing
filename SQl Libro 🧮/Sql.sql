@@ -1,3 +1,31 @@
+🧨 <Paginas 43 > 
+
+
+
+
+
+
+🧨 <Paginas 42 > 
+
+   --  TABLA 1.4 
+   --  Ejemplo de la base 
+   --  de datos de la universidad que ilustra las 
+   --  diferencias entre los 
+   --  niveles de esquema  
+
+   --  1.4.2 Procesamiento distribuido y la arquitectura 
+   --  cliente-servidor
+
+   --  arquitectura 
+   --  cliente-servidor
+   --  un arreglo de componentes (clientes y 
+   --  servidores) y datos 
+   --  entre computadoras 
+   --  conectadas a una red. 
+   --  La arquitectura clienteservidor soporta el procesamiento eficiente de 
+   --  mensajes (solicitudes de 
+   --  servicio) entre los clientes y los servidores.
+
 🧨 <Paginas 41 > 
 
    --  FIGURA 1.12 
