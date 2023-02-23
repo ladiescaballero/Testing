@@ -1,7 +1,11 @@
+🧨 <Paginas 53 >
+
+
+
+
 🧨 <Paginas 52 >
 
-
-
+    -- 2.2 Objetivos del desarrollo de base de datos
 
 🧨 <Paginas 51 >
 
