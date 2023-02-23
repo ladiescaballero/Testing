@@ -1,9 +1,27 @@
+🧨 <Paginas 41 > 
+
+   --  FIGURA 1.12 
+   --  Arquitectura de los 
+   --  tres esquemas  
+
+   --  independencia 
+   --  de datos
+
+   --  arquitectura de los 
+   --  tres esquemas  
+
+🧨 <Paginas 40 > 
+
+   -- 1.4 Arquitecturas de los sistemas de administración 
+   -- de bases de datos
+
+   -- 1.4.1 Independencia de datos y la arquitectura 
+   -- de los tres esquemas
+
 🧨 <Paginas 39 > 
  
    1.3.2 El mercado actual del software de base de datos
-   
- 
- 
+
  🧨 <Paginas 38 >
 
    -- TABLA 1.2
