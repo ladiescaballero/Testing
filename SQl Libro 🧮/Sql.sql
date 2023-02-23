@@ -1,7 +1,23 @@
+🧨 <Paginas 49 >
+
+    -- Introducción al desarrollo 
+    -- de bases de datos
+
+    -- Panorama general
+    -- 2.1 Sistemas de información
+
+
+🧨 <Paginas 48 > 
+🧨 <Paginas 47 > 
+
+
 🧨 <Paginas 46 > 
 
+    -- Reflexión 
+    -- final
 
-
+    -- Revisión de 
+    -- conceptos
 
 🧨 <Paginas 45 > 
 
