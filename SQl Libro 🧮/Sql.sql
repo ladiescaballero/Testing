@@ -1,5 +1,23 @@
+🧨 <Paginas 55 >
+
+
+
+
+🧨 <Paginas 55 >
+
+	-- FIGURA 2.3 
+	-- Fases del desarrollo 
+	-- de bases de datos
+
+	-- 2.3.1 Fases del desarrollo de base de datos
+
 🧨 <Paginas 54 >
 
+	-- TABLA 2.1 
+	-- Características comunes de la calidad de 
+	-- datos
+	-- 2.2.4 En busca de la implementación eficiente
+	-- 2.3 Proceso de desarrollo de la base de datos
 
 ❗🧨 <Paginas 53 >
 	
