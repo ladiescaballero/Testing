@@ -1,7 +1,29 @@
 🧨 <Paginas 56 >
 
+	-- FIGURA 2.4 
+	-- ERD parcial del sistema de préstamos a 
+	-- estudiantes
+
+	-- Diseño lógico de bases de datos
+
+	-- FIGURA 2.5 
+	-- Conversión 
+	-- de la figura 2.4
 
 
+Create table Students(
+Stdno Interger NOT NULL,
+StdName Char(50),
+....
+Primary key(StdNo))
+
+Create table Loan(
+LoanNo integer not null , 
+loanAmt decimal(10,2),
+StdNo integer Not null,
+.....
+primary Key(LoanNo),
+foreign key(StdNo) REFERENCES Students)
 
 🧨 <Paginas 55 >
 
