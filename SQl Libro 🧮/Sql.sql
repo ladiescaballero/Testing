@@ -1,5 +1,12 @@
-🧨 <Paginas 53 >
+🧨 <Paginas 54 >
 
+
+❗🧨 <Paginas 53 >
+	
+	❗ "Agregar Comentarios" en lector PDF en cada parte del Encabezado. Para copiar tanto en el visual studio , Como en el PDF. De esta forma se hace mas practico. sin tener que cambiar las pestañas......
+	-- 2.2.1 Desarrollar un vocabulario común 
+	-- 2.2.2 Definición del significado de los datos
+	-- 2.2.3 Asegurar la calidad de los datos
 
 🧨 <Paginas 52 >
 
