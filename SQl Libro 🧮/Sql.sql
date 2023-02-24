@@ -1,3 +1,14 @@
+🧨 <Paginas 58 >
+
+
+
+
+🧨 <Paginas 57 >
+
+	-- Diseño de bases de datos distribuidas
+	-- Diseño físico de bases de datos
+	-- Diseño conceptual robusto en grandes proyectos
+
 🧨 <Paginas 56 >
 
 	-- FIGURA 2.4 
