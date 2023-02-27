@@ -1,3 +1,28 @@
+🧵 <Paginas 24 >
+
+
+
+
+🧵 <Paginas 23 >
+
+    -- Capítulo 1
+    -- Introducción a las 
+    -- bases de datos 
+    -- relacionales y a SQL
+
+🧵 <Paginas 21 >
+
+    -- Parte I
+    -- Bases de datos 
+    -- relacionales y SQL
+
+🧵 <Paginas 18 >
+
+    -- Contenido de cada capítulo
+    -- Pregunte al experto
+    -- Autoexamen
+    -- Sintaxis SQL
+
 🧵 <Paginas 17 >
 
     -- Capítulo 13: Crear rutinas invocadas por SQL
