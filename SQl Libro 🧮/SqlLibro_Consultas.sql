@@ -1,6 +1,8 @@
 🧵 <Paginas 24 >
 
-
+    -- 4 Fundamentos de SQL
+    -- Habilidades y conceptos clave
+    -- Entienda las bases de datos relacionales
 
 
 🧵 <Paginas 23 >
