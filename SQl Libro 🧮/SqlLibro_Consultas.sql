@@ -1,3 +1,19 @@
+🧵 <Otro >
+
+
+Select * from scott.emp;
+
+
+
+
+
+
+
+🧵 <Paginas 25 >
+
+
+
+
 🧵 <Paginas 24 >
 
     -- 4 Fundamentos de SQL
