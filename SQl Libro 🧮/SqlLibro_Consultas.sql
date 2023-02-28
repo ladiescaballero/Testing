@@ -1,17 +1,8 @@
 🧵 <Otro >
 
 
-Select * from scott.emp;
-
-
-
-
-
-
 
 🧵 <Paginas 25 >
-
-
 
 
 🧵 <Paginas 24 >
