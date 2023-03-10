@@ -1,14 +1,47 @@
-chapter N 2 = Single tables queries covers various aspects of querying
+You can control permissions at the schema level. For example, you can grant a user SELECT permissions on a schema, allowing the user to query data from all objects in that schema. So security is one of the considerations for determining how to arrange objects in schemas.
+
+The schema is also a namespace—it is used as a prefix to the object name. For example, suppose
+you have a table named Orders in a schema named Sales. The schema-qualified object name (also known as the two-part object name) is Sales.Orders. If you omit the schema name when referring to an object, SQL Server will apply a process to resolve the schema name, such as checking whether the object exists in the user’s default schema, and if it doesn’t, checking whether it exists in the dbo schema. Microsoft recommends that when you refer to objects in your code you always use the twopart object names. There are some relatively insignificant extra costs involved in resolving the object name when you don’t specify it explicitly. But as insignificant as this extra cost might be, why pay it? Also, if multiple objects with the same name exist in different schemas, you might end up getting a different object than the one you wanted.
+
+Creating Tables and Defining Data Integrity
+
+This section describes the fundamentals of creating tables and defining data integrity using T-SQL. Feel free to run the included code samples in your environment.
+
+More Info If you don’t know yet how to run code against SQL Server, the Appendix will help you get started.
+
+As mentioned earlier, DML rather than DDL is the focus of this book. Still, it is important that you
+understand how to create tables and define data integrity. I will not go into the explicit details here, but I will provide a brief description of the essentials.
+
+Before you look at the code for creating a table, remember that tables reside within schemas, and
+schemas reside within databases. The examples use the book’s sample database, TSQL2012, and a schema called dbo
+
+More Info See the Appendix for details on creating the sample database.
+
+The examples here use a schema named dbo that is created automatically in every database and is
+also used as the default schema for users who are not explicitly associated with a different schema.
 
 
-this books starts with both a theoretical background to SQl 
 
-this book features a companion website 
+Puede controlar los permisos a nivel de esquema. Por ejemplo, puede conceder a un usuario permisos SELECT sobre un esquema, permitiéndole consultar datos de todos los objetos de ese esquema. Por tanto, la seguridad es una de las consideraciones a la hora de determinar cómo organizar los objetos en los esquemas.
 
-To Members of the microsoft SQL server Development team
+El esquema también es un espacio de nombres: se utiliza como prefijo del nombre del objeto. Por ejemplo, supongamos que
+que tiene una tabla llamada Pedidos en un esquema llamado Ventas. El nombre de objeto calificado por el esquema (también conocido como nombre de objeto de dos partes) es Ventas.Pedidos. Si omite el nombre de esquema al hacer referencia a un objeto, SQL Server aplicará un proceso para resolver el nombre de esquema, como comprobar si el objeto existe en el esquema predeterminado del usuario y, si no existe, comprobar si existe en el esquema dbo. Microsoft recomienda que cuando se refiera a objetos en su código utilice siempre los nombres de objeto de dos partes. Hay algunos costes adicionales relativamente insignificantes en la resolución del nombre del objeto cuando no se especifica explícitamente. Pero por insignificante que sea este coste extra, ¿por qué pagarlo? Además, si existen varios objetos con el mismo nombre en distintos esquemas, es posible que acabe obteniendo un objeto distinto del que quería.
 
+Creación de tablas y definición de la integridad de los datos
 
-Many Programmers have a hard time adapting
+Esta sección describe los fundamentos de la creación de tablas y la definición de la integridad de datos utilizando T-SQL. Siéntase libre de ejecutar los ejemplos de código incluidos en su entorno.
 
+Más información Si aún no sabe cómo ejecutar código contra SQL Server, el Apéndice le ayudará a empezar.
 
-loosely speaking a predicate is a property or an expression 
+Como se mencionó anteriormente, DML en lugar de DDL es el enfoque de este libro. Aún así, es importante que
+entender cómo crear tablas y definir la integridad de los datos. No entraré en los detalles explícitos aquí, pero proporcionaré una breve descripción de lo esencial.
+
+Antes de que veas el código para crear una tabla, recuerda que las tablas residen dentro de esquemas, y los esquemas residen dentro de bases de datos.
+los esquemas residen dentro de las bases de datos. Los ejemplos utilizan la base de datos de muestra del libro, TSQL2012, y un esquema llamado dbo
+
+Más información Consulte el Apéndice para obtener detalles sobre la creación de la base de datos de ejemplo.
+
+Los ejemplos utilizan un esquema llamado dbo que se crea automáticamente en todas las bases de datos y que también se utiliza como esquema predeterminado para las bases de datos.
+también se utiliza como esquema predeterminado para los usuarios que no están asociados explícitamente a un esquema diferente.
+
+🔁 Pagina 47 

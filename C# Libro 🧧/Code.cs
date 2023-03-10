@@ -243,17 +243,17 @@ miPila.Push(8);
 
 ¬¬ pag 237
 
-/*como obtener informacion del stack
+como obtener informacion del stack
 
 si queremos obtener informacion del stack del elemento que esta en el lugar superior.
-*/
+
 int valor = 0;
 valor = (int)miPila.Pop();
 
 // el valor tendra el valor 8	
 
-/*para recorrer el stack usar foreach
-*/
+para recorrer el stack usar foreach
+
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
@@ -264,19 +264,19 @@ foreach(int x in miPila)
 	Console.WriteLine("{0}",n);
 }
 
-/*para obtener la cantidad de elementos del stack.Se debe usar la propiedad Count.
+para obtener la cantidad de elementos del stack.Se debe usar la propiedad Count.
 Esta nos regresa un valor entero.Con la cantidad de elementos.
-*/
+
 cantidad = miPila.Count();
 
-/*para limpiar elementos del stack. Si queremos eliminar todo los elementos del stack se usa una propiedad y no necesita parametros.
-*/
+para limpiar elementos del stack. Si queremos eliminar todo los elementos del stack se usa una propiedad y no necesita parametros.
+
 miPila.Clear();
 
-/*Para saber si un stack tiene elementos.y este es un elemento en particular.
+Para saber si un stack tiene elementos.y este es un elemento en particular.
 se debe agregar un parametro
 que es el elemento que se busca.Regresa un TRUE o FALSE
-*/
+
 bool enStack = false;
 enStack = miPila.Contains(7);
 
@@ -284,8 +284,8 @@ enStack = miPila.Contains(7);
 
 ¬¬ pag 239 - 240
 
-/*creacion de una aplicacion
-*/
+creacion de una aplicacion
+
 
 static void Main(string[]args)
 {
@@ -397,8 +397,8 @@ valor = fila.Dequeue();
 
 ¬¬ Pag 246
 
-/*para saber si un Queue tiene un determinado elemento en particular.gracias a un metodo se puede hacer. hay que pasarle un parametro. el elemento en cuestion. retorno un booleano
-*/
+para saber si un Queue tiene un determinado elemento en particular.gracias a un metodo se puede hacer. hay que pasarle un parametro. el elemento en cuestion. retorno un booleano
+
 Contains();
 
 if(miFila.Contains(7) == true)
@@ -410,25 +410,25 @@ if(miFila.Contains(7) == true)
 
 ¬¬ pag 247
 
-/*para Borrar elementos del Queue: No requiere de ningun parametro. pero se debe usar con cuidado. o se pueden perder toda la coleccion.
-*/
+para Borrar elementos del Queue: No requiere de ningun parametro. pero se debe usar con cuidado. o se pueden perder toda la coleccion.
+
 
 miFila.Clear();
 
-/*Para conocer la cantidad de elementos que tiene un Queue:debemos usar la propiedad Count este corresponde a un valor entero.
-*/
+Para conocer la cantidad de elementos que tiene un Queue:debemos usar la propiedad Count este corresponde a un valor entero.
+
 int cantidad = 0;
 cantidad = miFila.Count;
 
-/*Si se quiere usar para aprovechar y hacer una operacion en,particular.evitar algun error con el queue. 
-*/
+Si se quiere usar para aprovechar y hacer una operacion en,particular.evitar algun error con el queue. 
+
 if(miFila.Count>0)
 {
 	 valor = (int)miFila.Dequeue();
 }
 
-/*Para recorrer los elementos del Queue la mejor forma es con un foreach.
-*/
+Para recorrer los elementos del Queue la mejor forma es con un foreach.
+
 foreach(int n in miFila)
 {
 	Console.WriteaLine("{0}",n);
@@ -514,10 +514,10 @@ static void Main(string[]args)
 	
 Hashtable tabla = new Hashtable();
 
-/*adicion de elementos al Hashtable para agregar elementos se debe usar dos parametros. uno la llave y el value.
+adicion de elementos al Hashtable para agregar elementos se debe usar dos parametros. uno la llave y el value.
 
 llave generalmente es un string y el value cualquier tipo de dato.
-*/
+
 
 <<<><<<<<<<<<<<>>>>><<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>><<<<<
 
@@ -599,12 +599,12 @@ tabla.Remove("Pan");
 
 ¬¬ Pag 258
 
-/*Las cadenas sirven para guardar informacion alfanumerica.Se utilisa la clase String.
+Las cadenas sirven para guardar informacion alfanumerica.Se utilisa la clase String.
 las cadenas se guardan como una coleccion y cada caracter es un elemento.
-*/
-/*Como declarar una cadena:Para declarar una cadena es muy sencillo. se crea una instancia de la clase string 
+
+Como declarar una cadena:Para declarar una cadena es muy sencillo. se crea una instancia de la clase string 
 y le asignamos el valor que corresponde. puede ser un texto o vacio. debe ir entre comillas dobles.
-*/
+
 string miCadena = "lalal";
 string miCadenaDos = "";
 
@@ -613,9 +613,9 @@ string miCadenaDos = "";
 
 ¬¬ Pag 259
 
-/*El metodo ToString: Este metodo es muy util cuando se quiere convertir un tipo de dato o su representacion a una "CADENA" y queremos desplegar informacion al usuario.
+El metodo ToString: Este metodo es muy util cuando se quiere convertir un tipo de dato o su representacion a una "CADENA" y queremos desplegar informacion al usuario.
 Imagenemos que tenemos una variable de tipo entero y queremos desplegar este valor al usuario.Para eso podemos convertir a cadena el valor.
-*/
+
 string cadena = valor.ToString();
 
 // Como convertir y formatear fechas a cadenas: Uno de los usos mas comunes de las cadenas es poder formatear informacion que puede ser de cualquier tipo. Uno que es bien comun es la de formatear son las fechas- Se hace con una clase llamada DateTime();
@@ -647,38 +647,38 @@ formato = String.Format("la fecha es : {0:dddd yyyy M}" , DateTime.Now);
   
  // Para Darles formato a valores numericos. Mira la tabla. Al igual con la informacion de la fecha y hora . es posible darle formato a los valores numericos que deseamos mostrar.
  
-/*ver tabla de valores especifcados
-*/
+ver tabla de valores especifcados
 
-/*Cuando especificamos un formato podemos tener diferentes secciones.podemos tener un formato en particular , Una primera seccion para los numeros positivos , segunda seccion para los numeros negativos , tercera seccion para el valor cero.
-*/
+
+Cuando especificamos un formato podemos tener diferentes secciones.podemos tener un formato en particular , Una primera seccion para los numeros positivos , segunda seccion para los numeros negativos , tercera seccion para el valor cero.
+
 Console.WriteLine(String.Format("{0:$#,###0.00;Negativo $#,###0.00;Cero}",valor));
 
-/*Si el valor contenido adentro de valor es positivo.se presentara normalmente y con un signo de moneda antes de el.Pero si el valor es negativo aparecera con la palabra Negativo y el signo de monedas antes.y si el valor fue cero aparecera la palabra Cero.
-*/
+Si el valor contenido adentro de valor es positivo.se presentara normalmente y con un signo de moneda antes de el.Pero si el valor es negativo aparecera con la palabra Negativo y el signo de monedas antes.y si el valor fue cero aparecera la palabra Cero.
+
 
 ¬¬ Pag 262
 
-/*Como concatenar Cadenas : Otra manipulacion que podemos hacer es la concatenacion es muy sencilla de hacer existe una funcionalidad o sobrecarga del operador + para la clase String .
-*/
+Como concatenar Cadenas : Otra manipulacion que podemos hacer es la concatenacion es muy sencilla de hacer existe una funcionalidad o sobrecarga del operador + para la clase String .
+
 string nombre = "tomas";
 string apellido = "lopez"
 NombreCompleto = "nombre +""+apellido;
 
-/*Nota : Utilizar el operador + no es muy practico ya que al utilizar espacios vacios se pieden espacios en memoria. para eso es mejor utilizar Concat una clase especializada. solo requiere dos parametros . uno no tendria sentido unir.
-*/
+Nota : Utilizar el operador + no es muy practico ya que al utilizar espacios vacios se pieden espacios en memoria. para eso es mejor utilizar Concat una clase especializada. solo requiere dos parametros . uno no tendria sentido unir.
+
 nombreCompleto = String.Concat(nombre , apellido);
 
-/*El metodo Concat es estatico por eso es posible usarlo sin la necesidad de instanciarlo.
+El metodo Concat es estatico por eso es posible usarlo sin la necesidad de instanciarlo.
 
-*/
+
 
 ¬¬ Pag 263
 
 nombreCompleto = String.Concat(nombre , String.Concat(" ",apellido));
 
-/*Uso de StringBuilder permite construir cadenas de forma efeciente.y se puedem usar en vez de usar las concatenaciones se puede usar el constructor por default que no necesita ningun parametro.la clase tiene varias propiedades como capacity que nos indica la capacidad actual o tambien chars que podemos modificar un caracter en particular.
-*/
+Uso de StringBuilder permite construir cadenas de forma efeciente.y se puedem usar en vez de usar las concatenaciones se puede usar el constructor por default que no necesita ningun parametro.la clase tiene varias propiedades como capacity que nos indica la capacidad actual o tambien chars que podemos modificar un caracter en particular.
+
 
 StringBuilder sb = new StringBuilder("Hola a todos");
 
