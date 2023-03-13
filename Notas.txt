@@ -108,3 +108,29 @@ I:\.shortcut-targets-by-id\1JsCP5Xg_m2QF7wi58MD0DkiYhRoXhhrV\COSTOS CSI\Costos 2
 Otro Web
 
 https://www.allthingshair.com/es-mx/productos/shampoo-tresemme-detox-hidratacion/
+
+
+
+DeepL
+
+Primary Key Constraints A primary key constraint enforces uniqueness of rows and also disallows NULL marks in the constraint attributes. Each unique set of values in the constraint attributes can appear only once in the table—in other words, only in one row. An attempt to define a primary key constraint on a column that allows NULL marks will be rejected by the RDBMS. Each table can have only one primary key.
+
+🎇 Las Dos Formas de Traducir Textos-
+Seleccionar Texto de Pagina en Paginas. De Abajo Hacia Arriba , Selecionar Cada parrafo y Guardarlo en "PORTAPELES" Luego Utilizar el Navegador , Usar VSCode.Dev , DeepL Web.
+Copiar texto en Ingles Y Traducir- Una vez traducido Leer y Agregar Comentarios(Subrayar) Cada parte mas Importante o Significativo del texto.
+Copiar el texto , Seleccionar el Texto Completo de la pagina y Agregar un Comentario /**/ Pegar el Texto en Español y Guardar.(XODO)
+
+--Traducido--
+Restricciones de clave primaria Una restricción de /*clave primaria impone la unicidad de las filas y también prohíbe las marcas NULL en los atributos de la restricción.*/ Cada conjunto único de valores en los atributos de restricción sólo puede aparecer una vez en la tabla, es decir, sólo en una fila. Cualquier intento de definir una restricción de clave primaria en una columna que permita marcas NULL será rechazado por el RDBMS. /*Cada tabla sólo puede tener una clave primaria.*/
+NOTA: Importante Leer y Escribir Texto Ingles al español. Mismo texto para practicar el Ingles. Usar web , App
+
+🎆 2 Forma de Traducir texto es usar la App DeepL Para windows Se puede usar select-Copy , la mejor forma es usar la funcionalidad de [Captura de Pantalla] y en el mismo texto Realizar los Comentarios /*Texto ingles*/ para resaltar los temas Importantes.- Copiar el texto , Resaltar el Parrafo y agregar Comentarios , pegar y Guardar.-
+
+
+
+
+
+
+
+
+
