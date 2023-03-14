@@ -1,0 +1,35 @@
+The following code defines a unique constraint on the ssn column in the Employees table.
+
+ALTER TABLE dbo.Employees ADD CONSTRAINT UNQ_Employees_ssn UNIQUE(ssn);
+
+As with a primary key constraint, SQL Server will create a unique index behind the scenes as the physical mechanism to enforce the logical unique constraint.
+
+Foreign Key Constraints A foreign key enforces referential integrity. This constraint is defined on one or more attributes in what’s called the referencing table and points to candidate key (primary key or unique constraint) attributes in what’s called the referenced table. Note that the referencing and referenced tables can be one and the same. The foreign key’s purpose is to restrict the values allowed in the foreign key columns to those that exist in the referenced columns.
+
+The following code creates a table called Orders with a primary key defined on the orderid column.
+
+IF OBJECT_ID('dbo.Orders', 'U') IS NOT NULL DROP TABLE dbo.Orders;
+
+CREATE TABLE dbo.Orders (
+orderid empid
+custid orderts
+qty
+INT INT
+NOT NULL, NOT NULL,
+VARCHAR(10) NOT NULL, DATETIME2 NOT NULL, NOT NULL,
+INT
+CONSTRAINT PK_Orders PRIMARY KEY(orderid)
+);
+
+Suppose you want to enforce an integrity rule that restricts the values supported by the empid column in the Orders table to the values that exist in the empid column in the Employees table. You can achieve this by defining a foreign key constraint on the empid column in the Orders table pointing to the empid column in the Employees table, like the following
+
+ALTER TABLE dbo.Orders
+ADD CONSTRAINT FK_Orders_Employees FOREIGN KEY(empid)
+REFERENCES dbo.Employees(empid);
+
+Similarly, if you want to restrict the values supported by the mgrid column in the Employees table
+to the values that exist in the empid column of the same table, you can do so by adding the following foreign key.
+
+ALTER TABLE dbo.Employees
+ADD CONSTRAINT FK_Employees_Employees FOREIGN KEY(mgrid)
+REFERENCES dbo.Employees(empid);
